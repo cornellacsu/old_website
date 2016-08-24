@@ -108,6 +108,8 @@ a:focus {
 
 .navbar-custom ul.nav ul.dropdown-menu {
 	  border-radius: 0;
+	  /* Override bootstrap default */
+	  min-width: 0;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li {
