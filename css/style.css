@@ -1,4 +1,4 @@
-f/* ==== Google font ==== */
+/* ==== Google font ==== */
 @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
 
 
@@ -50,6 +50,41 @@ a:hover,
 a:focus {
     text-decoration: none;
     color: #176e61;
+}
+
+.cal_button{
+border:1px solid #4B546A;
+-webkit-box-shadow: #B7B8B8 0px 1px 0px inset;
+-moz-box-shadow: #B7B8B8 0px 1px 0px inset; 
+box-shadow: #B7B8B8 0px 1px 0px inset; 
+-webkit-border-radius: 3px; 
+-moz-border-radius: 3px;
+border-radius: 3px;
+font-size:20px;
+font-family: 'Lato',sans-serif; 
+padding: 10px 10px 10px 10px; 
+display:inline-block;
+text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+font-weight:bold; 
+color: #FFFFFF;
+ background-color: #606C88; 
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#606C88), to(#3F4C6B));
+ background-image: -webkit-linear-gradient(top, #606C88, #3F4C6B);
+ background-image: -moz-linear-gradient(top, #606C88, #3F4C6B);
+ background-image: -ms-linear-gradient(top, #606C88, #3F4C6B);
+ background-image: -o-linear-gradient(top, #606C88, #3F4C6B);
+ background-image: linear-gradient(to bottom, #606C88, #3F4C6B);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#606C88, endColorstr=#3F4C6B);
+}
+
+.cal_button:hover{
+ border:1px solid #4B546A;
+ color: #FFFFFF;
+ background-color: #4B546A; background-image: -webkit-gradient(linear, left top, left bottom, from(#4B546A), to(#2C354B));
+ background-image: -webkit-linear-gradient(top, #4B546A, #2C354B);
+ background-image: -moz-linear-gradient(top, #4B546A, #2C354B);
+ background-image: -ms-linear-gradient(top, #4B546A, #2C354B);
+ background-image: -o-linear-gradient(top, #4B546A, #2C354B);
+ background-image: linear-gradient(to bottom, #4B546A, #2C354B);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#4B546A, endColorstr=#2C354B);
 }
 
 .light {
@@ -780,11 +815,32 @@ Parallax
 
 
 }
-@media screen and (max-width: 480px){
+
+@media screen and (max-width:630px) {
+
   .intro .slogan h2{
-      font-size: 37px;
+    font-size: 45px;
   }
 }
+
+@media screen and (max-width: 480px){
+  .intro .slogan h2{
+      font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 415px){
+  .intro .slogan h2{
+      font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .intro .slogan h2{
+      font-size: 30px;
+  }
+}
+
 
 @media screen and (max-width:768px) {
 
@@ -796,6 +852,7 @@ Parallax
     margin-bottom: 30px;
   }
 }
+
 
 @media (max-width:480px) {
 
