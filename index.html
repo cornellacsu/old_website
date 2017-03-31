@@ -13,7 +13,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" />
     <!-- Squad theme CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
   <link href="color/default.css" rel="stylesheet">
 
 </head>
@@ -36,24 +36,31 @@
           </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#intro">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#companies">Companies</a></li>
                 <li><a href="#calendar">Calendar</a></li>
-                <li><a href="team.html">Officers</a></li>
+                <li class="dropdown">
+                  <a>Officer Log</a>
+                  <ul class="dropdown-menu">
+                    <li class="officer"><a href = "team.html">Current</a></li>
+                    <li class="officer"><a href = "img/archive.html">Archived</a></li>
+                  </ul>
+                </li>
                 <li><a href="#contact">Contact</a></li>
-               <li class="dropdown">
-              <a>External Links</a>
-              <ul class="dropdown-menu">
-                <li><a href = "http://cornell-cs.wikia.com/wiki/Cornell_Computer_Science_Wikia">CS Wiki</a></li>
-                <li><a href="https://docs.google.com/document/d/1QlsmFufVhaU6SyREqrNg0zJEsHx_4d4Mzh-Bq9JsS78/edit">ACSU README</a></li>
-              </ul>
-            </li>
-              <li>
-                <a href="https://www.facebook.com/CornellACSU/?fref=ts" target="_blank"><img src="/img/icons/facebook-icon2.png" width=20></a>
-              </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li class="dropdown">
+                  <a>External Links</a>
+                  <ul class="dropdown-menu">
+                    <li><a href = "https://cornellcswiki.gitlab.io/" target="_blank">CS Wiki</a></li>
+                    <li><a href="https://docs.google.com/document/d/1h9qS1hdrSljEctY82TzFICjAUpJozEDSD0gUibSjbSc/edit?usp=sharing" target="_blank">ACSU README</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/CornellACSU/?fref=ts" target="_blank"><img src="/img/icons/facebook-icon2.png" width=20></a>
+                </li>
               </ul>
           </div>
             <!-- /.navbar-collapse -->
@@ -208,7 +215,7 @@
           </div>
         </div>
         <br>
-        <a href="https://www.google.com/calendar/embed?title=ACSU%20Events%202015-2016&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=cornell.edu_ugjtscehl3thqdg9vh8eg89ulk%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" class = "cal_button" target="_blank">CALENDAR 2016-2017</a>
+        <a class="cal" href="https://www.google.com/calendar/embed?title=ACSU%20Events%202015-2016&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=cornell.edu_ugjtscehl3thqdg9vh8eg89ulk%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" target="_blank">CALENDAR 2016-2017</a>
       </section>
       <!-- /Section: calendar -->
       <!-- Section: contact -->

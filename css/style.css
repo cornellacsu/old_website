@@ -52,40 +52,19 @@ a:focus {
     color: #176e61;
 }
 
-.cal_button, .cal_button:visited{
-    background: #223542;
-    background-image: -webkit-linear-gradient(top, #223542, #879094);
-    background-image: -moz-linear-gradient(top, #223542, #879094);
-    background-image: -ms-linear-gradient(top, #223542, #879094);
-    background-image: -o-linear-gradient(top, #223542, #879094);
-    background-image: linear-gradient(to bottom, #223542, #879094);
-    -webkit-border-radius: 6;
-    -moz-border-radius: 6;
-    border-radius: 6px;
-    font-family: 'Lato',sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    color: white;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
+li.officer {
+  font-size: 5px;
 }
 
-.cal_button:hover{
-    background: #515354;
-    background-image: -webkit-linear-gradient(top, #515354, #b3b3b3);
-    background-image: -moz-linear-gradient(top, #515354, #b3b3b3);
-    background-image: -ms-linear-gradient(top, #515354, #b3b3b3);
-    background-image: -o-linear-gradient(top, #515354, #b3b3b3);
-    background-image: linear-gradient(to bottom, #515354, #b3b3b3);
-    text-decoration: none;
-    color: white;
+li.officer:hover {
+  font-size: 20px;
 }
 
 .light {
     font-weight: 400;
 }
 
-.navbar {
+.navbar {1
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
 
@@ -145,6 +124,36 @@ a:focus {
 
 .dropdown:hover .dropdown-menu {
    visibility: visible;
+}
+
+.cal, .cal:visited {
+    background: #223542;
+    background-image: -webkit-linear-gradient(top, #223542, #879094);
+    background-image: -moz-linear-gradient(top, #223542, #879094);
+    background-image: -ms-linear-gradient(top, #223542, #879094);
+    background-image: -o-linear-gradient(top, #223542, #879094);
+    background-image: linear-gradient(to bottom, #223542, #879094);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: 'Lato',sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 100px;
+}
+
+.cal:hover {
+    background: #515354;
+    background-image: -webkit-linear-gradient(top, #515354, #b3b3b3);
+    background-image: -moz-linear-gradient(top, #515354, #b3b3b3);
+    background-image: -ms-linear-gradient(top, #515354, #b3b3b3);
+    background-image: -o-linear-gradient(top, #515354, #b3b3b3);
+    background-image: linear-gradient(to bottom, #515354, #b3b3b3);
+    text-decoration: none;
+    color: white;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu {
@@ -302,8 +311,9 @@ hr {
 
 
 .section-heading h2 {
-  font-size: 40px;
+  font-size: 32px;
 }
+
 .section-heading i {
   margin-bottom: 20px;
 }
