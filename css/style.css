@@ -116,14 +116,16 @@ li.officer:hover {
 
 .dropdown .dropdown-menu {
   visibility: hidden;
-  background-color: rgba(255, 255, 255, .3);
+  background-color: rgba(255, 255, 255, .6);
   /* Override bootstrap default */
   display: block;
   padding: 0;
+  z-index: 1;
 }
 
 .dropdown:hover .dropdown-menu {
    visibility: visible;
+   z-index: 1;
 }
 
 .cal, .cal:visited {
@@ -845,6 +847,13 @@ Parallax
   }
 }
 
+.show-mobile {
+  display: none;
+}
+
+.hide-mobile {
+  display: block;
+}
 
 @media screen and (max-width:768px) {
 
@@ -854,6 +863,14 @@ Parallax
 
   .boxed-grey {
     margin-bottom: 30px;
+  }
+
+  .show-mobile {
+    display: inline;
+  }
+
+  .hide-mobile {
+    display: none;
   }
 }
 
