@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='icon' href='favicon.ico' type='image/x-icon' />
+    <title>ACSU</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+    <script src="/js/serialize_resume.js"></script>
+    <script src="/js/jquery.dynatable.js"></script>
+ 
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="load"></div>
+  </div>
+
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header page-scroll">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                  <h1><img src = "img/logo_ACSU_short_transparent.png" width=36 />   &nbsp;ACSU</h1>
+              </a>
+          </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#intro">Home</a></li>
+                <li class="dropdown">
+                  <a>About</a>
+                  <ul class="dropdown-menu">
+                    <li class="acsu"><a href = "team.html">What is ACSU?</a></li>
+                    <li class="bylaws"><a href = "img/archive.html">ByLaws</a></li>
+                    <li class="officers"><a href = "img/archive.html">Officers</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a>Events</a>
+                  <ul class="dropdown-menu">
+                    <li class="calendar"><a href = "team.html">Calendar</a></li>
+                    <li class="gbody"><a href = "img/archive.html">G-Body</a></li>
+                    <li class="corporate"><a href = "img/archive.html">Corporate</a></li>
+                    <li class="workshops"><a href = "img/archive.html">Workshops</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a>Programs</a>
+                  <ul class="dropdown-menu">
+                    <li class="mentorship"><a href = "team.html">Mentorship</a></li>
+                    <li class="readinggroup"><a href = "img/archive.html">Reading Groups</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                <a>Resources</a>
+                <ul class="dropdown-menu">
+                  <li class="readme"><a href = "team.html">ACSU README</a></li>
+                  <li class="wiki"><a href = "img/archive.html">CS Wiki</a></li>
+                  <li class="food"><a href = "img/archive.html">Free Food</a></li>
+                </ul>
+                </li>
+                <li><a href="img/resources.html">Blog</a></li>
+                <li><a href="img/resources.html">Join</a></li>
+
+                <li>
+                  <a href="https://www.facebook.com/CornellACSU/?fref=ts" target="_blank"><img src="/img/icons/facebook-icon2.png" width=20></a>                </li>
+              </ul>
+          </div>
+            <!-- /.navbar-collapse -->
+      </div>
+        <!-- /.container -->
+  </nav>
+
+  
+
+  <!-- Section: intro -->
+    <section id="intro" class="intro">
+
+    <div class="slogan">
+      <h5>association of</h5>
+<!--       <h2>COMPUTER SCIENCE</h2>
+ -->      <h2><span id="qualities"></span><span class="blinking-cursor">|</span>
+          </h2>
+      <h2>undergraduates</h2>
+      <h4>Cornell University</h4>
+      
+    </div>
+    
+
+    
+      <!-- /Section: about -->
+    <footer>
+      <p>&copy; 1994-2017 ACSU. All rights reserved.</p>
+    </footer>
+
+    <!-- Hello World Script -->
+  <script>
+      (function(){
+
+        var message_str = "computer science"
+        var showText = function(target, message, index, interval) {
+            if (index < message.length) {
+                $(target).append(message[index++]);
+                setTimeout(function() {
+                    showText(target, message, index, interval);
+                }, interval);
+            }
+        }
+        $(function() {
+            
+            showText("#qualities", message_str, -1, 150);
+        });
+      })()
+  </script>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>

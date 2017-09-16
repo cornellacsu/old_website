@@ -1,0 +1,40 @@
+- title: About
+  url: /about.html
+  sublinks:
+    - title: What is ACSU?
+      url: /what.html
+    - title: ByLaws
+      url: /bylaws.html
+    - title: Officers
+      url: /officers.html
+- title: Events
+  url: /events.html
+  sublinks:
+    - title: Calendar
+      url: /calendar.html
+    - title: G-Body
+      url: /gbody.html
+    - title: Corporate
+      url: /corporate.html
+    - title: Workshops
+      url: /workshops.html
+- title: Programs
+  url: /programs.html
+  sublinks:
+    - title: Mentorship
+      url: /mentorship.html
+    - title: Reading Grouops
+      url: /reading.html
+- title: Resources
+  url: /resources.html
+  sublinks:
+    - title: ACSU README
+      url: /readme.html
+    - title: CS Wiki
+      url: /wiki.html
+    - title: Free Food
+      url: /food.html
+- title: Blog
+  url: /blog.html
+- title: Join
+  url: /join.html
