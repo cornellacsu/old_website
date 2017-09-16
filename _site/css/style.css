@@ -501,6 +501,13 @@ footer p {
   color: #EEE;
 }
 
+.readme {
+    padding-top: 10%;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
 /* ==========================
 Parallax
 ============================= */
