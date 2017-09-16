@@ -354,7 +354,8 @@ hr {
   width:100%;
   position:relative;
 
- /* background: url(../img/background.jpg) no-repeat top center;*/
+ /* background: url(../img/background.jpg) no-repeat top center;
+  background-size: 100% ;*/
 }
 
 #intro.intro {
