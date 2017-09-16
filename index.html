@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel='icon' href='favicon.ico' type='image/x-icon' />
-    <title>Cornell ACSU</title>
+    <title>ACSU</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- Fonts -->
@@ -14,7 +14,12 @@
     <link href="css/animate.css" rel="stylesheet" />
     <!-- Squad theme CSS -->
     <link href="css/style.css" type="text/css" rel="stylesheet">
-  <link href="color/default.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+    <script src="/js/serialize_resume.js"></script>
+    <script src="/js/jquery.dynatable.js"></script>
+ 
 
 </head>
 
@@ -31,7 +36,7 @@
                   <i class="fa fa-bars"></i>
               </button>
               <a class="navbar-brand" href="index.html">
-                  <h1><img src = "img/logo_ACSU_short_transparent.png" width=36 />   &nbsp;Cornell ACSU</h1>
+                  <h1><img src = "img/logo_ACSU_short_transparent.png" width=36 />   &nbsp;ACSU</h1>
               </a>
           </div>
 
@@ -39,28 +44,44 @@
              <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#intro">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#companies">Companies</a></li>
-                <li><a href="#calendar">Calendar</a></li>
                 <li class="dropdown">
-                  <a>Officer Log</a>
+                  <a>About</a>
                   <ul class="dropdown-menu">
-                    <li class="officer"><a href = "team.html">Current</a></li>
-                    <li class="officer"><a href = "img/archive.html">Archived</a></li>
+                    <li class="acsu"><a href = "team.html">What is ACSU?</a></li>
+                    <li class="officers"><a href = "img/archive.html">Officers</a></li>
+                    <li class="bylaws"><a href = "img/archive.html">ByLaws</a></li>
+                    <li class="archive"><a href = "img/archive.html">Archive</a></li>
                   </ul>
                 </li>
-                <li><a href="img/resources.html">Resources</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
-                  <a>External Links</a>
+                  <a>Events</a>
                   <ul class="dropdown-menu">
-                    <li><a href = "https://cornellcswiki.gitlab.io/" target="_blank">CS Wiki</a></li>
-                    <li><a href="https://docs.google.com/document/d/1h9qS1hdrSljEctY82TzFICjAUpJozEDSD0gUibSjbSc/edit?usp=sharing" target="_blank">ACSU README</a></li>
+                    <li class="calendar"><a href = "team.html">Calendar</a></li>
+                    <li class="gbody"><a href = "img/archive.html">G-Body</a></li>
+                    <li class="corporate"><a href = "img/archive.html">Corporate</a></li>
+                    <li class="workshops"><a href = "img/archive.html">Workshops</a></li>
                   </ul>
                 </li>
+                <li class="dropdown">
+                  <a>Programs</a>
+                  <ul class="dropdown-menu">
+                    <li class="mentorship"><a href = "team.html">Mentorship</a></li>
+                    <li class="readinggroup"><a href = "img/archive.html">Reading Groups</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                <a>Resources</a>
+                <ul class="dropdown-menu">
+                  <li class="readme"><a href = "team.html">ACSU README</a></li>
+                  <li class="wiki"><a href = "img/archive.html">CS Wiki</a></li>
+                  <li class="food"><a href = "img/archive.html">Free Food</a></li>
+                </ul>
+                </li>
+                <li><a href="img/resources.html">Blog</a></li>
+                <li><a href="img/resources.html">Join</a></li>
+
                 <li>
-                  <a href="https://www.facebook.com/CornellACSU/?fref=ts" target="_blank"><img src="/img/icons/facebook-icon2.png" width=20></a>
-                </li>
+                  <a href="https://www.facebook.com/CornellACSU/?fref=ts" target="_blank"><img src="/img/icons/facebook-icon2.png" width=20></a>                </li>
               </ul>
           </div>
             <!-- /.navbar-collapse -->
@@ -68,255 +89,47 @@
         <!-- /.container -->
   </nav>
 
+  
+
   <!-- Section: intro -->
     <section id="intro" class="intro">
 
     <div class="slogan">
-      <h5>ASSOCIATION OF</h5>
-      <h2>COMPUTER SCIENCE</h2>
-      <h2>UNDERGRADUATES</h2>
-      <h4>Cornell University</h4>
+      <h2>ACSU</h2>
+      <h4>Cornell University</h4> 
+      <h3><span id="qualities"></span></h3>
     </div>
-    <div class="page-scroll">
-      <a href="#about" class="btn btn-circle">
-        <i class="fa fa-angle-double-down animated"></i>
-      </a>
-    </div>
+    
 
-    </section>
-      <!-- Section: about -->
-      <section id="about" class="home-section text-center bg-gray">
-        <div class="heading-about">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <div class="wow bounceInDown" data-wow-delay="0.4s">
-                  <div class="section-heading">
-                    <h2>About Us</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 col-lg-offset-5">
-              <hr class="marginbot-50">
-            </div>
-          </div>
-          <div class="row">
-            <h4>Our Purpose</h4>
-            <p style="margin-left:3em; margin-right:3em">The Association of Computer Science Undergraduates (ACSU) is Cornell's chapter of the Association for Computing Machinery (ACM). We promote educational, professional, and social interaction among students interested in computer science and facilitate student communication with faculty, alumni, and corporate representatives to enhance the undergraduate experience in computer science. The ACSU receives support from the Department of Computer Science and several corporate sponsors.</p>
-          </div>
-          <div class="row">
-            <div class="col-lg-2 col-lg-offset-5">
-              <hr class="marginbot-50">
-            </div>
-          </div>
-          <div class="row">
-            <h4>What We Do</h4>
-            <br>
-            <div class="col-md-4">
-              <div class="service-icon">
-                <img src="img/icons/social.png" height=35 alt="" />
-              </div>
-              <h5>Social events</h5>
-              <p>We host a variety of events for CS students to meet each other outside of class, including bowling nights, lunches, and formals, as well as a mentorship program every semester!</p>
-            </div>
-            <div class="col-md-4">
-              <div class="service-icon">
-                <img src="img/icons/faculty.png" height=35 alt="" />
-              </div>
-              <h5>Faculty events</h5>
-              <p>We hold several events each year to improve student-faculty relations, including student-faculty luncheons, presentations by faculty on their research, and information sessions on graduate programs.</p>
-            </div>
-            <div class="col-md-4">
-              <div class="service-icon">
-                <img src="img/icons/education.png" height=35 alt="" />
-              </div>
-              <h5>Educational events</h5>
-              <p>We organize a few presentations and workshops each semester to help CS students learn something new and build their range of technical skills. Past events have included LaTeX tutorials and introductory web programming lessons. </p>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="service-icon">
-                <img src="img/icons/company.png" height=35 alt="" />
-              </div>
-              <h5>Company events</h5>
-              <p>We arrange many information sessions each semester for companies of all sizes from the tech industry and beyond, which provide a great opportunity for members to learn about employment options and meet recruiters. Companies we've hosted include Google, Microsoft, Goldman Sachs, Intel, BlackRock, Priceline, and many more.</p>
-            </div>
-            <div class="col-md-4">
-              <div class="service-icon">
-                <img src="img/icons/book.png" height=35 alt="" />
-              </div>
-              <h5>Resume book</h5>
-              <p>Each year, we feature our members' resumes in two books (one for students seeking summer opportunities and one for students seeking full-time employment). We send these resumes to over 100 top corporations as well as Cornell alumni. Numerous students have benefited from great career opportunities as a result.</p>
-            </div>
-            <div class="col-md-4">
-              <div class="service-icon">
-                <img src="img/icons/mentorship.png" height=35 alt="" />
-              </div>
-              <h5>Mentorship</h5>
-              <p>We offer a mentorship program that allows older ACSU students and alumni to be paired with younger students seeking advice regarding the CS major, undergraduate research, technical careers, and more. The program fosters friendships, promotes networking, and allows both mentors and mentees to be more involved with the local CS community.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    
       <!-- /Section: about -->
-      <!-- Section: companies -->
-      <section id="companies" class="home-section text-center">
-        <div class="heading-about">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <div class="section-heading">
-                  <h2>Companies</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 col-lg-offset-5">
-              <hr class="marginbot-50">
-            </div>
-          </div>
-          <div class="row">
-            <p style="margin-left:3em; margin-right:3em">The ACSU is a great way for your company to reach out to Cornell students who are majoring or minoring in Computer Science and other computing-related fields. We provide three key services to help expose students to your employment opportunities. Please reach out to our <a href="mailto:acsu@cornell.edu">officers list</a> to plan events or request to put up a posting for the students on our mailing list.</p>
-          </div>
-          <br>
-          <br>
-          <div class="row">
-            <h5>THANK YOU TO OUR FALL 2016 CORPORATE SPONSORS!</h5>
-          </div>
-          <div class="row">
-            <img src="img/sponsor_logo_4.png" width="70%">
-          </div>
-        </div>
-      </section>
-      <!-- /Section: companies -->
-      <!-- Section: calendar -->
-      <section id="calendar" class="home-section text-center bg-gray">
-        <div class="heading-about">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <div class="wow bounceInDown" data-wow-delay="0.4s">
-                  <div class="section-heading">
-                    <h2>Events Calendar</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
- 		      <div class="row">
- 			     <div class="col-lg-2 col-lg-offset-5">
- 				      <hr class="marginbot-50">
- 			     </div>
- 	      </div>
-        <a class="cal show-mobile" href="https://www.google.com/calendar/embed?title=ACSU%20Events%202015-2016&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=cornell.edu_ugjtscehl3thqdg9vh8eg89ulk%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" target="_blank">CALENDAR 2017-2018</a>
-
-          <div class="row hide-mobile">
-             <iframe src="https://www.google.com/calendar/embed?title=ACSU%20Events%202015-2016&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=cornell.edu_ugjtscehl3thqdg9vh8eg89ulk%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-           </div>
- 		  </div>
-      </section>
-      <!-- /Section: calendar -->
-      <!-- Section: contact -->
-      <section id="contact" class="home-section text-center">
-        <div class="heading-contact">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <div class="wow bounceInDown" data-wow-delay="0.4s">
-                  <div class="section-heading">
-                    <h2>Contact ACSU</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 col-lg-offset-5">
-              <hr class="marginbot-50">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-2">
-            </div>
-            <div class="col-lg-8">
-              <h4>Questions?</h4>
-              <p>Contact our officers at <strong><a href="mailto:acsu@cornell.edu">acsu@cornell.edu</a></strong>, or <strong><a href="https://www.facebook.com/CornellACSU">shoot us a message on Facebook</a></strong>.
-              <br/><br/>
-              <h4>Mailing List</h4>
-              <p><strong>Join our mailing list</strong> to get notified about relevant opportunities (e.g. internships/jobs), our upcoming events, and other events of interest in the Cornell Engineering community. Anyone is welcome to join at no cost. Just fill in your email below to subscribe! </p>
-              <!-- Mailing List Subscription Form -->
-              <form id="mailing_signup" action="https://www.list.cornell.edu/subscribe/subscribe.tml" method="POST">
-                <input class="form-control" type="text" name="email" value="" SIZE=18 placeholder="Email Address">
-                <br/>
-                <input class="form-control" type="text" name="name" value="" SIZE=18 MAXLENGTH=100 placeholder="Name (optional)">
-                <br/>
-                <input class="form-control" type="submit" class="btn" value="subscribe" title="subscribe" alt="subscribe" name="subscribe" align="left">
-                <br/>
-                <input type="hidden" name="list" value="acsu-l">
-                <input type="hidden" name="lists" value="acsu-l">
-                <input type="hidden" name="demographics" value="">
-                <input type="hidden" name="name_required" value="">
-                <input type="hidden" name="pw_required" value="">
-                <input type="hidden" name="confirm" value="one">
-                <input type="hidden" name="showconfirm" value="T">
-                <input type="hidden" name="url" value="">
-                <input type="hidden" name="appendsubinfotourl" value="">
-                <input type="hidden" name="secx" value="111f3785">
-              </form>
-              <!-- End Mailing List Subscription Form -->
-              <br/><br/>
-              <h4>Membership</h4>
-              <p>
-                Paid ACSU membership is open to all Cornell undergraduate students. Members receive a t-shirt, are invited to submit their resumes to our resume book, and enjoy many other benefits. To join ACSU, attend and sign in at least one general meeting and pay the annual dues of only $5. Membership is not required to subscribe to our mailing list.
-                <br/><br/>
-                Come to our <strong><a href="https://www.facebook.com/events/241344616393938/">first general body meeting</a></strong> of the semester on <strong>Tuesday, September 19</strong>!
-                <br/><br/>
-                <i>Note that ACSU membership lasts for an academic school year, regardless of which semester you paid. For instance, if you pay your dues anytime in Fall 2017 or Spring 2018, you will be an ACSU paid member until the end of the Spring 2018 semester.</i>
-              </p>
-              <br>
-              <br>
-              <p><strong>ACSU Groups</strong></p>
-              <a href="https://www.facebook.com/CornellACSU/" target="_blank"><img src="/img/icons/facebook-icon.png" width=32></a>&nbsp;&nbsp;
-              <a href="https://www.linkedin.com/groups/8275148" target="_blank"><img src="/img/icons/linkedin-icon.png" width=32></a>
-            </div>
-            <div class="col-lg-2">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Section: contact -->
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-lg-12">
-            <div class="wow shake" data-wow-delay="0.4s">
-              <div class="page-scroll marginbot-30">
-                <a href="#intro" id="totop" class="btn btn-circle">
-                  <i class="fa fa-angle-double-up animated"></i>
-                </a>
-              </div>
-            </div>
-            <p>&copy; 2010-2017 Association of Computer Science Undergraduates. All rights reserved.
-            <br>Department of Computer Science at Cornell University</p>
+            <p>&copy; 2010-2017 ACSU. All rights reserved.</p>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Hello World Script -->
+  <script>
+      (function(){
+        var message_str = "hello world!"
+        var showText = function(target, message, index, interval) {
+            if (index < message.length) {
+                $(target).append(message[index++]);
+                setTimeout(function() {
+                    showText(target, message, index, interval);
+                }, interval);
+            }
+        }
+        $(function() {
+            showText("#qualities", message_str, -1, 150);
+        });
+      })()
+  </script>
     <!-- Core JavaScript Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
