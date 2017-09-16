@@ -48,9 +48,8 @@
                   <a>About</a>
                   <ul class="dropdown-menu">
                     <li class="acsu"><a href = "team.html">What is ACSU?</a></li>
-                    <li class="officers"><a href = "img/archive.html">Officers</a></li>
                     <li class="bylaws"><a href = "img/archive.html">ByLaws</a></li>
-                    <li class="archive"><a href = "img/archive.html">Archive</a></li>
+                    <li class="officers"><a href = "img/archive.html">Officers</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
@@ -95,10 +94,11 @@
     <section id="intro" class="intro">
 
     <div class="slogan">
-      <h5>ASSOCIATION OF</h5>
+      <h5>association of</h5>
 <!--       <h2>COMPUTER SCIENCE</h2>
- -->      <h2><span id="qualities"></span></h2>
-      <h2>UNDERGRADUATES</h2>
+ -->      <h2><span id="qualities"></span><span class="blinking-cursor">|</span>
+          </h2>
+      <h2>undergraduates</h2>
       <h4>Cornell University</h4>
       
     </div>
@@ -113,7 +113,8 @@
     <!-- Hello World Script -->
   <script>
       (function(){
-        var message_str = "Computer Science"
+
+        var message_str = "computer science"
         var showText = function(target, message, index, interval) {
             if (index < message.length) {
                 $(target).append(message[index++]);
@@ -123,10 +124,12 @@
             }
         }
         $(function() {
+            
             showText("#qualities", message_str, -1, 150);
         });
       })()
   </script>
+
     <!-- Core JavaScript Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
