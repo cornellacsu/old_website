@@ -3,27 +3,30 @@
   sublinks:
     - title: What is ACSU?
       url: /what.html
-    - title: ByLaws
-      url: /bylaws.html
     - title: Officers
       url: /officers.html
+    - title: ByLaws
+      url: /bylaws.html
 - title: Events
-  url: /events.html
+  url: /calendar.html
   sublinks:
-    - title: Calendar
-      url: /calendar.html
-    - title: G-Body
-      url: /gbody.html
-    - title: Corporate
-      url: /corporate.html
-    - title: Workshops
-      url: /workshops.html
+  - title: Calendar
+    url: /calendar.html
+  - title: Corporate
+    url: /corporate.html
+  #   - title: Calendar
+  #     url: /calendar.html
+  #   - title: G-Body
+  #     url: /gbody.html
+    
+  #   - title: Workshops
+  #     url: /workshops.html
 - title: Programs
   url: /programs.html
   sublinks:
     - title: Mentorship
       url: /mentorship.html
-    - title: Reading Grouops
+    - title: Reading Groups
       url: /reading.html
 - title: Resources
   url: /resources.html
