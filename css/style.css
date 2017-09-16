@@ -82,7 +82,7 @@ li.officer:hover {
 
 /*-- title logo --*/
 .navbar-brand h1{
-  color: #000;
+  color: #FFF;
   font-size: 40px;
   line-height: 40px;
   letter-spacing: 3px;
@@ -354,8 +354,8 @@ hr {
   width:100%;
   position:relative;
 
- /* background: url(../img/background.jpg) no-repeat top center;
-  background-size: 100% ;*/
+  background: url(../img/background.jpg) no-repeat top center;
+  background-size: 100% ;
 }
 
 #intro.intro {
@@ -430,7 +430,7 @@ footer p {
   font-family: 'Lato',sans-serif;
   font-size: 14px;
 
-  color: #000;
+  color: #FFF;
 }
 
 /* ==========================
