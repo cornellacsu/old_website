@@ -23,6 +23,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 20px;
+    
 /*    text-transform: uppercase;
 */    font-family: Montserrat,sans-serif;
     font-weight: 700;
@@ -322,6 +323,9 @@ hr {
   margin-bottom: 20px;
 }
 
+.heading {
+    padding-top: 30px;
+}
 
 /* --- section bg var --- */
 
@@ -501,7 +505,7 @@ footer p {
   color: #EEE;
 }
 
-.readme {
+.content {
     padding-top: 10%;
     width: 70%;
     margin: 0 auto;
