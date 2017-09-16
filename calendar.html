@@ -1,6 +1,6 @@
----
-layout: default
-permalink: calendar.html
+--- 
+layout: default 
+permalink: calendar.html 
 ---
 
 <script>
@@ -8,7 +8,8 @@ $(".navbar-custom").css('background-color', '#272940');
 </script>
 
 <!-- Section: calendar -->
-<section id="calendar" class="home-section text-center">
+
+<section id="calen" class="home-section text-center">
     <div class="heading">
         <div class="heading-about">
             <div class="container">
@@ -23,17 +24,10 @@ $(".navbar-custom").css('background-color', '#272940');
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-5">
-                    <hr class="marginbot-50">
-                </div>
-            </div>
-            <a class="cal show-mobile" href="https://www.google.com/calendar/embed?title=ACSU%20Events%202015-2016&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=cornell.edu_ugjtscehl3thqdg9vh8eg89ulk%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" target="_blank">CALENDAR 2017-2018</a>
-            <div class="row hide-mobile">
-                <iframe src="https://www.google.com/calendar/embed?title=ACSU%20Events%202015-2016&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=cornell.edu_ugjtscehl3thqdg9vh8eg89ulk%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
+        <div id='calendar' class = 'calendar'></div>
     </div>
 </section>
+<script type='text/javascript'>
+ $(document).ready(function() { $('#calendar').fullCalendar({ googleCalendarApiKey: 'AIzaSyBsosKuN91ELrOaJ2PpIxSmSYHcrYSllhE', events: { googleCalendarId: 'cornell.edu_ugjtscehl3thqdg9vh8eg89ulk@group.calendar.google.com' } }); });
+</script>
 <!-- /Section: calendar -->

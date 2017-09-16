@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -15,20 +16,21 @@
     <!-- Squad theme CSS -->
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.js'></script>
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css" />
     <script src="/js/serialize_resume.js"></script>
     <script src="/js/jquery.dynatable.js"></script>
- 
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/gcal.js'></script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="load"></div>
-  </div>
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="load"></div>
+    </div>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
   <div class="container">
       <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -184,13 +186,13 @@
     <!-- /.container -->
 </nav>
 
-
-  <script>
+ <script>
 $(".navbar-custom").css('background-color', '#272940');
 </script>
 
 <!-- Section: calendar -->
-<section id="calendar" class="home-section text-center">
+
+<section id="calen" class="home-section text-center">
     <div class="heading">
         <div class="heading-about">
             <div class="container">
@@ -205,29 +207,20 @@ $(".navbar-custom").css('background-color', '#272940');
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-5">
-                    <hr class="marginbot-50">
-                </div>
-            </div>
-            <a class="cal show-mobile" href="https://www.google.com/calendar/embed?title=ACSU%20Events%202015-2016&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=cornell.edu_ugjtscehl3thqdg9vh8eg89ulk%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" target="_blank">CALENDAR 2017-2018</a>
-            <div class="row hide-mobile">
-                <iframe src="https://www.google.com/calendar/embed?title=ACSU%20Events%202015-2016&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=cornell.edu_ugjtscehl3thqdg9vh8eg89ulk%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
+        <div id='calendar' class = 'calendar'></div>
     </div>
 </section>
-<!-- /Section: calendar -->  
-    
-    
+<script type='text/javascript'>
+ $(document).ready(function() { $('#calendar').fullCalendar({ googleCalendarApiKey: 'AIzaSyBsosKuN91ELrOaJ2PpIxSmSYHcrYSllhE', events: { googleCalendarId: 'cornell.edu_ugjtscehl3thqdg9vh8eg89ulk@group.calendar.google.com' } }); });
+</script>
+<!-- /Section: calendar -->
     <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.scrollTo.js"></script>
     <script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
-  </body>
+</body>
+
 </html>
