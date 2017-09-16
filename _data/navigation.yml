@@ -14,13 +14,10 @@
     url: /calendar.html
   - title: Corporate
     url: /corporate.html
-  #   - title: Calendar
-  #     url: /calendar.html
-  #   - title: G-Body
-  #     url: /gbody.html
-    
-  #   - title: Workshops
-  #     url: /workshops.html
+  - title: G-Body
+    url: /gbody.html
+  - title: Workshops
+    url: /workshops.html
 - title: Programs
   url: /programs.html
   sublinks:

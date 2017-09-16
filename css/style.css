@@ -162,9 +162,8 @@ li.officer:hover {
 }
 
 .navbar-custom ul.nav ul.dropdown-menu {
+    left: 0;
     border-radius: 0;
-    /* Override bootstrap default */
-    min-width: 0;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li a {
