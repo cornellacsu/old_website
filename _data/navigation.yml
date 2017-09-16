@@ -7,13 +7,15 @@
       url: /officers.html
     - title: ByLaws
       url: /bylaws.html
+    - title: Sponsors
+      url: /corporate.html
 - title: Events
   url: /calendar.html
   sublinks:
   - title: Calendar
     url: /calendar.html
-  - title: Corporate
-    url: /corporate.html
+  # - title: Corporate
+  #   url: /corporate.html
   - title: G-Body
     url: /gbody.html
   - title: Workshops
