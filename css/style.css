@@ -647,6 +647,28 @@ Parallax
 }
 
 
+.btn-join {
+    font-weight: 200;
+    margin-top: 42px;
+    padding: 7px 40px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 32px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-join:hover,
+.btn-join:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+
 .btn-circle {
     width: 70px;
     height: 70px;
