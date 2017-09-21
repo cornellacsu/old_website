@@ -313,6 +313,13 @@ hr {
     z-index:120;
 }
 
+.officer-section {
+/*    padding-top: 10px;
+*/    padding-bottom: 110px;
+  display:block;
+    position:relative;
+    z-index:120;
+}
 
 .section-heading h2 {
   font-size: 32px;
@@ -509,6 +516,13 @@ footer p {
 
 .content {
     padding-top: 10%;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.content-less {
+    padding-top: 5%;
     width: 70%;
     margin: 0 auto;
     display: block;
