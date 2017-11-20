@@ -1,0 +1,48 @@
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+      <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+              <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="../index.html">
+              <h1><img src = "img/logo_ACSU_short_transparent.png" width=36 />   &nbsp;ACSU</h1>
+          </a>
+      </div>
+
+        <nav id="navbar" class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                {% assign links = site.data.navigation %}
+                {% for link in links %}
+                    {% assign class = nil %}
+                    {% if page.url contains link.url %}
+                        {% assign class = 'active' %}
+                    {% endif %}
+                    {% if link.sublinks %}
+                        <li class="dropdown {{ class }}">
+                            <a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                {% for sublink in link.sublinks %}
+                                    {% if sublink.title == 'separator' %}
+                                        <li role="separator" class="divider"></li>
+                                    {% else %}
+                                        <li>
+                                            <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li class="{{ class }}">
+                            <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+                <li>
+              <a href="https://www.facebook.com/CornellACSU/?fref=ts" target="_blank"><img src="icons/facebook-icon2.png" width=20></a>  </li>
+            </ul>
+        </nav>
+        <!-- /.nav -->
+  </div>
+    <!-- /.container -->
+</nav>
