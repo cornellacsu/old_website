@@ -4,13 +4,13 @@
     - title: What is ACSU?
       url: what.html
     - title: Officers
-      url: team.html
+      url: officers.html
     - title: ByLaws
       url: bylaws.html
     - title: Sponsors
       url: corporate.html
 - title: Events
-  url: img/calendar.html
+  url: calendar.html
   sublinks:
   - title: Calendar
     url: calendar.html

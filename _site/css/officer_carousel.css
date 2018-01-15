@@ -147,7 +147,6 @@ Main Components
 .cd-horizontal-timeline .events a.older-event::after {
   border-color: #B22222;
 }
-@media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
     margin: 6em auto;
   }
@@ -155,7 +154,7 @@ Main Components
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
   }
-}
+
 
 .cd-timeline-navigation a {
   /* these are the left/right arrows to navigate the timeline */
@@ -384,3 +383,10 @@ Main Components
     transform: translateX(0%);
   }
 }
+
+/* @media (max-width: 1099px) {
+  .cd-horizontal-timeline.loaded {
+    /* show the timeline after events position has been set (using JavaScript) */
+    /*padding-top: 12%;
+  }
+} */
