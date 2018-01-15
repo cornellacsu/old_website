@@ -23,7 +23,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 20px;
-    
+
 /*    text-transform: uppercase;
 */    font-family: Montserrat,sans-serif;
     font-weight: 700;
@@ -38,6 +38,27 @@ p {
 
 p.lead {
   font-weight: 600;
+}
+
+.bio {
+  text-align: left;
+}
+
+.bio2 {
+  text-align: right;
+}
+
+.bio_link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bio_link:hover {
+  color: inherit;
+}
+
+.quote {
+  font-style: italic;
 }
 
 a {
@@ -359,18 +380,46 @@ hr {
 /* ===========================
 --- Intro
 ============================ */
+.officer_intro {
+    width: 100%;
+    position: relative;
+    background: url(../img/academic_background.jpg) no-repeat top center;
+}
+
+#intro.officer_intro {
+  padding: 20% 0 10% 0;
+}
+
+.officer_intro .slogan {
+  text-align: center;
+
+}
+
+.officer_intro .page-scroll {
+  text-align: center;
+}
+
+.officer_intro .slogan h2 {
+  color: white;
+  text-shadow: none;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
 .intro {
-  width:100%;
-  position:relative;
+    width:100%;
+    position:relative;
 
   background: url(../img/background.jpg) no-repeat top center;
   opacity: 0.95;
-  background-size: 100% ;
+  height: 100% ;
 }
 
 #intro.intro {
-  padding:17% 0 0 0;
+  padding: 19% 0 0 0;
 }
 
 .intro .slogan {
@@ -422,7 +471,7 @@ hr {
   font-weight: 100;
 /*  font-family: monaco, Consolas, "Lucida Console", monospace;
 */  font-style: normal;
-  font-variant: normal;  
+  font-variant: normal;
   background-color: rgba(0, 0, 0, 0);
   text-decoration: none;
 /*  text-transform: uppercase;
@@ -494,7 +543,7 @@ hr {
   }
   50% {
     color: white;
-    
+
   }
 }
 
@@ -587,6 +636,28 @@ Parallax
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}
+
+
+.btn-join {
+    font-weight: 200;
+    margin-top: 42px;
+    padding: 7px 40px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 32px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-join:hover,
+.btn-join:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
 }
 
 
@@ -726,6 +797,50 @@ Parallax
 
 
 /* Media queries */
+@media (max-width: 990px) {
+    .navbar {
+      padding: 20px 0;
+      border-bottom: 0;
+      letter-spacing: 1px;
+      background: 0 0;
+      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>ul {
+        width: 50%;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+
+}
 
 @media(min-width:767px) {
 

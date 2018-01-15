@@ -415,11 +415,11 @@ hr {
 
   background: url(../img/background.jpg) no-repeat top center;
   opacity: 0.95;
-  background-size: 100% ;
+  height: 100% ;
 }
 
 #intro.intro {
-  padding:17% 0 0 0;
+  padding: 19% 0 0 0;
 }
 
 .intro .slogan {
@@ -797,6 +797,50 @@ Parallax
 
 
 /* Media queries */
+@media (max-width: 990px) {
+    .navbar {
+      padding: 20px 0;
+      border-bottom: 0;
+      letter-spacing: 1px;
+      background: 0 0;
+      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>ul {
+        width: 50%;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+
+}
 
 @media(min-width:767px) {
 
