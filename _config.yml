@@ -84,3 +84,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - old/*
+  - upload_to_website.sh
