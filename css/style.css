@@ -414,6 +414,7 @@ hr {
     position:relative;
 
   background: url(../img/background.jpg) no-repeat top center;
+  background-size: cover;
   opacity: 0.95;
   height: 100% ;
 }
