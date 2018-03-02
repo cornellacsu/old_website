@@ -1,0 +1,19 @@
+_site/
+.sass-cache
+node_modules
+
+# Text Backup Files #
+*.sw[a-z]
+*~
+\#*\#
+.\#*
+
+# OS X Files #
+.DS_Store
+._*
+.Spotlight*
+.Trashes
+
+# Windows Files #
+Thumbs.db
+ehthumbs.db
