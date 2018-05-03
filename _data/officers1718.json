@@ -1,307 +1,312 @@
-[{
-      "name": "Irene Yoon",
-      "team": "Academic",
-      "position": "President",
-      "year": "19",
-      "img": "board/IreneYoon_2019_Academic.png",
-      "isBoard": true,
-      "email": "ey222@cornell.edu"
-   },
-   {
-      "name": "Abrahm Magaña",
-      "team": "Social",
-      "position": "Vice President",
-      "year": "19",
-      "img": "board/AbrahmMagana_19_Social.jpg",
-      "isBoard": true,
-      "email": "adm264@cornell.edu"
-   },
-   {
-      "name": "Rachel Shim",
-      "team": "Social",
-      "position": "Treasurer",
-      "year": "20",
-      "img": "board/RachelShim_20_Social.jpg",
-      "isBoard": true,
-      "email": "cs899@cornell.edu"
-   },
-   {
-      "name": "Allie Shuldman",
-      "team": "Corporate",
-      "position": "Secretary",
-      "year": "20",
-      "img": "board/AllieShuldman_20_Corporate.jpg",
-      "isBoard": true,
-      "email": ""
-   },
-   {
-      "name": "Kyra Patton",
-      "team": "Academic Chair",
-      "position": "Academic Chair",
-      "year": "19",
-      "img": "board/KyraPatton_2019_Academic.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Yizhou Yu",
-      "team": "Academic",
-      "position": "Academic Chair",
-      "year": "20",
-      "img": "board/YizhouYu_20_Academic.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Tyler Ishikawa",
-      "team": "Corporate",
-      "position": "Corporate Chair",
-      "year": "19",
-      "img": "board/TylerIshikawa_19_Corporate.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Danny Qiu",
-      "team": "Corporate",
-      "position": "Corporate Chair",
-      "year": "19",
-      "img": "board/DannyQiu_19_Corporate.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Keivan Shahida",
-      "team": "Publicity",
-      "position": "Publicity Chair",
-      "year": "20",
-      "img": "board/KeivanShahida-2020-Publicity.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Sally Yue Gao",
-      "team": "Social",
-      "position": "Social Chair",
-      "year": "20",
-      "img": "board/SallyGao_2020_Social.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Xinyu (Cynthia) Zhao",
-      "team": "Academic",
-      "position": "Web Dev Chair",
-      "year": "19",
-      "img": "board/XinyuZhao_19_WebDev.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Mary Ji",
-      "team": "Publicity",
-      "position": "Graphic Designer",
-      "year": "19",
-      "img": "publicity/Mary_Ji_19.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Mahfuza Shovik",
-      "team": "Publicity",
-      "position": "Graphic Designer",
-      "year": "19",
-      "img": "publicity/Mahfuza Shovik_19.jpg",
-      "isBoard": false
-   }, {
-      "name": "Daniel Nosrati",
-      "team": "Academic",
-      "position": "Academic",
-      "year": "19",
-      "img": "academic/DanielNosrati19Academic.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Tony Zhang",
-      "team": "Academic",
-      "position": "Academic",
-      "year": "19",
-      "img": "academic/TonyZhang_19_Academic.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Marina Zhou",
-      "team": "Academic",
-      "position": "Academic",
-      "year": "19",
-      "img": "academic/Marina Zhou_19_Academic.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Anmol Kabra",
-      "team": "Academic",
-      "position": "Academic",
-      "year": "20",
-      "img": "academic/AnmolKabra_20_Academic.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Caleb Koch",
-      "team": "Academic",
-      "position": "Academic",
-      "year": "20",
-      "img": "academic/CalebKoch_20_Academic.png",
-      "isBoard": false
-   },
-   {
-      "name": "Jerry Qu",
-      "team": "Academic",
-      "position": "Academic",
-      "year": "20",
-      "img": "academic/JerryQu_20_Academic.png",
-      "isBoard": false
-   },
-   {
-      "name": "Daniel Galarraga",
-      "team": "Academic",
-      "position": "Academic",
-      "year": "21",
-      "img": "academic/DanielGalarraga_21_Academic.png",
-      "isBoard": false
-   },
-   {
-      "name": "Zicen Pan",
-      "team": "Academic",
-      "position": "Academic",
-      "year": "21",
-      "img": "academic/Zicen Pan _21_academic.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Jialu Bao",
-      "team": "Corporate",
-      "position": "Corporate",
-      "year": "19",
-      "img": "corporate/Jialu Bao_19_Corporate.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Rachel Kwak",
-      "team": "Corporate",
-      "position": "Corporate",
-      "year": "19",
-      "img": "academic/RachelKwak_2019_Academic.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Kevin Ye",
-      "team": "Corporate",
-      "position": "Corporate",
-      "year": "19",
-      "img": "corporate/KevinYe_19_Corporate.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Lindsay Fei",
-      "team": "Corporate",
-      "position": "Corporate",
-      "year": "20",
-      "img": "corporate/LindsayFei_20_Corporate.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Vaed Prasad",
-      "team": "Corporate",
-      "position": "Corporate",
-      "year": "21",
-      "img": "corporate/VaedPrasad_21_Corporate.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Pingdi Huang",
-      "team": "Publicity",
-      "position": "Publicity",
-      "year": "19",
-      "img": "publicity/PingdiHuang_19_Publicity.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Zachary Brody",
-      "team": "Publicity",
-      "position": "Publicity",
-      "year": "20",
-      "img": "publicity/ZackBrody_20_Publicity.png",
-      "isBoard": false
-   },
-   {
-      "name": "Qihang Yan",
-      "team": "Publicity",
-      "position": "Publicity",
-      "year": "20",
-      "img": "publicity/QihangYan_20_Publicity.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Ally Zhang",
-      "team": "Publicity",
-      "position": "Publicity",
-      "year": "21",
-      "img": "publicity/AllyZhang_21_Publicity.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Chris Fifty",
-      "team": "Social",
-      "position": "Social",
-      "year": "19",
-      "img": "social/Chris_Fifty_2019_Social.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Johanna Smith-Palliser",
-      "team": "Social",
-      "position": "Social",
-      "year": "19",
-      "img": "social/JohannaSmith-Palliser_19_Social.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Alex Yoo",
-      "team": "Social",
-      "position": "Social",
-      "year": "19",
-      "img": "social/AlexYoo_19_Social.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Ryan Curtis",
-      "team": "Social",
-      "position": "Social",
-      "year": "20",
-      "img": "social/RyanCurtis_20_Social.jpeg",
-      "isBoard": false
-   },
-   {
-      "name": "Helen Liang",
-      "team": "Social",
-      "position": "Social",
-      "year": "21",
-      "img": "social/HelenLiang_21_Social.jpg",
-      "isBoard": false
-   }, {
-      "name": "Sandy Fang",
-      "team": "WebDev",
-      "position": "Web Dev",
-      "year": "20",
-      "img": "web_dev/SandyFang_20_WebDev.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Eric Feng",
-      "team": "WebDev",
-      "position": "Web Dev",
-      "year": "20",
-      "img": "web_dev/EricFeng_20_WebDev.jpg",
-      "isBoard": false
-   },
-   {
-      "name": "Rachel Lee",
-      "team": "WebDev",
-      "position": "Web Dev",
-      "year": "20",
-      "img": "web_dev/RachelLee_20_WebDev.jpg",
-      "isBoard": false
-   }
-]
+{
+   "year": "2017-2018",
+   "date": "01/09/2017",
+   "current": "selected",
+   "officers": [{
+         "name": "Irene Yoon",
+         "team": "Academic",
+         "position": "President",
+         "year": "19",
+         "img": "board/IreneYoon_2019_Academic.png",
+         "isBoard": true,
+         "email": "ey222@cornell.edu"
+      },
+      {
+         "name": "Abrahm Magaña",
+         "team": "Social",
+         "position": "Vice President",
+         "year": "19",
+         "img": "board/AbrahmMagana_19_Social.jpg",
+         "isBoard": true,
+         "email": "adm264@cornell.edu"
+      },
+      {
+         "name": "Rachel Shim",
+         "team": "Social",
+         "position": "Treasurer",
+         "year": "20",
+         "img": "board/RachelShim_20_Social.jpg",
+         "isBoard": true,
+         "email": "cs899@cornell.edu"
+      },
+      {
+         "name": "Allie Shuldman",
+         "team": "Corporate",
+         "position": "Secretary",
+         "year": "20",
+         "img": "board/AllieShuldman_20_Corporate.jpg",
+         "isBoard": true,
+         "email": ""
+      },
+      {
+         "name": "Kyra Patton",
+         "team": "Academic Chair",
+         "position": "Academic Chair",
+         "year": "19",
+         "img": "board/KyraPatton_2019_Academic.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Yizhou Yu",
+         "team": "Academic",
+         "position": "Academic Chair",
+         "year": "20",
+         "img": "board/YizhouYu_20_Academic.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Tyler Ishikawa",
+         "team": "Corporate",
+         "position": "Corporate Chair",
+         "year": "19",
+         "img": "board/TylerIshikawa_19_Corporate.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Danny Qiu",
+         "team": "Corporate",
+         "position": "Corporate Chair",
+         "year": "19",
+         "img": "board/DannyQiu_19_Corporate.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Keivan Shahida",
+         "team": "Publicity",
+         "position": "Publicity Chair",
+         "year": "20",
+         "img": "board/KeivanShahida-2020-Publicity.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Sally Yue Gao",
+         "team": "Social",
+         "position": "Social Chair",
+         "year": "20",
+         "img": "board/SallyGao_2020_Social.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Xinyu (Cynthia) Zhao",
+         "team": "Academic",
+         "position": "Web Dev Chair",
+         "year": "19",
+         "img": "board/XinyuZhao_19_WebDev.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Mary Ji",
+         "team": "Publicity",
+         "position": "Graphic Designer",
+         "year": "19",
+         "img": "publicity/Mary_Ji_19.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Mahfuza Shovik",
+         "team": "Publicity",
+         "position": "Graphic Designer",
+         "year": "19",
+         "img": "publicity/Mahfuza Shovik_19.jpg",
+         "isBoard": false
+      }, {
+         "name": "Daniel Nosrati",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "19",
+         "img": "academic/DanielNosrati19Academic.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Tony Zhang",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "19",
+         "img": "academic/TonyZhang_19_Academic.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Marina Zhou",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "19",
+         "img": "academic/Marina Zhou_19_Academic.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Anmol Kabra",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "20",
+         "img": "academic/AnmolKabra_20_Academic.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Caleb Koch",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "20",
+         "img": "academic/CalebKoch_20_Academic.png",
+         "isBoard": false
+      },
+      {
+         "name": "Jerry Qu",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "20",
+         "img": "academic/JerryQu_20_Academic.png",
+         "isBoard": false
+      },
+      {
+         "name": "Daniel Galarraga",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "21",
+         "img": "academic/DanielGalarraga_21_Academic.png",
+         "isBoard": false
+      },
+      {
+         "name": "Zicen Pan",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "21",
+         "img": "academic/Zicen Pan _21_academic.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Jialu Bao",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "19",
+         "img": "corporate/Jialu Bao_19_Corporate.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Rachel Kwak",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "19",
+         "img": "academic/RachelKwak_2019_Academic.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Kevin Ye",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "19",
+         "img": "corporate/KevinYe_19_Corporate.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Lindsay Fei",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "20",
+         "img": "corporate/LindsayFei_20_Corporate.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Vaed Prasad",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "21",
+         "img": "corporate/VaedPrasad_21_Corporate.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Pingdi Huang",
+         "team": "Publicity",
+         "position": "Publicity",
+         "year": "19",
+         "img": "publicity/PingdiHuang_19_Publicity.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Zachary Brody",
+         "team": "Publicity",
+         "position": "Publicity",
+         "year": "20",
+         "img": "publicity/ZackBrody_20_Publicity.png",
+         "isBoard": false
+      },
+      {
+         "name": "Qihang Yan",
+         "team": "Publicity",
+         "position": "Publicity",
+         "year": "20",
+         "img": "publicity/QihangYan_20_Publicity.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Ally Zhang",
+         "team": "Publicity",
+         "position": "Publicity",
+         "year": "21",
+         "img": "publicity/AllyZhang_21_Publicity.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Chris Fifty",
+         "team": "Social",
+         "position": "Social",
+         "year": "19",
+         "img": "social/Chris_Fifty_2019_Social.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Johanna Smith-Palliser",
+         "team": "Social",
+         "position": "Social",
+         "year": "19",
+         "img": "social/JohannaSmith-Palliser_19_Social.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Alex Yoo",
+         "team": "Social",
+         "position": "Social",
+         "year": "19",
+         "img": "social/AlexYoo_19_Social.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Ryan Curtis",
+         "team": "Social",
+         "position": "Social",
+         "year": "20",
+         "img": "social/RyanCurtis_20_Social.jpeg",
+         "isBoard": false
+      },
+      {
+         "name": "Helen Liang",
+         "team": "Social",
+         "position": "Social",
+         "year": "21",
+         "img": "social/HelenLiang_21_Social.jpg",
+         "isBoard": false
+      }, {
+         "name": "Sandy Fang",
+         "team": "WebDev",
+         "position": "Web Dev",
+         "year": "20",
+         "img": "web_dev/SandyFang_20_WebDev.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Eric Feng",
+         "team": "WebDev",
+         "position": "Web Dev",
+         "year": "20",
+         "img": "web_dev/EricFeng_20_WebDev.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Rachel Lee",
+         "team": "WebDev",
+         "position": "Web Dev",
+         "year": "20",
+         "img": "web_dev/RachelLee_20_WebDev.jpg",
+         "isBoard": false
+      }
+   ]
+}

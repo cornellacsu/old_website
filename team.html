@@ -37,6 +37,7 @@ ul {
         <!-- .cd-timeline-navigation -->
     </div>
     <!-- </div> -->
+    {% assign data_jsons = "officers1617|officers1718" | split: "|" %}
     <!-- .timeline -->
     <div class="events-content">
         <ol>
@@ -158,102 +159,66 @@ ul {
                   </div>
               </section>
           </li>
-          <li data-date="01/09/2016">
+
+          <!-- generate the team pages using the data jsons -->
+          {% for json in data_jsons %}
+          {% assign data = site.data[json] %}
+          <li data-date={{ data.date }} class={{ data.current }}>
               <section id="officers" class="officer-section text-center">
                 <div class="heading-about">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="wow bounceInDown" data-wow-delay="0.4s">
-                                    <div class="section-heading">
-                                        <h2>2016-2017</h2>
-                                        <p>These brave souls were the ACSU officers for 2016-2017.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                   <div class="container">
-                      <div class="row">
-                          <div class="col-lg-2 col-lg-offset-5">
-                              <hr class="marginbot-50">
+                    <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="wow bounceInDown" data-wow-delay="0.4s">
+                              <div class="section-heading">
+                                {% if data.current == "selected" %}
+                                  <h2>Current Officers</h2>
+                                  <p>These brave souls are the ACSU officers for {{ data.year }}.
+                                  <br/>Feel free to <a href="mailto:acsu@cornell.edu">email</a> or contact us through our <a href="https://www.facebook.com/CornellACSU/" target="_blank">Facebook</a> page.</p>
+                                {% else %}
+                                  <h2>{{ data.year }}</h2>
+                                  <p>These brave souls were the ACSU officers for {{ data.year }}.</p>
+                                {% endif %}
+                              </div>
                           </div>
                       </div>
-                      <div class="container">
-                       {% assign rows = site.data.officers1617.size | divided_by: 4.0 | ceil %}
-                      {% for i in (1..rows) %}
-                        {% assign offset = forloop.index0 | times: 4 %}
-                        <div class="row">
-                          {% for officer in site.data.officers1617 limit:4 offset:offset %}
-                            <div class="col-xs-6 col-sm-3 col-md-3">
-                              <div class="wow bounceInUp" data-wow-delay="0.2s">
-                                <div class="team boxed-grey">
-                                  <div class="inner">
-                                    <h5>{{ officer.name }} '{{ officer.year }}</h5>
-                                    <p class="subtitle">{{ officer.position }}</p>
-                                    <div class="avatar"><img src="img/team/{{ officer.img }}" alt="" width=500 class="img-responsive img-circle" alt="" width=500 class="img-responsive img-circle" /></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          {% endfor %}
-                        </div>
-                        <br>
-                      {% endfor %}
                     </div>
                   </div>
-              </section>
-          </li>
-          <li class="selected" data-date="01/09/2017">
-              <section id="officers" class="officer-section text-center">
-                    <div class="heading-about">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-lg-8 col-lg-offset-2">
-                              <div class="wow bounceInDown" data-wow-delay="0.4s">
-                                  <div class="section-heading">
-                                      <h2>Current Officers</h2>
-                                      <p>These brave souls are the ACSU officers for 2017-2018.
-                                      <br/>Feel free to email or contact us through our <a href="https://www.facebook.com/CornellACSU/" target="_blank">Facebook</a> page.</p>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
+                </div>
+                  <div class="row">
+                      <div class="col-lg-2 col-lg-offset-5">
+                          <hr class="marginbot-50">
                       </div>
-                    </div>
-                      <div class="row">
-                          <div class="col-lg-2 col-lg-offset-5">
-                              <hr class="marginbot-50">
-                          </div>
-                      </div>
-                      <div class="container">
-                      {% assign rows = site.data.officers1718.size | divided_by: 4.0 | ceil %}
-                      {% for i in (1..rows) %}
-                        {% assign offset = forloop.index0 | times: 4 %}
-                        <div class="row">
-                          {% for officer in site.data.officers1718 limit:4 offset:offset %}
-                            <div class="col-xs-6 col-sm-3 col-md-3">
-                              <div class="wow bounceInUp" data-wow-delay="0.2s">
-                                <div class="team boxed-grey">
-                                  <div class="inner">
-                                    <h5>{{ officer.name }} '{{ officer.year }}</h5>
-                                    <p class="subtitle">{{ officer.position }}</p>
-                                    <div class="avatar"><img src="img/team/{{ officer.img }}" alt="" width=500 class="img-responsive img-circle" alt="" width=500 class="img-responsive img-circle" /></div>
-                                    {% if officer.isBoard %}
-                                    <a href="mailto:{{ officer.email }}"><img src="img/icons/email.png" onmouseover="this.src='img/icons/email-2.png'" onmouseout="this.src='img/icons/email.png'" width="38" alt="" /></a>
-                                    {% endif %}
-                                  </div>
-                                </div>
+                  </div>
+                  <div class="container">
+                  <!-- create a row for every 4 officers  -->
+                  {% assign rows = data.officers.size | divided_by: 4.0 | ceil %}
+                  {% for i in (1..rows) %}
+                    {% assign offset = forloop.index0 | times: 4 %}
+                    <div class="row">
+                      {% for officer in data.officers limit:4 offset:offset %}
+                        <div class="col-xs-6 col-sm-3 col-md-3">
+                          <div class="wow bounceInUp" data-wow-delay="0.2s">
+                            <div class="team boxed-grey">
+                              <div class="inner">
+                                <h5>{{ officer.name }} '{{ officer.year }}</h5>
+                                <p class="subtitle">{{ officer.position }}</p>
+                                <div class="avatar"><img src="img/team/{{ officer.img }}" alt="" width=500 class="img-responsive img-circle" alt="" width=500 class="img-responsive img-circle" /></div>
+                                {% if officer.isBoard %}
+                                <a href="mailto:{{ officer.email }}"><img src="img/icons/email.png" onmouseover="this.src='img/icons/email-2.png'" onmouseout="this.src='img/icons/email.png'" width="38" alt="" /></a>
+                                {% endif %}
                               </div>
                             </div>
-                          {% endfor %}
+                          </div>
                         </div>
-                        <br>
                       {% endfor %}
                     </div>
+                    <br>
+                  {% endfor %}
+                </div>
               </section>
           </li>
+          {% endfor %}
           <li data-date="01/09/2018">
               <section id="officers" class="officer-section text-center">
                   <div class="heading-about">
