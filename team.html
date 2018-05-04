@@ -14,16 +14,18 @@ ul {
     list-style-type: none;
 }
 </style>
+{% assign data_jsons = "officers1516|officers1617|officers1718" | split: "|" %}
 <br>
 <section class="cd-horizontal-timeline">
     <div class="timeline">
         <div class="events-wrapper">
             <div class="events">
                 <ol>
-                    <li><a href="#0" data-date="01/09/2015">2015-2016</a></li>
-                    <li><a href="#1" data-date="01/09/2016">2016-2017</a></li>
-                    <li><a href="#2" data-date="01/09/2017" class="selected">2017-2018</a></li>
-                    <li><a href="#3" data-date="01/09/2018">2018-2019</a></li>
+                    {% for json in data_jsons %}
+                      {% assign data = site.data[json] %}
+                      <li><a href="#{{ forloop.index0 }}" data-date={{ data.date }} class={{ data.current }}>{{data.year}}</a></li>
+                    {% endfor %}
+                    <li><a href="#{{ data_jsons.size }}" data-date="01/09/2018">2018-2019</a></li>
                 </ol>
                 <span class="filling-line" aria-hidden="true"></span>
             </div>
@@ -37,129 +39,9 @@ ul {
         <!-- .cd-timeline-navigation -->
     </div>
     <!-- </div> -->
-    {% assign data_jsons = "officers1617|officers1718" | split: "|" %}
     <!-- .timeline -->
     <div class="events-content">
         <ol>
-          <li data-date="01/09/2015">
-              <section id="officers" class="officer-section text-center">
-                  <div class="heading-about">
-                      <div class="container">
-                          <div class="row">
-                              <div class="col-lg-8 col-lg-offset-2">
-                                  <div class="wow bounceInDown" data-wow-delay="0.4s">
-                                      <div class="section-heading">
-                                          <h2>2015-2016</h2>
-                                          <p>These brave souls were the ACSU officers for 2015-2016.</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-lg-2 col-lg-offset-5">
-                              <hr class="marginbot-50">
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-xs-6 col-sm-3 col-md-3">
-                              <div class="wow bounceInUp" data-wow-delay="0.2s">
-                                  <div class="team boxed-grey">
-                                      <div class="inner">
-                                          <h5>Luke Mehringer '17</h5>
-                                          <p class="subtitle">'15-'16 President</p>
-                                          <div class="avatar"><img src="img/team/board/LukeMehringer-17-President.jpeg" alt="" class="img-responsive img-circle" /></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-xs-6 col-sm-3 col-md-3">
-                              <div class="wow bounceInUp" data-wow-delay="0.5s">
-                                  <div class="team boxed-grey">
-                                      <div class="inner">
-                                          <h5>Eric Lin '17</h5>
-                                          <p class="subtitle">'15-'16 Vice President</p>
-                                          <div class="avatar"><img src="img/team/board/EricLin-17-VicePresident.jpg" alt="" class="img-responsive img-circle" /></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-xs-6 col-sm-3 col-md-3">
-                              <div class="wow bounceInUp" data-wow-delay="0.8s">
-                                  <div class="team boxed-grey">
-                                      <div class="inner">
-                                          <h5>Brandon Zhang '17</h5>
-                                          <p class="subtitle">'15-'16 Treasurer</p>
-                                          <div class="avatar"><img src="img/team/board/BrandonZhang-17-Treasurer.jpg" alt="" width=500 class="img-responsive img-circle" /></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-xs-6 col-sm-3 col-md-3">
-                              <div class="wow bounceInUp" data-wow-delay="1s">
-                                  <div class="team boxed-grey">
-                                      <div class="inner">
-                                          <h5>Nancy Ding '17</h5>
-                                          <p class="subtitle">'15-'16 Corporate Chair</p>
-                                          <div class="avatar"><img src="img/team/board/Nancy_Ding_17_CorporateDirector.jpg" alt="" class="img-responsive img-circle" /></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <br>
-                      <div class="row">
-                          <div class="col-xs-6 col-sm-3 col-md-3">
-                              <div class="wow bounceInUp" data-wow-delay="1s">
-                                  <div class="team boxed-grey">
-                                      <div class="inner">
-                                          <h5>Juhee Lee '17</h5>
-                                          <p class="subtitle">'15-'16 Social Chair</p>
-                                          <div class="avatar"><img src="img/team/board/JuheeLee_17_SocialDirector.jpg" alt="" class="img-responsive img-circle" /></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-xs-6 col-sm-3 col-md-3">
-                              <div class="wow bounceInUp" data-wow-delay="0.2s">
-                                  <div class="team boxed-grey">
-                                      <div class="inner">
-                                          <h5>Junia George '17</h5>
-                                          <p class="subtitle">'15-'16 Social Chair</p>
-                                          <div class="avatar"><img src="img/team/social/JuniaGeorge_17_SocialOfficer.jpg" alt="" height=50 class="img-responsive img-circle" /></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-xs-6 col-sm-3 col-md-3">
-                              <div class="wow bounceInUp" data-wow-delay="1s">
-                                  <div class="team boxed-grey">
-                                      <div class="inner">
-                                          <h5>Ji Hun Kim '17</h5>
-                                          <p class="subtitle">'15-'16 Academic Chair</p>
-                                          <div class="avatar"><img src="img/team/board/JiHunKim-17-AcademicChair.png" alt="" class="img-responsive img-circle" /></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-xs-6 col-sm-3 col-md-3">
-                              <div class="wow bounceInUp" data-wow-delay="0.2s">
-                                  <div class="team boxed-grey">
-                                      <div class="inner">
-                                          <h5>Adi Bodas '17</h5>
-                                          <p class="subtitle">'15-'16 Web Dev Chair</p>
-                                          <div class="avatar"><img src="img/team/board/AdiBodas-17-WebDev.jpg" alt="" class="img-responsive img-circle" /></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </section>
-          </li>
-
           <!-- generate the team pages using the data jsons -->
           {% for json in data_jsons %}
           {% assign data = site.data[json] %}
