@@ -647,6 +647,21 @@ hr {
   text-shadow: -1px 1px 1px #000;
 }
 
+.header {
+  padding: 4px;
+  padding-left: 10px;
+  /* border: 1px black solid; */
+  height: 50px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  background: #e8e8e8;
+  position: relative;
+}
+
+.header:hover {
+  cursor: pointer;
+}
+
 .intro .slogan h5 {
   color: #FFF;
   font-size: 30px;
@@ -1262,4 +1277,12 @@ div.panel.show {
 
 .application-link button:hover {
   background: rgba(125,0,49,0.99);;
+}
+
+.none {
+  display: none;
+}
+
+.years {
+  margin-top: -2%;
 }
