@@ -648,18 +648,21 @@ hr {
 }
 
 .header {
-  padding: 4px;
+  padding: 5px;
   padding-left: 10px;
-  /* border: 1px black solid; */
+  text-align: center;
   height: 50px;
   margin-top: 5%;
   margin-bottom: 2%;
-  background: #e8e8e8;
+  background-color: #e8e8e8;
   position: relative;
+  -webkit-transition: 0.4s; /* Safari */
+  transition: 0.4s;
 }
 
 .header:hover {
   cursor: pointer;
+  background-color: #d6d4d4;
 }
 
 .intro .slogan h5 {
