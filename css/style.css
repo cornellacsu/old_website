@@ -9,6 +9,11 @@ body {
     font-weight: 300;
     color: #666;
     background-color: #fff;
+    padding-top: 91px;
+}
+
+@media screen and (max-width: 990px) {
+    body { padding-top: 104px; }
 }
 
 html {
@@ -766,7 +771,7 @@ footer p {
 }
 
 .content {
-    padding-top: 10%;
+    padding-top: 20px;
     width: 70%;
     margin: 0 auto;
     display: block;
