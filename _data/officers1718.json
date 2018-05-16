@@ -198,11 +198,35 @@
          "isBoard": false
       },
       {
+         "name": "Amrit Amar",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "20",
+         "img": "corporate/AmritAmar_20_Corporate.jpg",
+         "isBoard": false
+      },
+      {
          "name": "Lindsay Fei",
          "team": "Corporate",
          "position": "Corporate",
          "year": "20",
          "img": "corporate/LindsayFei_20_Corporate.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Olivia Xiang",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "20",
+         "img": "corporate/OliviaXiang_20_Corporate.jpg",
+         "isBoard": false
+      },
+      {
+         "name": "Ayesha Gagguturi",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "21",
+         "img": "corporate/AyeshaGagguturi_21_Corporate.png",
          "isBoard": false
       },
       {
