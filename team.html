@@ -79,14 +79,14 @@ ul {
                     {% assign offset = forloop.index0 | times: 4 %}
                     <div class="row">
                       {% for officer in data.officers limit:4 offset:offset %}
-                        <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="col-md-3">
                           <div class="wow bounceInUp" data-wow-delay="0.2s">
                             <div class="team boxed-grey">
                               <div class="inner">
                                 <h5>{{ officer.name }} '{{ officer.year }}</h5>
                                 <p class="subtitle">{{ officer.position }}</p>
                                 <div class="avatar"><img src="img/team/{{ officer.img }}" alt="" width=500 class="img-responsive img-circle" alt="" width=500 class="img-responsive img-circle" /></div>
-                                {% if officer.isBoard %}
+                                {% if officer.email %}
                                 <a href="mailto:{{ officer.email }}"><img src="img/icons/email.png" onmouseover="this.src='img/icons/email-2.png'" onmouseout="this.src='img/icons/email.png'" width="38" alt="" /></a>
                                 {% endif %}
                               </div>
