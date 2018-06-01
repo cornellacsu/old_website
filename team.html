@@ -56,7 +56,13 @@ ul {
                                 {% if data.current == "selected" %}
                                   <h2>Current Officers</h2>
                                   <p>These brave souls are the ACSU officers for {{ data.year }}.
-                                  <br/>Feel free to <a href="mailto:acsu@cornell.edu">email</a> or contact us through our <a href="https://www.facebook.com/CornellACSU/" target="_blank">Facebook</a> page.</p>
+                                  <br/>Feel free to <a id="acsuemail" href="mailto:acsu.">email</a> or contact us through our <a href="https://www.facebook.com/CornellACSU/" target="_blank">Facebook</a> page.</p>
+                                  <script>
+                                    $('#acsuemail').on('click', function(){
+                                      var href = $(this).attr('href')
+                                      $(this).attr('href', href.replace(".", "@cornell.edu"));
+                                  });
+                                  </script>
                                 {% else %}
                                   <h2>{{ data.year }}</h2>
                                   <p>These brave souls were the ACSU officers for {{ data.year }}.</p>
@@ -87,7 +93,18 @@ ul {
                                 <p class="subtitle">{{ officer.position }}</p>
                                 <div class="avatar"><img src="img/team/{{ officer.img }}" alt="" width=500 class="img-responsive img-circle" alt="" width=500 class="img-responsive img-circle" /></div>
                                 {% if officer.email %}
-                                <a href="mailto:{{ officer.email }}"><img src="img/icons/email.png" onmouseover="this.src='img/icons/email-2.png'" onmouseout="this.src='img/icons/email.png'" width="38" alt="" /></a>
+                                <div id="email{{ officer.email }}" ></div>
+                                <script>
+                                  var email = "{{ officer.email }}" + ".";
+                                  var emailDiv = document.getElementById("email{{ officer.email }}")
+                                  emailDiv.innerHTML = '<a href="mailto:' + email + '"><img src="img/icons/email.png" onmouseover="this.src=\'img/icons/email-2.png\'" onmouseout="this.src=\'img/icons/email.png\'" width="38" alt=""/></a>';
+
+                                  $('#email{{ officer.email }}').on('click', function(){
+                                    var href = $(this).find('a').attr('href')
+                                    $(this).find('a').attr('href', href.replace(".", "@cornell.edu"));
+                                  });
+                                </script>
+
                                 {% endif %}
                               </div>
                             </div>
