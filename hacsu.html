@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: hacsu.html
+---
+
+<script>
+$(".navbar-custom").css('background-color', '#272940');
+</script>
+
+<!-- Section: hhacsu -->
+
+<section id="calen" class="home-section text-center">
+    <div class="wow bounceInDown" data-wow-delay="0.4s">
+        <img src="img/hacsu/logo.jpg" class="hacsu-photo" alt="logo"/>
+        <h2> Latest Stories </h2>
+        <div class="hacsu-container">
+            {% assign data = site.data.hacsu.posts %}
+            {% for post in data %}
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <img src="{{ post.photo }}" class="hacsu-photo" alt="photo"/>
+                <p>{{ post.body }}</p>
+                <p style="font-style: italic">{{ post.person }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- /Section: hhacsu -->
