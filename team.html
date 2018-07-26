@@ -4,15 +4,8 @@ permalink: officers.html
 ---
 <script>
 $(".navbar-custom").css('background-color', '#272940');
-
-function showEmail(id) {
-  var emailDiv = document.getElementById(id)
-  $('#' + id).on('mouseover', function(){
-    var href = $(this).attr('href')
-    if (href == 'mailto:') $(this).attr('href', href + emailDiv.dataset.email + "@cornell.edu");
-  });
-}
 </script>
+
 <style>
 ol {
     list-style-type: none;
@@ -65,14 +58,6 @@ ul {
                                   <h2>Current Officers</h2>
                                   <p>These brave souls are the ACSU officers for {{ data.year }}.
                                   <br/>Feel free to <a id="acsuemail" data-email="acsu" href="mailto:">email</a> or contact us through our <a href="https://www.facebook.com/CornellACSU/" target="_blank">Facebook</a> page.</p>
-                                  <script>
-                                    // var emailDiv = document.getElementById("acsuemail")
-                                    // $('#acsuemail').on('mouseover', function(){
-                                    //   var href = $(this).attr('href')
-                                    //   if (href == 'mailto:') $(this).attr('href', href + emailDiv.dataset.email + "@cornell.edu");
-                                  // });
-                                    showEmail("acsuemail")
-                                  </script>
                                 {% else %}
                                   <h2>{{ data.year }}</h2>
                                   <p>These brave souls were the ACSU officers for {{ data.year }}.</p>
@@ -104,11 +89,6 @@ ul {
                                 <div class="avatar"><img src="img/team/{{ officer.img }}" alt="" width=500 class="img-responsive img-circle" alt="" width=500 class="img-responsive img-circle" /></div>
                                 {% if officer.email %}
                                 <a id="email{{ officer.email }}" data-email="{{ officer.email }}" href="mailto:"><img src="img/icons/email.png" onmouseover="this.src='img/icons/email-2.png'" onmouseout="this.src='img/icons/email.png'" width="38" alt=""/></a>
-                                <script>
-                                  var emailDiv = document.getElementById("email{{ officer.email }}")
-                                  showEmail("email{{ officer.email }}")
-                                </script>
-
                                 {% endif %}
                               </div>
                             </div>
@@ -117,10 +97,24 @@ ul {
                       {% endfor %}
                     </div>
                     <br>
+                    {% if forloop.last == true %}
+                      <script>
+                        var emails = document.querySelectorAll('[data-email]');
+                        emails.forEach(function(id) {
+                            $(id).on('mouseover', function(){
+                              var href = $(this).attr('href')
+                              if (href == 'mailto:') $(this).attr('href', href + id.dataset.email + "@cornell.edu");
+                            });
+                        });
+                      </script>
+                    {% endif %}
                   {% endfor %}
                 </div>
               </section>
           </li>
+          <script>
+
+          </script>
           {% endfor %}
           <li data-date="01/09/2018">
               <section id="officers" class="officer-section text-center">
