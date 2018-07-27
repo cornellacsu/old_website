@@ -98,23 +98,12 @@ ul {
                     </div>
                     <br>
                     {% if forloop.last == true %}
-                      <script>
-                        var emails = document.querySelectorAll('[data-email]');
-                        emails.forEach(function(id) {
-                            $(id).on('mouseover', function(){
-                              var href = $(this).attr('href')
-                              if (href == 'mailto:') $(this).attr('href', href + id.dataset.email + "@cornell.edu");
-                            });
-                        });
-                      </script>
+                      <
                     {% endif %}
                   {% endfor %}
                 </div>
               </section>
           </li>
-          <script>
-
-          </script>
           {% endfor %}
           <li data-date="01/09/2018">
               <section id="officers" class="officer-section text-center">
@@ -137,6 +126,15 @@ ul {
           </li>
         </ol>
     </div>
+<script>
+var emails = document.querySelectorAll('[data-email]');
+emails.forEach(function(id) {
+  $(id).on('mouseover', function(){
+    var href = $(this).attr('href')
+    if (href == 'mailto:') $(this).attr('href', href + id.dataset.email + "@cornell.edu");
+  });
+});
+</script>
 <!-- .events-content -->
 </section>
 <script src="js/jquery.min.js"></script>
