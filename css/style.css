@@ -658,11 +658,21 @@ hr {
   position: relative;
   -webkit-transition: 0.4s; /* Safari */
   transition: 0.4s;
+  vertical-align: bottom;
 }
 
 .header:hover {
   cursor: pointer;
   background-color: #d6d4d4;
+}
+
+.header h4 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .intro .slogan h5 {
