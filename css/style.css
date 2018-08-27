@@ -520,11 +520,7 @@ hr {
   text-shadow: -1px 1px 1px #000;
 }
 
-/* .background {
-  background-color: ;
-} */
-
-.header {
+.accordion_header {
   padding: 5px;
   border-bottom-color: #848484;
   border-bottom-width: 1.5px;
@@ -540,7 +536,7 @@ hr {
   vertical-align: bottom;
 }
 
-.header:after {
+.accordion_header:after {
     content: '\25BE'; /* Unicode character for "plus" sign (+) */
     font-size: 15px;
     color: #777;
@@ -550,12 +546,12 @@ hr {
     float: right;
 }
 
-.header:hover {
+.accordion_header:hover {
   cursor: pointer;
   border-bottom-color: black;
 }
 
-.text {
+.accordion_text {
   margin: 0;
   position: absolute;
   top: 50%;
