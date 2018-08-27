@@ -647,32 +647,49 @@ hr {
   text-shadow: -1px 1px 1px #000;
 }
 
+/* .background {
+  background-color: ;
+} */
+
 .header {
   padding: 5px;
+  border-bottom-color: #848484;
+  border-bottom-width: 1.5px;
+  border-bottom-style: solid;
   padding-left: 10px;
   text-align: center;
   height: 50px;
   margin-top: 5%;
   margin-bottom: 2%;
-  background-color: #e8e8e8;
   position: relative;
   -webkit-transition: 0.4s; /* Safari */
   transition: 0.4s;
   vertical-align: bottom;
 }
 
-.header:hover {
-  cursor: pointer;
-  background-color: #d6d4d4;
+.header:after {
+    content: '\25BE'; /* Unicode character for "plus" sign (+) */
+    font-size: 15px;
+    color: #777;
+    position: absolute;
+    top: 25%;
+    left: 96%;
+    float: right;
 }
 
-.header h4 {
+.header:hover {
+  cursor: pointer;
+  border-bottom-color: black;
+}
+
+.text {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  font-size: 19px;
 }
 
 .intro .slogan h5 {
