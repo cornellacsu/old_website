@@ -11,21 +11,23 @@ $(".navbar-custom").css('background-color', '#272940');
 
 <section id="calen" class="home-section text-center">
     <div class="wow bounceInDown" data-wow-delay="0.4s">
-        <img src="img/hacsu/logo.jpg" class="hacsu-photo" alt="logo"/>
+        <h1> Humans of ACSU </h1>
+        <p> Over the course of the year we will be highlighting some of the amazing students in the Cornell University CIS community. We want to share your stories with the world! If there is anyone you would like to recommend, please message Keivan Shahida to arrange a photoshoot! </p>
         <h2> Latest Stories </h2>
         <div class="hacsu-container">
-            {% assign rows = site.data.hacsu.posts.size | divided_by: 4.0 | ceil %}
+            {% assign rows = site.data.hacsu.posts.size | divided_by: 3.0 | ceil %}
             {% assign data = site.data.hacsu.posts %}
             {% for i in (1..rows) %}
                 {% assign offset = forloop.index0 | times: 4 %}
                 <div class="row">
-                {% for post in data limit:4 offset:offset %}
-                    <div class="col-xs-6 col-sm-3 col-md-3">
-                        <img src="{{ post.photo }}" class="hacsu-photo" alt="photo"/>
-                        <p>{{ post.body }}</p>
-                        <p style="font-style: italic">{{ post.person }}</p>
+                {% for post in data limit:3 offset:offset %}
+                <div>
+                    <div class="col-xs-6 col-sm-4 col-md-4">
+                        <iframe src={{ post.url }} width="500" height="580" style="border:none;overflow:hidden;display:inline-block;margin:auto;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
+                </div>
                 {% endfor %}
+
                 </div>
             {% endfor %}
             </div>
