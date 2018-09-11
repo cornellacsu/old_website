@@ -16,6 +16,11 @@ html {
     height: 100%;
 }
 
+hr {
+  border-color: rgb(169,169,169);
+  border-width: 3px;
+}
+
 h1,
 h2,
 h3,
