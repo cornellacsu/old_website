@@ -6,19 +6,36 @@ permalink: hacsu.html
 <script>
 $(".navbar-custom").css('background-color', '#272940');
 </script>
+<style>
+.signup-button {
+    background: rgba(125,0,49,0.75);
+    color: #fff;
+    opacity: 0.9;
+    padding: 7px 30px;
+    border-radius: 5px;
+}
+
+.signup-button:hover {
+  background: rgba(125,0,49,0.99);
+}
+</style>
 
 <!-- Section: hacsu -->
 
 <section id="calen" class="home-section text-center">
     <div class="wow bounceInDown" data-wow-delay="0.4s">
         <h1> Humans of ACSU </h1>
-        <p> Over the course of the year we will be highlighting some of the amazing students in the Cornell University CIS community. We want to share your stories with the world!
+        <div class="row">
+            <div class = "col-xs-9 col-md-6 col-md-offset-3">
+                <p> Over the course of the year we will be highlighting some of the amazing students in the Cornell University CIS community. We want to share your stories with the world!
 
-        Got some advice to share? A surprising college experience? Just want to rant? Or do you have a friend who you know would have an awesome story to tell? Submit this Google form to sign up for a quick, casual interview and a photo, and see yourself/your friend on our FB page!
-
-        <a href="https://goo.gl/forms/GHVqoZjwox7lRdUt1">Sign up here!</a></p>
-        <h2> Latest Stories </h2>
+                Got some advice to share? A surprising college experience? Just want to rant? Or do you have a friend who you know would have an awesome story to tell? Submit this Google form to sign up for a quick, casual interview and a photo, and see yourself/your friend on our FB page!
+                </p>
+                <a href="https://goo.gl/forms/GHVqoZjwox7lRdUt1"><button class="signup-button">Sign up here!</button></a>
+            </div>
+        </div>
         <div class="hacsu-container">
+        <h2> Latest Stories </h2>
             {% assign rows = site.data.hacsu.posts.size | divided_by: 3.0 | ceil %}
             {% assign data = site.data.hacsu.posts %}
             {% for i in (1..rows) %}
