@@ -13,16 +13,19 @@ $(".navbar-custom").css('background-color', '#272940');
     opacity: 0.9;
     padding: 7px 30px;
     border-radius: 5px;
+    border: none;
 }
 
 .signup-button:hover {
   background: rgba(125,0,49,0.99);
 }
+
+.post-container {
+    padding: 1%;
+}
 </style>
-
 <!-- Section: hacsu -->
-
-<section id="calen" class="home-section text-center">
+<section id="hacsu" class="home-section text-center">
     <div class="wow bounceInDown" data-wow-delay="0.4s">
         <h1> Humans of ACSU </h1>
         <div class="row">
@@ -34,6 +37,7 @@ $(".navbar-custom").css('background-color', '#272940');
                 <a href="https://goo.gl/forms/GHVqoZjwox7lRdUt1"><button class="signup-button">Sign up here!</button></a>
             </div>
         </div>
+        <br/>
         <div class="hacsu-container">
         <h2> Latest Stories </h2>
             {% assign rows = site.data.hacsu.posts.size | divided_by: 3.0 | ceil %}
@@ -42,11 +46,9 @@ $(".navbar-custom").css('background-color', '#272940');
                 {% assign offset = forloop.index0 | times: 4 %}
                 <div class="row">
                 {% for post in data limit:3 offset:offset %}
-                <div>
-                    <div class="col-xs-6 col-sm-4 col-md-4">
-                        <iframe src={{ post.url }} width="500" height="580" style="border:none;overflow:hidden;display:inline-block;margin:auto;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <div class="col-xs-6 col-sm-4 col-md-4 post-container">
+                        <iframe src="{{ post.url }}&width=auto&show_text=true&height=500" width="auto" height="500" style="overflow:hidden;border:none;width:90%;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
-                </div>
                 {% endfor %}
 
                 </div>
