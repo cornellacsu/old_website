@@ -6,6 +6,7 @@ permalink: workshops.html
 $(".navbar-custom").css('background-color', '#272940');
 </script>
 <!-- Section: workshop -->
+<div class="background">
 <section id="calen" class="home-section text-center">
     <div class="heading">
         <div class="heading-about">
@@ -26,23 +27,26 @@ $(".navbar-custom").css('background-color', '#272940');
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container workshops-body">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 workshops-tablist">
                 <!-- Nav tabs -->
-                <ul class="nav nav-stacked navbar-left" id="workshops-tablist" role="tablist">
+                <ul class="nav nav-stacked navbar-left" role="tablist">
+                    <li role="presentation">
+                        <a class="nav-header">Previous Workshops</a>
+                    </li>
                     <li role="presentation" class="active">
                         <a href="#career-fair" aria-controls="career-fair" role="tab" data-toggle="pill">Career Fair Prep Day</a>
                     </li>
                     <li role="presentation">
                         <a href="#portfolio-workshop" aria-controls="portfolio-workshop" role="tab" data-toggle="pill">Portfolio Workshop</a>
                     </li>
-                    <li role="presentation">
+                   <!--  <li role="presentation">
                         <a href="#latex-workshop" aria-controls="latex-workshop" role="tab" data-toggle="pill">Latex Workshop</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 workshops-content">
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade in active" id="career-fair">
@@ -76,4 +80,5 @@ $(".navbar-custom").css('background-color', '#272940');
 </div>
 </div>
 </section>
+</div>
 <!-- /Section: workshop -->

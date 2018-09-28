@@ -1197,3 +1197,53 @@ div.panel.show {
 .years {
   margin-top: -2%;
 }
+
+.background {
+    min-height: -webkit-fill-available;
+    background-image: linear-gradient(-16.18deg, rgba(178,0,0,0.16) 50%, transparent 50.2%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+}
+
+/* ===========================
+--- Workshops
+============================ */
+
+.workshops-tablist li a{
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 10px;
+  text-align: left;
+  color: rgba(39,41,64, 0.75)
+}
+
+.workshops-tablist a:hover, 
+.workshops-tablist a:focus{
+  color: rgba(39,41,64, 1);
+}
+
+.workshops-tablist a:active,
+.workshops-tablist a:focus{
+  border-left: 6px solid;
+}
+
+.workshops-tablist a.nav-header, 
+.workshops-tablist a:hover.nav-header,
+.workshops-tablist a:focus.nav-header{
+  background: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(39,41,64, 0.75);
+}
+
+.workshops-tablist {
+  padding-top: 5%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.workshops-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
