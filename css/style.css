@@ -1198,14 +1198,6 @@ div.panel.show {
   margin-top: -2%;
 }
 
-.background {
-    min-height: -webkit-fill-available;
-    background-image: linear-gradient(-16.18deg, rgba(178,0,0,0.16) 50%, transparent 50.2%);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position-y: 100px;
-}
-
 /* ===========================
 --- Workshops
 ============================ */
@@ -1232,6 +1224,7 @@ div.panel.show {
 .workshops-tablist a:hover.nav-header,
 .workshops-tablist a:focus.nav-header{
   background: none;
+  border-left: none;
   font-size: 18px;
   font-weight: 700;
   color: rgba(39,41,64, 0.75);
@@ -1246,4 +1239,22 @@ div.panel.show {
 .workshops-content {
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 5%;
+  text-align: left;
+}
+
+.workshops-item {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.workshops-item-name{
+  margin: 0 0 5px 0;
+}
+.workshops-background {
+    min-height: -webkit-fill-available;
+    background-image: linear-gradient(-16.18deg, rgba(178,0,0,0.16) 50%, transparent 50.2%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-y: 100px;
 }

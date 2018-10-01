@@ -6,7 +6,7 @@ permalink: workshops.html
 $(".navbar-custom").css('background-color', '#272940');
 </script>
 <!-- Section: workshop -->
-<div class="background">
+<div class="workshops-background">
 <section id="calen" class="home-section text-center">
     <div class="heading">
         <div class="heading-about">
@@ -31,7 +31,7 @@ $(".navbar-custom").css('background-color', '#272940');
         <div class="row">
             <div class="col-md-2 workshops-tablist">
                 <!-- Nav tabs -->
-                <ul class="nav nav-stacked navbar-left" role="tablist">
+                <ul class="nav nav-stacked navbar-left affix" role="tablist">
                     <li role="presentation">
                         <a class="nav-header">Previous Workshops</a>
                     </li>
@@ -41,9 +41,11 @@ $(".navbar-custom").css('background-color', '#272940');
                     <li role="presentation">
                         <a href="#portfolio-workshop" aria-controls="portfolio-workshop" role="tab" data-toggle="pill">Portfolio Workshop</a>
                     </li>
-                   <!--  <li role="presentation">
+                   <!-- can use as stub for future workshops
+                    <li role="presentation">
                         <a href="#latex-workshop" aria-controls="latex-workshop" role="tab" data-toggle="pill">Latex Workshop</a>
-                    </li> -->
+                    </li> 
+                    -->
                 </ul>
             </div>
             <div class="col-md-10 workshops-content">
@@ -51,21 +53,29 @@ $(".navbar-custom").css('background-color', '#272940');
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade in active" id="career-fair">
                         <h3>Career Fair Prep Day (Co-hosted with <a href="http://wicc.acm.org/" target="_blank">WICC</a>)</h3>
-                        <h4> Technical Interview Prep Slides </h4>
+                        <div class="workshops-item">
+                        <h4 class="workshops-item-name"> Technical Interview Prep Slides </h4>
+                        <p>Fall 2018</p>
                         <iframe class="embed-responsive-item" src="img/files/CodingInterviewPrep.pdf" frameborder="0" width=100% height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                        <br><br>
-                        <h4> Interview Demo Slides </h4>
+                        </div>
+                        <div class="workshops-item">
+                        <h4 class="workshops-item-name"> Interview Demo Slides </h4>
+                        <p>Spring 2017</p>
                         <iframe class="embed-responsive-item" src="img/files/Interview_Demo.pdf" frameborder="0" width=100% height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                        <br><br>
-                        <h4>Resume Critique Slides</h4>
+                        </div>
+                        <div class="workshops-item">
+                        <h4 class="workshops-item-name">Resume Critique Slides</h4>
+                        <p>Spring 2017</p>
                         <iframe class="embed-responsive-item" src="img/files/ResumeCritique.pdf" frameborder="0" width=100% height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                        <br><br>
+                        </div>
+                        <div class="workshops-item">
                         <h4>Videos (Must be affiliated with Cornell to view)</h4>
                         <p><a href="https://cornell.mediasite.com/Mediasite/Play1bdfd34e748749668ea577f2cb3999d21d" target="_blank">Interview Demo Video</a></p>
                         <br>
                         <p><a href="https://cornell.mediasite.com/Mediasite/Play1bdfd34e748749668ea577f2cb3999d21d" target="_blank">Intro to the Career Fair and Soft Skills Video (WICC)</p>
                         <br>
                         <p><a href="https://cornell.mediasite.com/Mediasite/Play/35c1fe9424ba4bc691c1587dba9702971d" target="_blank">Techinical Interview Prep Video (WICC)</p></a>
+                        </div>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="portfolio-workshop">
                         <h3> Portfolio Workshop (Co-hosted with <a href="http://cornelldti.org/" target="_blank">CDTI</a>)</h3>
