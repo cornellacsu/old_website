@@ -248,10 +248,8 @@ li.officer:hover {
     background-color: #E0E0E0; /* Gray */
     overflow-x: hidden; /* Disable horizontal scroll */
     margin-top: 100px;
-    border-right: solid;
-    border-top: solid;
-    border-bottom: solid;
-    border-color: #F0F0F0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* readme side navbar menu links */
@@ -259,15 +257,14 @@ li.officer:hover {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 13px;
-    color: #818181;
+    color: rgb(39,41,62);
     display: block;
     text-transform: uppercase;
 }
 
 /* readme side navbar hover */
 .sidenav a:hover {
-    color: rgba(125,0,49,0.99);
-    font-weight: bold;
+    color: rgb(125,0,49,0.99);
 }
 
 /* style page content (making space for readme side navbar) */
