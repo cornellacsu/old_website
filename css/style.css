@@ -1194,3 +1194,19 @@ div.panel.show {
 .years {
   margin-top: -2%;
 }
+
+/* what is acsu */
+#subheader_div {
+  background-color: #DCDCDC;
+  padding:50px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.h5_blue {
+  color: rgb(39,41,62);
+}
+
+#italicize {
+  font-style: italic;
+}
