@@ -21,8 +21,31 @@ $(".navbar-custom").css('background-color', '#272940');
 }
 
 .post-container {
-    padding: 1%;
+    position: relative;
+    /*padding-top: 500px;*/
+    height: 0;
 }
+
+.carousel{
+    background: #FFF;
+    margin-top: 20px;
+}
+
+.carousel .item{
+    min-height: 600px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+.carousel-indicators li {
+    border-color: #333;
+}
+
+.carousel-indicators .active {
+    background-color: #333;
+}
+
+/*.posts {
+    display: table;
+}*/
 </style>
 <!-- Section: hacsu -->
 <section id="hacsu" class="home-section text-center">
@@ -40,19 +63,47 @@ $(".navbar-custom").css('background-color', '#272940');
         <br/>
         <div class="hacsu-container">
         <h2> Latest Stories </h2>
-            {% assign rows = site.data.hacsu.posts.size | divided_by: 3.0 | ceil %}
+        <div id="hacsu-carousel" class="carousel slide" data-ride="carousel">
             {% assign data = site.data.hacsu.posts %}
-            {% for i in (1..rows) %}
-                {% assign offset = forloop.index0 | times: 4 %}
-                <div class="row">
-                {% for post in data limit:3 offset:offset %}
-                    <div class="col-xs-6 col-sm-4 col-md-4 post-container">
-                        <iframe src="{{ post.url }}&width=auto&show_text=true&height=500" width="auto" height="500" style="overflow:hidden;border:none;width:90%;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                    </div>
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                {% for post in data %}
+                    {% if forloop.index == 1 %}
+                        {% assign class = 'active' %}
+                    {% else %}
+                        {% assign class = '' %}
+                    {% endif %}
+                    {% assign index = forloop.index0 %}
+                    <li data-target="#hacsu-carousel" data-slide-to="{{ index }}" class="{{ class }}"></li>
                 {% endfor %}
 
-                </div>
-            {% endfor %}
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                {% for post in data %}
+                    {% if forloop.index0 == 0 %}
+                        {% assign class = 'item active' %}
+                    {% else %}
+                        {% assign class = 'item' %}
+                    {% endif %}
+                    <div class="{{ class }} ">
+                        <div class="col-xs-offset-4 col-md-offset-3 col-sm-offset-3 col-xs-8 col-sm-6 col-md-6">
+                            <div class="post-container">
+                                <iframe src="{{ post.url }}&width=auto&show_text=true&height=500" width="100%" height="500" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+              </div>
+
+              <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#hacsu-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control-next" href="#hacsu-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
             </div>
         </div>
     </div>
