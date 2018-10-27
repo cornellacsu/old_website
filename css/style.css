@@ -201,7 +201,7 @@ li.officer:hover {
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
   color: #444;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: #ddd;
 }
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
