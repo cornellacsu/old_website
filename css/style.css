@@ -122,7 +122,7 @@ li.officer:hover {
 }
 
 .nav.navbar-nav {
-    background-color: rgba(255,255,255,.4);
+    background-color: rgba(255,255,255,.6);
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -147,7 +147,8 @@ li.officer:hover {
 
 .dropdown .dropdown-menu {
   visibility: hidden;
-  background-color: rgba(255, 255, 255, .6);
+  background-color: #eee;
+  /* background-color: rgba(255, 255, 255, 1); */
   /* Override bootstrap default */
   display: block;
   padding: 0;
