@@ -948,13 +948,17 @@ Parallax
     .collapse.in{
   		display:block !important;
 	}
-  .workshops-tablist .navbar-left {
+  .workshops-tablist .navbar-left{
     position: relative;
+    margin-top: 0;
     margin-bottom: 5%;
     padding-left: 30px;
   }
+
+  /*lock iframe to 4:3 resolution*/
   .workshops-content iframe {
-    padding-right: 30px;
+    max-width: 100vw;
+    max-height: 75vw;
   }
 }
 
@@ -1242,6 +1246,9 @@ div.panel.show {
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
+}
+.workshops-tablist ul{
+  margin-top: 25vh;
 }
 
 .workshops-content {
