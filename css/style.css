@@ -948,7 +948,14 @@ Parallax
     .collapse.in{
   		display:block !important;
 	}
-
+  .workshops-tablist .navbar-left {
+    position: relative;
+    margin-bottom: 5%;
+    padding-left: 30px;
+  }
+  .workshops-content iframe {
+    padding-right: 30px;
+  }
 }
 
 @media(min-width:767px) {
