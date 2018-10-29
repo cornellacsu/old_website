@@ -20,19 +20,18 @@ $(".navbar-custom").css('background-color', '#272940');
   background: rgba(125,0,49,0.99);
 }
 
-.post-container {
-    position: relative;
-    /*padding-top: 500px;*/
-    height: 0;
-}
-
 .carousel{
     background: #FFF;
     margin-top: 20px;
 }
 
-.carousel .item{
+.carousel .item {
     min-height: 600px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+.carousel .inner {
+    min-height: 600px;
+    overflow: auto;
 }
 
 .carousel-indicators li {
@@ -40,7 +39,7 @@ $(".navbar-custom").css('background-color', '#272940');
 }
 
 .carousel-indicators {
-    bottom: 625px;
+    bottom: 690px;
 }
 
 .carousel {
@@ -53,18 +52,34 @@ $(".navbar-custom").css('background-color', '#272940');
 
 .carousel-control.left, .carousel-control.right {
     background-image: none;
+    color: #000;
+    top: 50%;
 }
 
-/*.posts {
-    display: table;
-}*/
+.iframe-container {
+    padding-top: 56.25%;
+    position: relative;
+    min-height: 690px;
+    overflow: visible;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 </style>
+
 <!-- Section: hacsu -->
 <section id="hacsu" class="home-section text-center">
     <div class="wow bounceInDown" data-wow-delay="0.4s">
         <h1> Humans of ACSU </h1>
         <div class="row">
-            <div class = "col-xs-9 col-md-6 col-md-offset-3">
+            <div class = "col-xs-10 col-md-6 col-xs-offset-1 col-md-offset-3">
                 <p> Over the course of the year we will be highlighting some of the amazing students in the Cornell University CIS community. We want to share your stories with the world!
 
                 Got some advice to share? A surprising college experience? Just want to rant? Or do you have a friend who you know would have an awesome story to tell? Submit this Google form to sign up for a quick, casual interview and a photo, and see yourself/your friend on our FB page!
@@ -100,9 +115,9 @@ $(".navbar-custom").css('background-color', '#272940');
                         {% assign class = 'item' %}
                     {% endif %}
                     <div class="{{ class }} ">
-                        <div class="col-xs-offset-4 col-md-offset-3 col-sm-offset-3 col-xs-8 col-sm-6 col-md-6">
-                            <div class="post-container">
-                                <iframe src="{{ post.url }}&width=auto&show_text=true&height=500" width="100%" height="500" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <div class="col-xs-offset-1 col-md-offset-3 col-sm-offset-3 col-xs-10 col-sm-6 col-md-6">
+                            <div class="iframe-container">
+                                <iframe src="{{ post.url }}&width=auto" width="100%" height="600px" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                             </div>
                         </div>
                     </div>
