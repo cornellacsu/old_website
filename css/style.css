@@ -238,58 +238,137 @@ li.officer:hover {
     outline: 0;
 }
 
-/* readme side navbar */
-.sidenav {
-    height: auto; /* Full-height: remove this if you want "auto" height */
-    width: 165px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #E0E0E0; /* Gray */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    margin-top: 100px;
-    border-right: solid;
-    border-top: solid;
-    border-bottom: solid;
-    border-color: #F0F0F0;
+/* ABOUT */
+.what_we_do {
+  background-color: rgba(39, 41, 64);
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  color: white;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 10px;
+ 
+
+  /*flex-direction: row; */
 }
 
-/* readme side navbar menu links */
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 13px;
-    color: #818181;
-    display: block;
-    text-transform: uppercase;
+#first_row {
+  display: flex;
 }
 
-/* readme side navbar hover */
-.sidenav a:hover {
-    color: rgba(125,0,49,0.99);
-    font-weight: bold;
+#second_row {
+  display: flex;
 }
 
-/* style page content (making space for readme side navbar) */
-.main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+#events {
+  /* flex-grow: 1; */
+  background: rgba(125,0,49,0.99);
+  flex: 1;
+  padding: 3em;
+  margin: 1em;
 }
 
-/* prevent header from covering main text */
-.anchor{
-   display:block;
-   height:100px; /* this is the height of your header */
-   margin-top:-63px; /* this is again negative value of the height of your header */
-   visibility:hidden;
+.gbody {
+  /* background-color: rgba(246, 247, 248, 0.945); */
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+
 }
 
-/* change the style of the readme side navbar */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+.gbody_container {
+  display:flex;
 }
+
+.gbody_text {
+  flex-grow: 1;
+  padding: 1em;
+  background-color: rgba(246, 247, 248, 0.945);
+  margin-right: 1em;
+  padding-bottom: 1em;
+  /* height: 100%;
+  margin: auto; */
+  vertical-align: middle;
+}
+
+.gbody_pics {
+  flex-grow: 2;
+}
+
+.gbody_text2 {
+  flex-grow: 2;
+  padding: 1em;
+  margin-left: 1em;
+  background-color: rgba(246, 247, 248, 0.945);
+  /* margin: auto; */
+  vertical-align: middle;
+}
+
+.gbody_pics2 {
+  flex-grow: 1;
+  
+}
+
+/* README TAB */
+.above-tab {
+  display:flex;
+  justify-content: space-between;
+}
+
+.readme_table {
+  margin-bottom: 10%;
+  margin-top: 3%;
+}
+/* tab styling */
+.readme_tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: rgba(39, 41, 64);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* tab button styling */
+.readme_tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  flex-flow: center;
+  color: white;
+  flex-grow: 1;
+}
+
+/* button color on hover */
+.readme_tab button:hover {
+  color: #ccc;
+  /* border-width: medium;
+  border-bottom: rgba(125,0,49,0.99); */
+}
+
+/* active/current tab styling */
+.readme_tab button.active {
+  background-color: rgba(125,0,49,0.99);
+}
+
+/* tab content styling */
+.readme_tabcontent {
+  display: none;
+  padding: 6px 12px;
+  padding-top: 30px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* END OF README TAB */
 
 /* loader */
 #preloader {
