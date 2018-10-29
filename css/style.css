@@ -572,7 +572,7 @@ hr.separator {
 .accordion_text {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -1227,7 +1227,7 @@ div.panel.show {
   color: rgba(39,41,64, 0.75)
 }
 
-.workshops-tablist a:hover, 
+.workshops-tablist a:hover,
 .workshops-tablist a:focus{
   color: rgba(39,41,64, 1);
 }
@@ -1237,7 +1237,7 @@ div.panel.show {
   border-left: 6px solid;
 }
 
-.workshops-tablist a.nav-header, 
+.workshops-tablist a.nav-header,
 .workshops-tablist a:hover.nav-header,
 .workshops-tablist a:focus.nav-header{
   background: none;
