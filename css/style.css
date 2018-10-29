@@ -214,7 +214,8 @@ li.officer:hover {
   background-color: rgb(81, 85, 135);
 }
 
-.navbar-custom.top-nav-collapse ul.nav li a:hover {
+.navbar-custom.top-nav-collapse ul.nav li a:hover,
+.navbar-custom.top-nav-collapse .nav li.active {
   color: white;
   background-color: rgb(81, 85, 135);
 }
