@@ -13,6 +13,7 @@ jQuery(document).ready(function($){
             timelineComponents['eventsWrapper'] = timelineComponents['timelineWrapper'].children('.events');
             timelineComponents['fillingLine'] = timelineComponents['eventsWrapper'].children('.filling-line');
             timelineComponents['timelineEvents'] = timelineComponents['eventsWrapper'].find('a');
+            console.log(timelineComponents['timelineEvents'].eq(2));
             timelineComponents['timelineDates'] = parseDate(timelineComponents['timelineEvents']);
             timelineComponents['eventsMinLapse'] = minLapse(timelineComponents['timelineDates']);
             timelineComponents['timelineNavigation'] = timeline.find('.cd-timeline-navigation');
@@ -141,7 +142,7 @@ jQuery(document).ready(function($){
             timeSpanNorm = Math.round(timeSpanNorm) + 4,
             totalWidth = timeSpanNorm*width;
         timelineComponents['eventsWrapper'].css('width', totalWidth+'px');
-        updateFilling(timelineComponents['timelineEvents'].eq(1), timelineComponents['fillingLine'], totalWidth);
+        updateFilling(timelineComponents['timelineEvents'].eq(2), timelineComponents['fillingLine'], totalWidth);
 
         return totalWidth;
     }
