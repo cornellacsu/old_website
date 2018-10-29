@@ -374,6 +374,11 @@ hr {
   margin-top: 10px;
 }
 
+hr.separator {
+  border-color: rgb(169,169,169);
+  border-width: 3px;
+}
+
 /* margins */
 .marginbot-0{margin-bottom:0 !important;}
 .marginbot-10{margin-bottom:10px !important;}
