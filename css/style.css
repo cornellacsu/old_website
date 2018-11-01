@@ -1227,14 +1227,10 @@ div.panel.show {
   color: rgba(39,41,64, 0.75)
 }
 
-.workshops-tablist a:hover, 
-.workshops-tablist a:focus{
+.workshops-tablist .active a{
   color: rgba(39,41,64, 1);
-}
-
-.workshops-tablist a:active,
-.workshops-tablist a:focus{
-  border-left: 6px solid;
+  border-left: 6px solid rgb(178,0,0,1);
+  background-color: #eee;
 }
 
 .workshops-tablist a.nav-header, 
