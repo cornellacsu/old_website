@@ -16,11 +16,6 @@ html {
     height: 100%;
 }
 
-hr {
-  border-color: rgb(169,169,169);
-  border-width: 3px;
-}
-
 h1,
 h2,
 h3,
@@ -206,12 +201,18 @@ li.officer:hover {
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
   color: white;
-  background-color: black;
+  background-color: rgb(58, 62, 102);
 }
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a:hover {
   color: white;
-  background-color: #444;
+  background-color: rgb(81, 85, 135);
+}
+
+.navbar-custom.top-nav-collapse ul.nav li a:hover,
+.navbar-custom.top-nav-collapse .nav li.active {
+  color: white;
+  background-color: rgb(81, 85, 135);
 }
 
 .navbar-custom .nav li a {
@@ -224,13 +225,7 @@ li.officer:hover {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
-    background-color: rgba(255,255,255,.2);
-}
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li.active {
-    outline: 0;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .navbar-toggle:focus,
