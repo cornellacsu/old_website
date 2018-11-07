@@ -93,7 +93,13 @@
          "year": "18",
          "img": "academic/AthenaHuang_18_Academic.jpeg"
       },
-
+      {
+         "name": "Chris Fifty",
+         "team": "Social",
+         "position": "Social",
+         "year": "19",
+         "img": "social/Chris_Fifty_2019_Social.jpg"
+      },
       {
          "name": "Daniel Nosrati",
          "team": "Academic",

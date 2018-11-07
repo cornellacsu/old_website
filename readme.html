@@ -7,107 +7,17 @@ permalink: readme.html
 
 </script>
 
-<script>
-// Fixes navibar hiding anchor point
-window.addEventListener("hashchange", () => scrollBy(0, -65));
-
-$(document).ready(function(){
-	$('.hamburger-shell').click(function(){
-		$('#menu').slideToggle(300);
-		$('.top').toggleClass('rotate');
-		$('.middle').toggleClass('rotate-back');
-		$('.bg-cover').toggleClass('reveal');
-	});
-	$('.bg-cover').click(function(){
-		$('#menu').slideToggle(300);
-		$('.top').toggleClass('rotate');
-		$('.middle').toggleClass('rotate-back');
-		$('.bg-cover').toggleClass('reveal');
-	})
-});
-</script>
-
-<div class="bg-cover" class="none"></div>
-
-<a class="hamburger-shell">
-	<div class="hamb top"></div>
-		<div class="hamb middle"></div>
-
-<ul id="menu">
-		<a href="#guide"> <li>A Guide to Cornell CS</li></a>
-		<a href="#forward"> <li>Forward</li></a>
-    <div class="sidedropdown">
-      <button class="dropbtn"><a href="#faq">FAQ <i class="fa fa-caret-down"></i></a></button>
-      <div class="sidedropdown-content">
-        <a href="#general">General</a>
-        <a href="#academics">Academics</a>
-        <a href="#internships&jobs">Internships & Jobs</a>
-      </div>
-    </div>
-    <div class="sidedropdown">
-      <button class="dropbtn"><a href="#graduateschool">Graduate School <i class="fa fa-caret-down"></i></a></button>
-      <div class="sidedropdown-content">
-        <a href="#mastersdegree">Master's Degree (CS MS)</a>
-        <a href="#meng">MEng</a>
-        <a href="#phd">Ph.D.</a>
-      </div>
-    </div>
-    <div class="sidedropdown">
-      <button class="dropbtn"><a href="#courseinformation">Course Information <i class="fa fa-caret-down"></i></a></button>
-      <div class="sidedropdown-content">
-        <a href="#themajor">The Major</a>
-        <a href="#coreclasses">Core Classes</a>
-        <a href="#supplementstothecoreclasses">Supplements to the Core Classes</a>
-        <a href="#alternativestothecoreclasses">Alternatives to the Core Classes</a>
-        <a href="#electives">Electives</a>
-        <a href="#3000level">3000 Level</a>
-        <a href="#4000level">4000 Level</a>
-      </div>
-    </div>
-    <div class="sidedropdown">
-      <button class="dropbtn"><a href="#relevantgroupsoncampus">Relevant Groups on Campus <i class="fa fa-caret-down"></i></a></button>
-      <div class="sidedropdown-content">
-        <a href="#acsu">ACSU</a>
-        <a href="#wicc">WICC</a>
-        <a href="#urmc">URMC</a>
-        <a href="#issa">ISSA</a>
-        <a href="#opensourcecornell">Open Source Cornell</a>
-        <a href="#projectteams">Project Teams</a>
-        <a href="#acm">ACM Programming Team</a>
-        <a href="#cornellappdev">Cornell AppDev</a>
-        <a href="#cds">CDS: Cornell Data Science</a>
-        <a href="#cornelldesign&techinitiative">Cornell Design & Tech Initiative</a>
-      </div>
-    </div>
-    <div class="sidedropdown">
-      <button class="dropbtn"><a href="#undergraduateresearch">Undergraduate Research <i class="fa fa-caret-down"></i></a></button>
-      <div class="sidedropdown-content">
-        <a href="#howtofindaposition">How to Find a Position</a>
-        <a href="#preparation">preparation</a>
-        <a href="#whatresearchislike">What Research is Like</a>
-        <a href="#gettingcredit">Getting Credit</a>
-      </div>
-    </div>
-    <div class="sidedropdown">
-      <button class="dropbtn"><a href="#testimonials">Testimonials <i class="fa fa-caret-down"></i></a></button>
-      <div class="sidedropdown-content">
-        <a href="#freshmana">Freshman A</a>
-        <a href="#freshmanb">Freshman B</a>
-        <a href="#freshmanc">Freshman C</a>
-        <a href="#freshmand">Freshman D</a>
-        <a href="#sophomorea">Sophomore A</a>
-        <a href="#sophomoreb">Sophomore B</a>
-        <a href="#sophomorec">Sophomore C</a>
-        <a href="#sophomored">Sophomore D</a>
-        <a href="#sophomoree">Sophomore E</a>
-        <a href="#sophomoref">Sophomore F</a>
-        <a href="#juniora">Junior A</a>
-        <a href="#juniorb">Junior B</a>
-        <a href="#juniorc">Junior C</a>
-        <a href="#seniora">Senior A</a>
-        <a href="#seniorb">Senior B</a>
-</ul>
-</a>
+<!-- Side navigation bar -->
+<div class="sidenav">
+  <a href="#guide"> &Rang; A Guide to Cornell CS</a>
+  <a href="#forward"> &Rang; Forward</a>
+  <a href="#faq"> &Rang; FAQ</a>
+  <a href="#graduateschool"> &Rang; Graduate School</a>
+  <a href="#courseinformation"> &Rang; Course Information</a>
+  <a href="#relevantgroupsoncampus"> &Rang; Relevant Groups on Campus</a>
+  <a href="#undergraduateresearch"> &Rang; Undergraduate Research</a>
+  <a href="#testimonials"> &Rang; Testimonials</a>
+</div>
 
 <div id="readme" class="content">
   <div>
@@ -118,9 +28,8 @@ $(document).ready(function(){
   <p class="c15 c9 title" id="h.wx1w83pc1n0c"><span class="c37 c43"></span></p>
   <p class="c15 title" id="h.47q1ynmuqqow"><span class="c43">README</span><span class="c43 c49">&nbsp;</span></p>
   <p class="c1 c9"><span class="c49 c41 c60"></span></p>
-  <section id="guide">
+  <span class="anchor" id="guide"></span>
   <h1 class="c15" id="h.6cui3qtafuhl"><span class="c35">A Guide to Cornell Computer Science</span></h1>
-  </section>
   <h1 class="c15" id="h.6cui3qtafuhl-1"><span class="c35">Written by Students for Students</span></h1>
   <p class="c1 c9"><span class="c54 c57"></span></p>
   <p class="c1"><span class="c12">2018 Edition</span></p>
@@ -137,9 +46,8 @@ $(document).ready(function(){
   <h1 class="c15 c22" id="h.32x4g5m7t21n"><span class="c28"></span></h1>
   <hr style="page-break-before:always;display:none;">
   <h1 class="c15 c22" id="h.ubroe7q8rw7u"><span class="c28"></span></h1>
-  <section id="forward">
+  <span class="anchor" id="forward"></span>
   <h1 class="c15" id="h.x1lrq2jypck"><span class="c28">FOREWORD</span></h1>
-  </section>
   <p class="c1 c9"><span class="c5"></span></p>
   <p class="c1"><span class="c5">In one fateful winter break, a few students involved with Association
       for Computer Science Undergraduates (ACSU) wanted to provide a resource that not only addresses a
@@ -162,9 +70,8 @@ $(document).ready(function(){
   <h1 class="c31" id="h.8hdunkegmj5p"><span class="c32 c16"></span></h1>
   <hr style="page-break-before:always;display:none;">
   <h1 class="c31" id="h.uujhxrmtak3x"><span class="c16 c32"></span></h1>
-  <section id="faq">
+  <span class="anchor" id="faq"></span>
   <h1 class="c33" id="h.1yguotoepj2l"><span class="c28 c16 c55 c59">FREQUENTLY ASKED QUESTIONS</span></h1>
-  </section>
   <section id="general">
   <h2 class="c24" id="h.3qa5un1tk31t"><span class="c12">General</span></h2>
   </section>
@@ -351,7 +258,7 @@ $(document).ready(function(){
   <h1 class="c31" id="h.760aznt12c56"><span class="c32 c16"></span></h1>
   <hr style="page-break-before:always;display:none;">
   <h1 class="c31" id="h.oveegdggdpb3"><span class="c32 c16"></span></h1>
-  <section id="graduateschool">
+  <span class="anchor" id="graduateschool"></span>
   <h1 class="c33" id="h.besdpzegavd8"><span class="c28 c43 c16">GRADUATE SCHOOL</span></h1>
   </section>
   <section id="mastersdegree">
@@ -379,7 +286,8 @@ $(document).ready(function(){
   <p class="c0"><span class="c18"></span></p>
   <hr style="page-break-before:always;display:none;">
   <h1 class="c31" id="h.8vmqylsugxnx"><span class="c32 c16"></span></h1>
-  <section id="courseinformation"><h1 class="c33" id="h.gie8lif1ujic"><span class="c28 c43 c16">COURSE INFORMATION</span></h1></section>
+  <span class="anchor" id="courseinformation"></span>
+  <h1 class="c33" id="h.gie8lif1ujic"><span class="c28 c43 c16">COURSE INFORMATION</span></h1>
   <p class="c0"><span class="c6 c28"></span></p>
   <p class="c2"><span class="c13">Disclaimer Addendum</span><span class="c1">: Because the world is constantly innovating and changing, you can expect that courses at Cornell will be changing as well. All information in this section is based on previous semesters&rsquo; experience and may not be accurate with respect to the current or future semesters. </span></p>
   <p class="c0"><span class="c1"></span></p>
@@ -1032,7 +940,8 @@ $(document).ready(function(){
   <p class="c4 c15"><span class="c28 c43 c16"></span></p>
   <hr style="page-break-before:always;display:none;">
   <h1 class="c31" id="h.dxhqj7flzup0"><span class="c28 c16 c43"></span></h1>
-  <section id="relevantgroupsoncampus"><h1 class="c33" id="h.t54c1bm2ewv3"><span class="c28 c43 c16">RELEVANT GROUPS ON CAMPUS</span></h1></section>
+  <span class="anchor" id="relevantgroupsoncampus"></span>
+  <h1 class="c33" id="h.t54c1bm2ewv3"><span class="c28 c43 c16">RELEVANT GROUPS ON CAMPUS</span></h1>
   <p class="c0"><span class="c1"></span></p>
   <p class="c2"><span class="c1">Outside of courses, Cornell offers a variety of ways for students to get involved in the local computer science community through student computing groups. Joining one or more of these organizations is a great way for students to network with other computer science students as well as learn about different opportunities in the computer science field. These organizations also host many company info sessions, academic and career development workshops, guest speaker presentations, and other events that computer science students may find helpful (not to mention, there&rsquo;s usually free food and swag!).</span></p>
   <section id="acsu"><h2 class="c24" id="h.ruds2twsg2z9"><span class="c12">ACSU: Association of Computer Science Undergraduates</span></h2></section>
@@ -1085,7 +994,8 @@ $(document).ready(function(){
   <h1 class="c31" id="h.xbetk6o5f0wm"><span class="c32 c16"></span></h1>
   <hr style="page-break-before:always;display:none;">
   <h1 class="c31" id="h.5rlkm7gy34dk"><span class="c32 c16"></span></h1>
-  <section id="undergraduateresearch"><h1 class="c33" id="h.nnlmakkc7ca"><span class="c28 c43 c16">UNDERGRADUATE RESEARCH</span></h1></section>
+  <section class="anchor" id="undergraduateresearch"></section>
+  <h1 class="c33" id="h.nnlmakkc7ca"><span class="c28 c43 c16">UNDERGRADUATE RESEARCH</span></h1>
   <p class="c0"><span class="c1"></span></p>
   <p class="c2"><span class="c1">Undergraduate research is a unique opportunity to reinforce topics you are learning about in class and to get experience working on real world projects. If you think you might want to pursue a PhD after graduating, then undergrad research experience is essential. </span></p>
   <section id="howtofindaposition"><h2 class="c24" id="h.33a1wu7fl7f1"><span class="c12">How to Find a Position</span></h2></section>
@@ -1101,7 +1011,8 @@ $(document).ready(function(){
   <h2 class="c24" id="h.a0sxii7ur44a"><span class="c12">Getting Credit</span></h2>
   <section id="gettingcredit"><p class="c2"><span class="c22 c55">Research can be done either for course credit or (if the research group has sufficient resources) for pay. If you opt to take course credit it will appear on your transcript as CS 4999, which can be used to fill a technical elective. The CS department website describes the process in more detail </span></section>
     <span class="c14"><a class="c3" href="https://www.google.com/url?q=https://www.cs.cornell.edu/undergrad/uresch/registeringforcs4999&amp;sa=D&amp;ust=1522738117003000">here</a></span><span class="c1">.</span></p>
-  <section id="testimonials"><h1 class="c33" id="h.lhdui9q7pm7v"><span class="c28 c43 c16">TESTIMONIALS</span></h1></section>
+  <span class="anchor" id="testimonials"></span>
+  <h1 class="c33" id="h.lhdui9q7pm7v"><span class="c28 c43 c16">TESTIMONIALS</span></h1>
   <p class="c2"><span class="c1">Although the purpose of this README document is to provide an objective, unbiased introduction and overview of the major, we also thought it would be beneficial for students, especially underclassmen, to get personal insights from current CS majors of different grades. Note that these perspectives were provided by volunteers who wanted to contribute to the README so the contributors consisted of self-selected individuals, and therefore these testimonials may not be fully representative of the CS population at Cornell. Also note that these testimonials were collected from underclassmen (freshmen &amp; sophomores) due to our target audience. However, we hope that these shared experiences can help shed light on what being a CS major could potentially be like in the Cornell community. </span></p>
   <h2 class="c20" id="h.fw1c68w0vgda"><span class="c12"></span></h2>
   <hr style="page-break-before:always;display:none;">

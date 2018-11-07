@@ -7,3 +7,6 @@ The Association of Computer Science Undergraduates (ACSU) is Cornell's chapter o
 
 ### Contact
 Contact our officers at **[acsu@cornell.edu](mailto:acsu@cornell.edu)**, or **[shoot us a message on Facebook](https://www.facebook.com/CornellACSU)**
+
+### Building
+Jekyll 3.1.6 or greater is required to build this website. Serve it locally with `jekyll serve`.

@@ -35,7 +35,7 @@
 		});
 	});
 
-	$('.header').click(function() {
+	$('.accordion_header').click(function() {
 		var par = $(this).parent().find(".reading_info");
 		par.toggle(500);
 	})

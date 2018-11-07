@@ -33,13 +33,6 @@
          "img": "board/AllieShuldman_20_Corporate.jpg"
       },
       {
-         "name": "Kyra Patton",
-         "team": "Academic Chair",
-         "position": "Academic Chair",
-         "year": "19",
-         "img": "board/KyraPatton_2019_Academic.jpg"
-      },
-      {
          "name": "Yizhou Yu",
          "team": "Academic",
          "position": "Academic Chair",
@@ -233,13 +226,6 @@
          "position": "Publicity",
          "year": "21",
          "img": "publicity/AllyZhang_21_Publicity.jpg"
-      },
-      {
-         "name": "Chris Fifty",
-         "team": "Social",
-         "position": "Social",
-         "year": "19",
-         "img": "social/Chris_Fifty_2019_Social.jpg"
       },
       {
          "name": "Johanna Smith-Palliser",

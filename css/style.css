@@ -16,6 +16,11 @@ html {
     height: 100%;
 }
 
+hr {
+  border-color: rgb(169,169,169);
+  border-width: 3px;
+}
+
 h1,
 h2,
 h3,
@@ -117,7 +122,7 @@ li.officer:hover {
 }
 
 .nav.navbar-nav {
-    background-color: rgba(255,255,255,.4);
+    background-color: rgba(255,255,255,.6);
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -142,7 +147,8 @@ li.officer:hover {
 
 .dropdown .dropdown-menu {
   visibility: hidden;
-  background-color: rgba(255, 255, 255, .6);
+  background-color: #eee;
+  /* background-color: rgba(255, 255, 255, 1); */
   /* Override bootstrap default */
   display: block;
   padding: 0;
@@ -195,7 +201,7 @@ li.officer:hover {
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
   color: #444;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: #ddd;
 }
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
@@ -233,183 +239,56 @@ li.officer:hover {
 }
 
 /* readme side navbar */
-.bg-cover {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: white;
-	z-index: 0;
-	transition: all 350ms ease;
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
+.sidenav {
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 165px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #E0E0E0; /* Gray */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    margin-top: 100px;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #F0F0F0;
 }
 
-.reveal {
-	opacity: .50;
-	display: block;
-	pointer-events: auto;
-	visibility: visible;
+/* readme side navbar menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #818181;
+    display: block;
+    text-transform: uppercase;
 }
 
-.hamburger-shell {
-	margin-top: 90px;
-	position: fixed;
-	overflow: hidden;
-	width: 35px;
-	height: 60px;
-	overflow: auto;
-	right: calc(100% - 70px);
-	top: 20px;
+/* readme side navbar hover */
+.sidenav a:hover {
+    color: rgba(125,0,49,0.99);
+    font-weight: bold;
 }
 
-.top, .middle{
-	position: absolute;
-	width: 62px;
-	height: 6px;
-	background-color: #C21734;
-	transition: all 350ms ease-in-out;
-	top: 20px;
+/* style page content (making space for readme side navbar) */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
 }
 
-.middle {
-	top: 35px;
+/* prevent header from covering main text */
+.anchor{
+   display:block;
+   height:100px; /* this is the height of your header */
+   margin-top:-63px; /* this is again negative value of the height of your header */
+   visibility:hidden;
 }
 
-#menu {
-	position: fixed;
-	right: calc(100% - 292px);
-	top: 10px;
-	display: none;
-  margin-top: 200px;
-	font-weight: 100;
-	font-size: 12px;
-	text-transform: uppercase;
-	margin-right: 140px;
-	width: 170px;
-	text-align: right;
-  background-color: white;
-}
-
-#menu a li {
-	text-decoration: none!important;
-	padding-bottom: 10px;
-	margin-bottom: 12px;
-	border-bottom: none;
-	list-style: none;
-	color: #C21734;
-	transition: all 150ms ease;
-  margin-left: 7px;
-  padding-right: 10px;
-  font-weight: bold;
-}
-
-#menu a li:hover {
-	color: #272940;
-	padding-right: 3px;
-}
-
-#menu a li:hover:after {
-}
-
-#menu a {
-	text-decoration: none;
-}
-
-.dropbtn {
-  text-decoration: none!important;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 12px;
-  border: none;
-  list-style: none;
-  color: #C21734;
-  font-weight: 100;
-	font-size: 12px;
-	text-transform: uppercase;
-	text-align: right;
-  font-weight: bold;
-}
-
-.sidedropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.sidedropdown-content {
-  right: auto;
-  left: 100%;
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-  background-color: white;
-  border-left: 1px solid #272940;
-}
-
-.sidedropdown-content a {
-  padding-left: 10px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #C21734;
-  text-transform: uppercase;
-  display: block;
-  text-align: left;
-  right: calc(100% - 292px);
-  font-weight: bold;
-}
-
-.sidedropdown-content a:hover {
-  color: #272940;
-  padding-right: 3px;
-}
-
-.sidedropdown:hover .sidedropdown-content {
-  display: block;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.sidedropdown:hover .dropbtn {
-  color: #272940;
-}
-
-.rotate {
-	transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	top: 20px;
-	background-color: #272940;
-	height: 6px;
-}
-
-.rotate-back {
-	transform: rotate(-360deg);
-	-webkit-transform: rotate(-360deg);
-	top: 20px;
-	background-color: #272940;
-	height: 6px;
-}
-
-.top {
--webkit-animation-delay: 100ms;
-}
-
-.middle {
--webkit-animation-delay: 250ms;
-}
-
-.bottom {
-	-webkit-animation-delay: 400ms;
-}
-
-.content {
-    transition: margin-left .5s;
+/* change the style of the readme side navbar */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 /* loader */
@@ -510,7 +389,7 @@ hr {
 .home-section {
     padding-top: 110px;
     padding-bottom: 110px;
-  display:block;
+    display:block;
     position:relative;
     z-index:120;
 }
@@ -556,6 +435,13 @@ hr {
   color: #fff;
 }
 
+.link_margin a {
+  margin: 10px;
+}
+
+.padding {
+  padding: 10px;
+}
 
 
 /* ===========================
@@ -647,22 +533,45 @@ hr {
   text-shadow: -1px 1px 1px #000;
 }
 
-.header {
+.accordion_header {
   padding: 5px;
+  border-bottom-color: #848484;
+  border-bottom-width: 1.5px;
+  border-bottom-style: solid;
   padding-left: 10px;
   text-align: center;
   height: 50px;
   margin-top: 5%;
   margin-bottom: 2%;
-  background-color: #e8e8e8;
   position: relative;
   -webkit-transition: 0.4s; /* Safari */
   transition: 0.4s;
+  vertical-align: bottom;
 }
 
-.header:hover {
+.accordion_header:after {
+    content: '\25BE'; /* Unicode character for "plus" sign (+) */
+    font-size: 15px;
+    color: #777;
+    position: absolute;
+    top: 25%;
+    left: 96%;
+    float: right;
+}
+
+.accordion_header:hover {
   cursor: pointer;
-  background-color: #d6d4d4;
+  border-bottom-color: black;
+}
+
+.accordion_text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-size: 19px;
 }
 
 .intro .slogan h5 {

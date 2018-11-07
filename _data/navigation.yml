@@ -7,8 +7,6 @@
       url: officers.html
     - title: ByLaws
       url: bylaws.html
-    - title: Sponsors
-      url: corporate.html
 - title: Events
   url: calendar.html
   sublinks:
@@ -38,6 +36,8 @@
       url: https://cornellcswiki.gitlab.io/
     - title: Food
       url: food.html
+- title: Sponsors
+  url: corporate.html
 - title: HACSU
   url: hacsu.html
 - title: Join
