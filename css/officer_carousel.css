@@ -276,9 +276,6 @@ Main Components
   -moz-animation-direction: reverse;
   animation-direction: reverse;
 }
-.cd-horizontal-timeline .events-content li > * {
-  max-width: 800px;
-}
 
 .cd-horizontal-timeline .events-content em {
   display: block;
