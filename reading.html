@@ -39,10 +39,11 @@ $(".navbar-custom").css('background-color', '#272940');
                             <div class="reading_info none">
                               <p><b>Leaders</b>: {{t.leader}}
                                 <br/><br/><b>Papers</b>:
+                                <ul>
                                 {% for p in t.papers %}
-                                <br/>
-                                <a href="{{ p.link }}" target="_blank">{{ p.name }}</a>
+                                <li><a href="{{ p.link }}" target="_blank">{{ p.name }}</a></li>
                                 {% endfor %}
+                                </ul>
                               </p>
                             </div>
                           </div>
