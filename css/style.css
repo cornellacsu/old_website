@@ -948,7 +948,23 @@ Parallax
     .collapse.in{
   		display:block !important;
 	}
+  .workshops-tablist .navbar-left{
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 5%;
+    padding-left: 30px;
+  }
 
+  /*lock iframe to 4:3 resolution*/
+  .workshops-content iframe {
+    max-width: 100vw;
+    max-height: 75vw;
+    padding-right: 30px;
+  }
+
+  .workshops-tablist button.tablist-button {
+    display: block;
+  }
 }
 
 @media(min-width:767px) {
@@ -1197,4 +1213,71 @@ div.panel.show {
 
 .years {
   margin-top: -2%;
+}
+
+/* ===========================
+--- Workshops
+============================ */
+
+.workshops-tablist li a{
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 10px;
+  text-align: left;
+  color: rgba(39,41,64, 0.75)
+}
+
+.workshops-tablist .active a{
+  color: rgba(39,41,64, 1);
+  border-left: 6px solid rgb(178,0,0,1);
+  background-color: #eee;
+}
+
+.workshops-tablist a.nav-header, 
+.workshops-tablist a:hover.nav-header,
+.workshops-tablist a:focus.nav-header{
+  background: none;
+  border-left: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(39,41,64, 0.75);
+}
+
+.workshops-tablist {
+  text-align: left;
+}
+.workshops-tablist ul{
+  margin-top: 25vh;
+}
+
+.workshops-content {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5%;
+  text-align: left;
+}
+
+.workshops-item {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.workshops-item-name{
+  margin: 0 0 5px 0;
+}
+.workshops-background {
+    min-height: -webkit-fill-available;
+    background-image: linear-gradient(-16.18deg, rgba(178,0,0,0.16) 50%, transparent 50.2%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+}
+
+.workshops-tablist .tablist-button {
+  display: none;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: white;
+  border-color: #ccc;
+  outline: none;
 }
