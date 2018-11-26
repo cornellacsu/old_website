@@ -150,7 +150,12 @@ li.officer:hover {
   z-index: 1;
 }
 
-.dropdown:hover .dropdown-menu {
+/*.dropdown:hover .dropdown-menu {
+   visibility: visible;
+   z-index: 1;
+}*/
+
+.open .dropdown-menu {
    visibility: visible;
    z-index: 1;
 }
@@ -906,7 +911,7 @@ Parallax
 
 
 /* Media queries */
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
     .navbar {
       padding: 20px 0;
       border-bottom: 0;
@@ -1027,6 +1032,13 @@ Parallax
 @media screen and (max-width: 320px){
   .intro .slogan h2{
       font-size: 30px;
+  }
+}
+
+/* overriding bootstrap media queries */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
   }
 }
 
