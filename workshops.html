@@ -14,8 +14,14 @@ $(".navbar-custom").css('background-color', '#272940');
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2 workshops-tablist">
+
+                            <!-- Mobile Navlist -->
+                            <button class="btn btn-default btn-lg tablist-button collapsed" data-toggle="collapse" data-target="#workshops-tablist" type="button">
+                              <i class="fa fa-bars"></i>
+                            </button>
+
                             <!-- Nav tabs -->
-                            <ul class="nav nav-stacked navbar-left affix" role="tablist">
+                            <ul id="workshops-tablist" class="nav nav-stacked navbar-left affix" role="tablist">
                                 <li role="presentation" class="scroll-top active">
                                     <a href="#career-fair" aria-controls="career-fair" role="tab" data-toggle="pill">Career Fair Prep Day</a>
                                 </li>
@@ -23,6 +29,7 @@ $(".navbar-custom").css('background-color', '#272940');
                                     <a href="#portfolio-workshop" aria-controls="portfolio-workshop" role="tab" data-toggle="pill">Portfolio Workshop</a>
                                 </li>
                                 <!-- can use as stub for future workshops -->
+                                <!-- 
                                 <li role="presentation">
                                     <a href="#latex-workshop" aria-controls="latex-workshop" role="tab" data-toggle="pill">Filler Workshop 1</a>
                                 </li>
@@ -32,7 +39,7 @@ $(".navbar-custom").css('background-color', '#272940');
                                 <li role="presentation">
                                     <a href="#latex-workshop" aria-controls="latex-workshop" role="tab" data-toggle="pill">Filler Workshop 3</a>
                                 </li>
-                               
+                                -->
                             </ul>
                         </div>
                         <div class="col-md-10" >
@@ -58,7 +65,7 @@ $(".navbar-custom").css('background-color', '#272940');
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade in active" id="career-fair">
-                            <h3>Career Fair Prep Day (Co-hosted with <a href="http://wicc.acm.org/" target="_blank">WICC</a>)</h3>
+                            <h3>Career Fair Prep Day</h3>
                             <div class="workshops-item">
                                 <h4 class="workshops-item-name"> Technical Interview Prep Slides </h4>
                                 <p>Fall 2018</p>
@@ -77,9 +84,7 @@ $(".navbar-custom").css('background-color', '#272940');
                             <div class="workshops-item">
                                 <h4>Videos (Must be affiliated with Cornell to view)</h4>
                                 <p><a href="https://cornell.mediasite.com/Mediasite/Play1bdfd34e748749668ea577f2cb3999d21d" target="_blank">Interview Demo Video</a></p>
-                                <br>
                                 <p><a href="https://cornell.mediasite.com/Mediasite/Play1bdfd34e748749668ea577f2cb3999d21d" target="_blank">Intro to the Career Fair and Soft Skills Video (WICC)</p>
-                                <br>
                                 <p><a href="https://cornell.mediasite.com/Mediasite/Play/35c1fe9424ba4bc691c1587dba9702971d" target="_blank">Techinical Interview Prep Video (WICC)</p></a>
                             </div>
                         </div>
