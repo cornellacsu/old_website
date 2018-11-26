@@ -134,9 +134,9 @@ li.officer:hover {
 }
 
 .navbar-custom.top-nav-collapse ul.nav li a {
-      -webkit-transition: all .2s ease-in-out;
+  /*-webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;*/
   color: #fff;
 }
 
@@ -911,7 +911,7 @@ Parallax
 
 
 /* Media queries */
-@media (max-width: 1000px) {
+@media (max-width: 1015px) {
     .navbar {
       padding: 20px 0;
       border-bottom: 0;
