@@ -1,23 +1,18 @@
 - title: About
-  url: about.html
+  url: index.html#about_acsu
   sublinks:
     - title: What is ACSU?
-      url: what.html
-    - title: Officers
-      url: officers.html
+      url: index.html#what_we_do
+    - title: G-Body
+      url: index.html#gbody
     - title: ByLaws
       url: bylaws.html
-- title: Events
+- title: Sponsors
+  url: index.html#companies
+- title: Officers
+  url: officers.html
+- title: Calendar
   url: calendar.html
-  sublinks:
-  - title: Calendar
-    url: calendar.html
-  # - title: Corporate
-  #   url: /corporate.html
-  - title: G-Body
-    url: gbody.html
-  - title: Workshops
-    url: workshops.html
 - title: Programs
   url: programs.html
   sublinks:
@@ -25,6 +20,8 @@
       url: mentorship.html
     - title: Reading Groups
       url: reading.html
+    - title: Workshops
+      url: workshops.html
 - title: Resources
   url: resources.html
   sublinks:
@@ -36,8 +33,6 @@
       url: https://cornellcswiki.gitlab.io/
     - title: Food
       url: food.html
-- title: Sponsors
-  url: corporate.html
 - title: HACSU
   url: hacsu.html
 - title: Join
