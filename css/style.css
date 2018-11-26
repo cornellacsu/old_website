@@ -233,6 +233,129 @@ li.officer:hover {
     outline: 0;
 }
 
+/* ABOUT */
+.main-home-page {
+  /* background-color: rgba(39, 41, 64); */
+}
+ .about_div {
+  color: rgba(39, 41, 64);
+  /* margin-bottom: 50px; */
+  /* margin-right: 100px;
+  margin-left: 100px; */
+  /* border-radius: 0px; */
+}
+ .what-we-do {
+  background-color: rgb(225, 225, 227);
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  color: rgba(39, 41, 64);
+  padding-left: 170px;
+  padding-right: 170px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  /*flex-direction: row; */
+}
+ #first_row {
+  display: flex;
+}
+ #second_row {
+  display: flex;
+}
+ #events {
+  /* flex-grow: 1; */
+  background: rgba(39, 41, 64);
+  color: white;
+  flex: 1;
+  padding: 3em;
+  margin: 1em;
+  border-radius: 6px;
+}
+ .service-icon {
+  margin-bottom: 8px;
+}
+ .gbody {
+color: white;
+background-color: rgba(39, 41, 64);
+}
+ .mySlides {
+  display: none
+}
+ .w3-left,
+.w3-right,
+.w3-badge {
+  cursor: pointer
+}
+ .w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0
+}
+ .w3-content {
+  margin-left:auto;
+  margin-right:auto;
+  max-width:980px
+}
+ .w3-display-container{position:relative}
+ .w3-center {
+  display:inline-block;
+  width:auto;
+  text-align:center
+}
+ .w3-section{
+  margin-top:16px!important;
+  margin-bottom:16px!important
+}
+ .w3-large {
+  font-size:18px!important
+}
+ .w3-text-white {
+  color:#fff!important
+}
+ .w3-display-bottommiddle {
+  position:absolute;
+  left:50%;bottom:0;
+  transform:translate(-50%,0%);
+  -ms-transform:translate(-50%,0%)
+}
+ w3-hover-text-khaki {
+  color:#b4aa50!important
+}
+ w3-hover-white:hover {
+  color:#000!important;
+  background-color:#fff!important
+}
+ .w3-transparent,.w3-hover-none:hover {
+  background-color:transparent!important
+}
+ .sponsors-home {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#gold-sponsors {
+  background-color: rgb(236, 228, 148);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+#silver-sponsors {
+  background-color: rgb(228, 228, 231);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+#bronze-sponsors {
+  background-color: rgb(241, 221, 170);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 7px;
+}
+
 /* README TAB */
 .above-tab {
   display:flex;
