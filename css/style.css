@@ -244,7 +244,7 @@ li.officer:hover {
 }
 
 .about_div {
-  color: rgba(39, 41, 64);
+  color: rgb(39, 41, 64);
   /* margin-bottom: 50px; */
   /* margin-right: 100px;
   margin-left: 100px; */
@@ -257,7 +257,7 @@ li.officer:hover {
   position: relative;
   margin-left: -50vw;
   left: 50%;
-  color: rgba(39, 41, 64);
+  color: rgb(39, 41, 64);
   padding-left: 170px;
   padding-right: 170px;
   margin-bottom: 10px;
@@ -276,7 +276,7 @@ li.officer:hover {
 
 #events {
   /* flex-grow: 1; */
-  background: rgba(39, 41, 64);
+  background: rgb(39, 41, 64);
   color: white;
   flex: 1;
   padding: 3em;
@@ -290,7 +290,7 @@ li.officer:hover {
 
 .gbody {
 color: white;
-background-color: rgba(39, 41, 64);
+background-color: rgb(39, 41, 64);
 }
 
 .mySlides {
@@ -383,8 +383,6 @@ w3-hover-white:hover {
   border-radius: 7px;
 }
 
-
-
 /* README TAB */
 .above-tab {
   display:flex;
@@ -399,7 +397,7 @@ w3-hover-white:hover {
 .readme_tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: rgba(39, 41, 64);
+  background-color: rgb(39, 41, 64);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
