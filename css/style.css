@@ -246,7 +246,7 @@ li.officer:hover {
 .readme_tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: rgba(39, 41, 64);
+  background-color: rgb(39, 41, 64);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
