@@ -1,0 +1,279 @@
+{
+   "year": "2017-",
+   "date": "01/09/2017",
+   "current": "",
+   "officers": [{
+         "name": "Irene Yoon",
+         "team": "Academic",
+         "position": "President",
+         "year": "19",
+         "img": "board/IreneYoon_2019_Academic.png",
+         "email": "ey222"
+      },
+      {
+         "name": "Abrahm Magaña",
+         "team": "Social",
+         "position": "Vice President",
+         "year": "19",
+         "img": "board/AbrahmMagana_19_Social.jpg",
+         "email": "adm264"
+      },
+      {
+         "name": "Rachel Shim",
+         "team": "Social",
+         "position": "Treasurer",
+         "year": "20",
+         "img": "board/RachelShim_20_Social.jpg"
+      },
+      {
+         "name": "Allie Shuldman",
+         "team": "Corporate",
+         "position": "Secretary",
+         "year": "20",
+         "img": "board/AllieShuldman_20_Corporate.jpg"
+      },
+      {
+         "name": "Yizhou Yu",
+         "team": "Academic",
+         "position": "Academic Chair",
+         "year": "20",
+         "img": "board/YizhouYu_20_Academic.jpg"
+      },
+      {
+         "name": "Tyler Ishikawa",
+         "team": "Corporate",
+         "position": "Corporate Chair",
+         "year": "19",
+         "img": "board/TylerIshikawa_19_Corporate.jpg"
+      },
+      {
+         "name": "Danny Qiu",
+         "team": "Corporate",
+         "position": "Corporate Chair",
+         "year": "19",
+         "img": "board/DannyQiu_19_Corporate.jpg"
+      },
+      {
+         "name": "Keivan Shahida",
+         "team": "Publicity",
+         "position": "Publicity Chair",
+         "year": "20",
+         "img": "board/KeivanShahida-2020-Publicity.jpg"
+      },
+      {
+         "name": "Sally Yue Gao",
+         "team": "Social",
+         "position": "Social Chair",
+         "year": "20",
+         "img": "board/SallyGao_2020_Social.jpg"
+      },
+      {
+         "name": "Xinyu (Cynthia) Zhao",
+         "team": "Academic",
+         "position": "Web Dev Chair",
+         "year": "19",
+         "img": "board/XinyuZhao_19_WebDev.jpg"
+      },
+      {
+         "name": "Mary Ji",
+         "team": "Publicity",
+         "position": "Graphic Designer",
+         "year": "19",
+         "img": "publicity/Mary_Ji_19.jpg"
+      },
+      {
+         "name": "Mahfuza Shovik",
+         "team": "Publicity",
+         "position": "Graphic Designer",
+         "year": "19",
+         "img": "publicity/Mahfuza Shovik_19.jpg"
+      }, {
+         "name": "Daniel Nosrati",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "19",
+         "img": "academic/DanielNosrati19Academic.jpg"
+      },
+      {
+         "name": "Tony Zhang",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "19",
+         "img": "academic/TonyZhang_19_Academic.jpg"
+      },
+      {
+         "name": "Marina Zhou",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "19",
+         "img": "academic/Marina Zhou_19_Academic.jpg"
+      },
+      {
+         "name": "Anmol Kabra",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "20",
+         "img": "academic/AnmolKabra_20_Academic.jpg"
+      },
+      {
+         "name": "Caleb Koch",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "20",
+         "img": "academic/CalebKoch_20_Academic.png"
+      },
+      {
+         "name": "Jerry Qu",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "20",
+         "img": "academic/JerryQu_20_Academic.png"
+      },
+      {
+         "name": "Daniel Galarraga",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "21",
+         "img": "academic/DanielGalarraga_21_Academic.png"
+      },
+      {
+         "name": "Zicen Pan",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "21",
+         "img": "academic/Zicen Pan _21_academic.jpg"
+      },
+      {
+         "name": "Jialu Bao",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "19",
+         "img": "corporate/JialuBao_19_Corporate.jpg"
+      },
+      {
+         "name": "Rachel Kwak",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "19",
+         "img": "academic/RachelKwak_2019_Academic.jpg"
+      },
+      {
+         "name": "Kevin Ye",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "19",
+         "img": "corporate/KevinYe_19_Corporate.jpg"
+      },
+      {
+         "name": "Amrit Amar",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "20",
+         "img": "corporate/AmritAmar_20_Corporate.jpg"
+      },
+      {
+         "name": "Lindsay Fei",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "20",
+         "img": "corporate/LindsayFei_20_Corporate.jpg"
+      },
+      {
+         "name": "Olivia Xiang",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "20",
+         "img": "corporate/OliviaXiang_20_Corporate.jpg"
+      },
+      {
+         "name": "Ayesha Gagguturi",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "21",
+         "img": "corporate/AyeshaGagguturi_21_Corporate.png"
+      },
+      {
+         "name": "Vaed Prasad",
+         "team": "Corporate",
+         "position": "Corporate",
+         "year": "21",
+         "img": "corporate/VaedPrasad_21_Corporate.jpg"
+      },
+      {
+         "name": "Pingdi Huang",
+         "team": "Publicity",
+         "position": "Publicity",
+         "year": "19",
+         "img": "publicity/PingdiHuang_19_Publicity.jpg"
+      },
+      {
+         "name": "Zachary Brody",
+         "team": "Publicity",
+         "position": "Publicity",
+         "year": "20",
+         "img": "publicity/ZackBrody_20_Publicity.png"
+      },
+      {
+         "name": "Qihang Yan",
+         "team": "Publicity",
+         "position": "Publicity",
+         "year": "20",
+         "img": "publicity/QihangYan_20_Publicity.jpg"
+      },
+      {
+         "name": "Ally Zhang",
+         "team": "Publicity",
+         "position": "Publicity",
+         "year": "21",
+         "img": "publicity/AllyZhang_21_Publicity.jpg"
+      },
+      {
+         "name": "Johanna Smith-Palliser",
+         "team": "Social",
+         "position": "Social",
+         "year": "19",
+         "img": "social/JohannaSmith-Palliser_19_Social.jpg"
+      },
+      {
+         "name": "Alex Yoo",
+         "team": "Social",
+         "position": "Social",
+         "year": "19",
+         "img": "social/AlexYoo_19_Social.jpg"
+      },
+      {
+         "name": "Ryan Curtis",
+         "team": "Social",
+         "position": "Social",
+         "year": "20",
+         "img": "social/RyanCurtis_20_Social.jpeg"
+      },
+      {
+         "name": "Helen Liang",
+         "team": "Social",
+         "position": "Social",
+         "year": "21",
+         "img": "social/HelenLiang_21_Social.jpg"
+      }, {
+         "name": "Sandy Fang",
+         "team": "WebDev",
+         "position": "Web Dev",
+         "year": "20",
+         "img": "web_dev/SandyFang_20_WebDev.jpg"
+      },
+      {
+         "name": "Eric Feng",
+         "team": "WebDev",
+         "position": "Web Dev",
+         "year": "20",
+         "img": "web_dev/EricFeng_20_WebDev.jpg"
+      },
+      {
+         "name": "Rachel Lee",
+         "team": "WebDev",
+         "position": "Web Dev",
+         "year": "20",
+         "img": "web_dev/RachelLee_20_WebDev.jpg"
+      }
+   ]
+}
