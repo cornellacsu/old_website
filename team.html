@@ -19,7 +19,7 @@ ul {
     margin: auto;
 }
 </style>
-{% assign data_jsons = "officers15|officers16|officers17|officers18" | split: "|" %}
+{% assign data_jsons = "officers1516|officers1617|officers1718|officers1819" | split: "|" %}
 <br>
 <section class="cd-horizontal-timeline">
     <div class="timeline">
@@ -30,7 +30,7 @@ ul {
                       {% assign data = site.data[json] %}
                       <li><a href="#{{ forloop.index0 }}" data-date={{ data.date }} class={{ data.current }}>{{data.year}}</a></li>
                     {% endfor %}
-                    <li><a href="#{{ data_jsons.size }}" data-date="01/09/2019">2019</a></li>
+                    <li><a href="#{{ data_jsons.size }}" data-date="01/09/2019">2019-2020</a></li>
                 </ol>
                 <span class="filling-line" aria-hidden="true"></span>
             </div>
@@ -55,7 +55,7 @@ ul {
                                   <p>These brave souls are the ACSU officers for {{ data.year }}.
                                   <br/>Feel free to <a id="acsuemail" data-email="acsu" href="mailto:">email</a> or contact us through our <a href="https://www.facebook.com/CornellACSU/" target="_blank">Facebook</a> page.</p>
                                 {% else %}
-                                  <h2>{{ data.year }} Officers</h2>
+                                  <h2>{{ data.year }}</h2>
                                   <p>These brave souls were the ACSU officers for {{ data.year }}.</p>
                                 {% endif %}
                               </div>
@@ -105,8 +105,8 @@ ul {
                           <div class="row">
                               <div class="wow bounceInDown" data-wow-delay="0.4s">
                                   <div class="section-heading">
-                                      <h2>2019</h2>
-                                      <p>Recruitment for 2019 is currently not yet open. <br/>
+                                      <h2>2019-2020</h2>
+                                      <p>Recruitment for 2019-2020 is currently not yet open. <br/>
                                       Applications will open February 18th, 2019.</p>
                                       <hr class="marginbot-50">
                                       <p><img src = "img/acsu_team_2018.jpg" style="width:90%"/></p>
