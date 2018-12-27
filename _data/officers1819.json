@@ -1,7 +1,7 @@
 {
    "year": "2018-2019",
    "date": "01/09/2018",
-   "current": "selected",
+   "class_name": "selected",
    "officers": [{
          "name": "Jerry Qu",
          "team": "Academic",
