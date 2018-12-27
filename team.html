@@ -28,7 +28,7 @@ ul {
                 <ol>
                     {% for json in data_jsons %}
                       {% assign data = site.data[json] %}
-                      <li><a href="#{{ forloop.index0 }}" data-date={{ data.date }} class={{ data.current }}>{{data.year}}</a></li>
+                      <li><a href="#{{ forloop.index0 }}" data-date={{ data.date }} class="{{ data.class_name }}">{{data.year}}</a></li>
                     {% endfor %}
                     <li><a href="#{{ data_jsons.size }}" data-date="01/09/2019">2019-2020</a></li>
                 </ol>
@@ -42,7 +42,7 @@ ul {
           <!-- generate the team pages using the data jsons -->
           {% for json in data_jsons %}
           {% assign data = site.data[json] %}
-          <li data-date={{ data.date }} class={{ data.current }}>
+          <li data-date={{ data.date }} class={{ data.class_name }}>
               <section id="officers" class="officer-section text-center">
                 <div class="heading-about">
                   <div class="container">
