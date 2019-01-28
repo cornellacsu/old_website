@@ -111,6 +111,13 @@
          "img": "1819/academic/Academic_AnmolKabra_20.jpg"
       },
       {
+         "name": "Zhiqiu Lin",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "20",
+         "img": "1819/academic/Academic_ZhiqiuLin_20.jpg"
+      },
+      {
          "name": "Daniel Weber",
          "team": "Academic",
          "position": "Academic",
@@ -144,6 +151,13 @@
          "position": "Academic",
          "year": "21",
          "img": "1819/academic/Academic_LucyLu_21.jpg"
+      },
+      {
+         "name": "Zicen Pan",
+         "team": "Academic",
+         "position": "Academic",
+         "year": "21",
+         "img": "1819/academic/Academic_ZicenPan_21.jpg"
       },
       {
          "name": "Anika Talwar",
@@ -200,13 +214,6 @@
          "position": "Corporate",
          "year": "21",
          "img": "1819/corporate/Corporate_LesleyHuang_21.jpg"
-      },
-      {
-         "name": "Vaed Prasad",
-         "team": "Corporate",
-         "position": "Corporate",
-         "year": "21",
-         "img": "1819/corporate/Corporate_VaedPrasad_21.jpg"
       },
       {
          "name": "Avani Aggrwal",
