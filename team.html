@@ -2,6 +2,7 @@
 layout: default
 permalink: officers.html
 ---
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 <script>
 $(".navbar-custom").css('background-color', '#272940');
 </script>
@@ -129,8 +130,10 @@ emails.forEach(function(id) {
 });
 
 // for lozad lazy loading
-var observer = lozad();
-observer.observe();
+window.addEventListener('load', function() {
+  var observer = lozad();
+  observer.observe();
+})
 </script>
 <!-- .events-content -->
 </section>
