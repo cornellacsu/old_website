@@ -82,7 +82,7 @@ ul {
                               <div class="inner">
                                 <h5>{{ officer.name }} '{{ officer.year }}</h5>
                                 <p class="subtitle">{{ officer.position }}</p>
-                                <div class="avatar"><img src="img/team/{{ officer.img }}" alt="" width=500 class="img-responsive img-circle" alt="" width=500 class="img-responsive img-circle" /></div>
+                                <div class="avatar"><img class="lozad img-responsive img-circle" data-src="img/team/{{ officer.img }}" alt="" width=500/></div>
                                 {% if officer.email %}
                                 <a id="email{{ officer.email }}" data-email="{{ officer.email }}" href="mailto:"><img src="img/icons/email.png" onmouseover="this.src='img/icons/email-2.png'" onmouseout="this.src='img/icons/email.png'" width="38" alt=""/></a>
                                 {% endif %}
@@ -127,6 +127,10 @@ emails.forEach(function(id) {
     if (href == 'mailto:') $(this).attr('href', href + id.dataset.email + "@cornell.edu");
   });
 });
+
+// for lozad lazy loading
+var observer = lozad();
+observer.observe();
 </script>
 <!-- .events-content -->
 </section>
