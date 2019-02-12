@@ -141,7 +141,7 @@ jQuery(document).ready(function($){
             timeSpanNorm = Math.round(timeSpanNorm) + 4,
             totalWidth = timeSpanNorm*width;
         timelineComponents['eventsWrapper'].css('width', totalWidth+'px');
-        updateFilling(timelineComponents['timelineEvents'].eq(2), timelineComponents['fillingLine'], totalWidth);
+        updateFilling(timelineComponents['timelineEvents'].eq(3), timelineComponents['fillingLine'], totalWidth);
 
         return totalWidth;
     }
