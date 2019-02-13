@@ -12,19 +12,10 @@
   sublinks:
   - title: Calendar
     url: calendar.html
-  # - title: Corporate
-  #   url: /corporate.html
   - title: G-Body
     url: gbody.html
   - title: Workshops
     url: workshops.html
-- title: Programs
-  url: programs.html
-  sublinks:
-    - title: Mentorship
-      url: mentorship.html
-    - title: Reading Groups
-      url: reading.html
 - title: Resources
   url: resources.html
   sublinks:
