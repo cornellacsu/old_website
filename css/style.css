@@ -134,9 +134,6 @@ li.officer:hover {
 }
 
 .navbar-custom.top-nav-collapse ul.nav li a {
-/*  -webkit-transition: all 0s ease-in-out;
-    -moz-transition: all 0s ease-in-out;
-    transition: all 0s ease-in-out;*/
   color: #fff;
 }
 
