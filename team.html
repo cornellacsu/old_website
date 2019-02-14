@@ -2,6 +2,7 @@
 layout: default
 permalink: officers.html
 ---
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 <script>
 $(".navbar-custom").css('background-color', '#272940');
 </script>
@@ -19,7 +20,7 @@ ul {
     margin: auto;
 }
 </style>
-{% assign data_jsons = "officers1516|officers1617|officers1718" | split: "|" %}
+{% assign data_jsons = "officers1516|officers1617|officers1718|officers1819" | split: "|" %}
 <br>
 <section class="cd-horizontal-timeline">
     <div class="timeline">
@@ -28,20 +29,13 @@ ul {
                 <ol>
                     {% for json in data_jsons %}
                       {% assign data = site.data[json] %}
-                      <li><a href="#{{ forloop.index0 }}" data-date={{ data.date }} class={{ data.current }}>{{data.year}}</a></li>
+                      <li><a href="#{{ forloop.index0 }}" data-date={{ data.date }} class="{{ data.class_name }}">{{data.year}}</a></li>
                     {% endfor %}
-                    <li><a href="#{{ data_jsons.size }}" data-date="01/09/2018">2018-2019</a></li>
+                    <li><a href="#{{ data_jsons.size }}" data-date="01/09/2019">2019-2020</a></li>
                 </ol>
                 <span class="filling-line" aria-hidden="true"></span>
             </div>
-            <!-- .events -->
         </div>
-        <!-- .events-wrapper -->
-        <ul class="cd-timeline-navigation">
-            <li><a href="#0" class="prev inactive">Prev</a></li>
-            <li><a href="#0" class="next">Next</a></li>
-        </ul>
-        <!-- .cd-timeline-navigation -->
     </div>
     <!-- .timeline -->
     <div class="events-content">
@@ -49,7 +43,7 @@ ul {
           <!-- generate the team pages using the data jsons -->
           {% for json in data_jsons %}
           {% assign data = site.data[json] %}
-          <li data-date={{ data.date }} class={{ data.current }}>
+          <li data-date={{ data.date }} class={{ data.class_name }}>
               <section id="officers" class="officer-section text-center">
                 <div class="heading-about">
                   <div class="container">
@@ -57,7 +51,7 @@ ul {
                       <div class="col-lg-8 col-lg-offset-2">
                           <div class="wow bounceInDown" data-wow-delay="0.4s">
                               <div class="section-heading">
-                                {% if data.current == "selected" %}
+                                {% if data.class_name == "selected" %}
                                   <h2>Current Officers</h2>
                                   <p>These brave souls are the ACSU officers for {{ data.year }}.
                                   <br/>Feel free to <a id="acsuemail" data-email="acsu" href="mailto:">email</a> or contact us through our <a href="https://www.facebook.com/CornellACSU/" target="_blank">Facebook</a> page.</p>
@@ -89,7 +83,7 @@ ul {
                               <div class="inner">
                                 <h5>{{ officer.name }} '{{ officer.year }}</h5>
                                 <p class="subtitle">{{ officer.position }}</p>
-                                <div class="avatar"><img src="img/team/{{ officer.img }}" alt="" width=500 class="img-responsive img-circle" alt="" width=500 class="img-responsive img-circle" /></div>
+                                <div class="avatar"><img class="lozad img-responsive img-circle" data-src="img/team/{{ officer.img }}" alt="" width=500/></div>
                                 {% if officer.email %}
                                 <a id="email{{ officer.email }}" data-email="{{ officer.email }}" href="mailto:"><img src="img/icons/email.png" onmouseover="this.src='img/icons/email-2.png'" onmouseout="this.src='img/icons/email.png'" width="38" alt=""/></a>
                                 {% endif %}
@@ -105,18 +99,18 @@ ul {
               </section>
           </li>
           {% endfor %}
-          <li data-date="01/09/2018">
+          <li data-date="01/09/2019">
               <section id="officers" class="officer-section text-center">
                   <div class="heading-about">
                       <div class="container">
                           <div class="row">
                               <div class="wow bounceInDown" data-wow-delay="0.4s">
                                   <div class="section-heading">
-                                      <h2>2018-2019</h2>
-                                      <p>Recruitment for 2018-2019 is currently not yet open. <br/>
-                                      Keep an eye out!</p>
+                                      <h2>2019-2020</h2>
+                                      <p>Recruitment for 2019-2020 is currently not yet open. <br/>
+                                      Applications will open February 18th, 2019.</p>
                                       <hr class="marginbot-50">
-                                      <p><img src = "img/full_team.jpg" style="width:90%"/></p>
+                                      <p><img src = "img/acsu_team_2018.jpg" style="width:90%"/></p>
                                   </div>
                               </div>
                           </div>
@@ -134,6 +128,12 @@ emails.forEach(function(id) {
     if (href == 'mailto:') $(this).attr('href', href + id.dataset.email + "@cornell.edu");
   });
 });
+
+// for lozad lazy loading
+window.addEventListener('load', function() {
+  var observer = lozad();
+  observer.observe();
+})
 </script>
 <!-- .events-content -->
 </section>
