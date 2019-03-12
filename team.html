@@ -83,7 +83,7 @@ ul {
                               <div class="inner">
                                 <h5>{{ officer.name }} '{{ officer.year }}</h5>
                                 <p class="subtitle">{{ officer.position }}</p>
-                                <div class="avatar"><img class="lozad img-responsive img-circle" src="img/team/{{ officer.img }}" alt="" width=500/></div>
+                                <div class="avatar"><img class="lozad img-responsive img-circle" data-src="img/team/{{ officer.img }}" alt="" width=500/></div>
                                 {% if officer.email %}
                                 <a id="email{{ officer.email }}" data-email="{{ officer.email }}" href="mailto:"><img src="img/icons/email.png" onmouseover="this.src='img/icons/email-2.png'" onmouseout="this.src='img/icons/email.png'" width="38" alt=""/></a>
                                 {% endif %}
@@ -130,10 +130,10 @@ emails.forEach(function(id) {
 });
 
 // for lozad lazy loading
-// window.addEventListener('load', function() {
-//   var observer = lozad();
-//   observer.observe();
-// })
+window.addEventListener('load', function() {
+  var observer = lozad();
+  observer.observe();
+})
 </script>
 <!-- .events-content -->
 </section>
