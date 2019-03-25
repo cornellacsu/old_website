@@ -268,6 +268,13 @@ li.officer:hover {
   background-color: rgb(239, 239, 239);
 }
 
+.carousel-inner > .item > img {
+  margin: auto;
+}
+
+.bs-example {
+  margin: 20px;
+}
 .sponsors-home {
   background-color: white;
   display: flex;
