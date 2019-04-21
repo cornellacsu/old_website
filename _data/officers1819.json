@@ -118,13 +118,6 @@
          "img": "1819/academic/Academic_DanielWeber_20.jpg"
       },
       {
-         "name": "Jia Wei",
-         "team": "Academic",
-         "position": "Academic",
-         "year": "20",
-         "img": "1819/academic/Academic_JiaWei_20.jpg"
-      },
-      {
          "name": "Daniel Galarraga",
          "team": "Academic",
          "position": "Academic",
@@ -244,13 +237,6 @@
          "img": "1819/corporate/Corporate_HenryZheng_22.jpg"
       },
       {
-         "name": "Michelle Wang",
-         "team": "Graphic Design",
-         "position": "Graphic Design",
-         "year": "20",
-         "img": "1819/graphic_design/GraphicDesign_MichelleWang_20.jpg"
-      },
-      {
          "name": "Daniel Lee",
          "team": "Graphic Design",
          "position": "Graphic Design",
@@ -277,13 +263,6 @@
          "position": "Publicity",
          "year": "21",
          "img": "1819/publicity/Publicity_AllyZhang_21.jpg"
-      },
-      {
-         "name": "William Evans",
-         "team": "Publicity",
-         "position": "Publicity",
-         "year": "22",
-         "img": "1819/publicity/Publicity_WilliamEvans_22.jpg"
       },
       {
          "name": "Michael Zhang",
