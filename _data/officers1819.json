@@ -6,8 +6,8 @@
          "name": "Jerry Qu",
          "team": "Academic",
          "position": "President",
-         "year": "20",
-         "img": "1819/academic/Academic_JerryQu_20.jpg",
+         "year": "19",
+         "img": "1819/academic/Academic_JerryQu_19.jpg",
          "email": "cq55"
       },
       {
@@ -251,6 +251,13 @@
          "img": "1819/corporate/Corporate_HenryZheng_22.jpg"
       },
       {
+         "name": "Jo Chuang",
+         "team": "Graphic Design",
+         "position": "Graphic Design",
+         "year": "19",
+         "img": "1819/graphic_design/GraphicDesign_JoChuang_19.jpg"
+      },
+      {
          "name": "Ada Chai",
          "team": "Graphic Design",
          "position": "Graphic Design",
@@ -270,13 +277,6 @@
          "position": "Graphic Design",
          "year": "22",
          "img": "1819/graphic_design/GraphicDesign_MadeleineChang_22.jpg"
-      },
-      {
-         "name": "Rose Zhou",
-         "team": "Graphic Design",
-         "position": "Graphic Design",
-         "year": "22",
-         "img": "1819/graphic_design/GraphicDesign_RoseZhou_22.jpg"
       },
       {
          "name": "Daniel Lee",
