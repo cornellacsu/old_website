@@ -1,15 +1,8 @@
 {
-   "year": "2018-2019",
-   "date": "01/09/2018",
-   "class_name": "older-event",
-   "officers": [{
-         "name": "Jerry Qu",
-         "team": "Academic",
-         "position": "President",
-         "year": "19",
-         "img": "1819/academic/Academic_JerryQu_19.jpg",
-         "email": "cq55"
-      },
+   "year": "2019-2020",
+   "date": "01/09/2019",
+   "class_name": "selected",
+   "officers": [
       {
          "name": "Rachel Shim",
          "team": "Social",
@@ -26,19 +19,12 @@
          "img": "1819/academic/Academic_YizhouYu_20.jpg",
          "email": "yy372"
       },
-      {
-         "name": "Lucy Yang",
-         "team": "Publicity",
+            {
+         "name": "William Gao",
+         "team": "Academic",
          "position": "Treasurer",
-         "year": "22",
-         "img": "1819/publicity/Publicity_LucyYang_22.jpg"
-      },
-      {
-         "name": "Ryan Curtis",
-         "team": "Social",
-         "position": "Secretary & Design Chair",
-         "year": "19",
-         "img": "1819/social/Social_RyanCurtis_19.jpg"
+         "year": "20",
+         "img": "1819/academic/Academic_WilliamGao_20.jpg"
       },
       {
          "name": "Helen Liang",
@@ -55,6 +41,13 @@
          "img": "1819/academic/Academic_RishiBommasani_20.jpg"
       },
       {
+         "name": "Judy Huang",
+         "team": "Academic",
+         "position": "Academic Chair",
+         "year": "22",
+         "img": "1819/academic/Academic_JudyHuang_22.jpg"
+      },
+      {
          "name": "Lindsay Fei",
          "team": "Corporate",
          "position": "Corporate Chair",
@@ -67,6 +60,20 @@
          "position": "Corporate Chair",
          "year": "20",
          "img": "1819/corporate/Corporate_AmritAmar_20.jpg"
+      },
+      {
+         "name": "Rose Zhou",
+         "team": "Graphic Design",
+         "position": "Graphic Design Chair",
+         "year": "22",
+         "img": "1819/graphic_design/GraphicDesign_RoseZhou_22.jpg"
+      },
+       {
+         "name": "Julia Ng",
+         "team": "Graphic Design",
+         "position": "Graphic Design Chair",
+         "year": "21",
+         "img": "1819/graphic_design/GraphicDesign_JuliaNg_21.jpg"
       },
       {
          "name": "Qihang Yan",
@@ -151,13 +158,6 @@
          "position": "Academic",
          "year": "21",
          "img": "1819/academic/Academic_AnikaTalwar_21.jpg"
-      },
-      {
-         "name": "Judy Huang",
-         "team": "Academic",
-         "position": "Academic",
-         "year": "22",
-         "img": "1819/academic/Academic_JudyHuang_22.jpg"
       },
       {
          "name": "Keely Wan",
@@ -251,13 +251,6 @@
          "img": "1819/corporate/Corporate_HenryZheng_22.jpg"
       },
       {
-         "name": "Jo Chuang",
-         "team": "Graphic Design",
-         "position": "Graphic Design",
-         "year": "19",
-         "img": "1819/graphic_design/GraphicDesign_JoChuang_19.jpg"
-      },
-      {
          "name": "Ada Chai",
          "team": "Graphic Design",
          "position": "Graphic Design",
@@ -265,32 +258,11 @@
          "img": "1819/graphic_design/GraphicDesign_AdaChai_21.jpg"
       },
       {
-         "name": "Julia Ng",
-         "team": "Graphic Design",
-         "position": "Graphic Design",
-         "year": "21",
-         "img": "1819/graphic_design/GraphicDesign_JuliaNg_21.jpg"
-      },
-      {
          "name": "Madeleine Chang",
          "team": "Graphic Design",
          "position": "Graphic Design",
          "year": "22",
          "img": "1819/graphic_design/GraphicDesign_MadeleineChang_22.jpg"
-      },
-      {
-         "name": "Daniel Lee",
-         "team": "Graphic Design",
-         "position": "Graphic Design",
-         "year": "22",
-         "img": "1819/graphic_design/GraphicDesign_DanielLee_22.jpg"
-      },
-      {
-         "name": "Rose Zhou",
-         "team": "Graphic Design",
-         "position": "Graphic Design",
-         "year": "22",
-         "img": "1819/graphic_design/GraphicDesign_RoseZhou_22.jpg"
       },
       {
          "name": "Catherine Yu",
@@ -312,13 +284,6 @@
          "position": "Publicity",
          "year": "21",
          "img": "1819/publicity/Publicity_YisuZheng_21.jpg"
-      },
-      {
-         "name": "Ally Zhang",
-         "team": "Publicity",
-         "position": "Publicity",
-         "year": "21",
-         "img": "1819/publicity/Publicity_AllyZhang_21.jpg"
       },
       {
          "name": "Trisha Guttal",
