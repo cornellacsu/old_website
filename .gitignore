@@ -1,6 +1,7 @@
 _site/
 .sass-cache
 node_modules
+.jekyll-cache
 
 # Text Backup Files #
 *.sw[a-z]

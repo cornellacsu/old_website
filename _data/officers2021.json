@@ -1,0 +1,351 @@
+{
+   "year": "2020-2021",
+   "date": "01/09/2020",
+   "class_name": "selected",
+   "officers": [
+      {
+         "name": "Helen Liang",
+         "team": "Social",
+         "position": "Co-President",
+         "year": "21",
+         "img": "1819/social/Social_HelenLiang_21.jpg",
+         "email": "hl973"
+      },
+      {
+         "name": "Michael Zhang",
+         "team": "Social",
+         "position": "Co-President",
+         "year": "21",
+         "img": "1819/social/Social_MichaelZhang_21.jpg",
+         "email": "maz62"
+      },
+            {
+         "name": "Daniel Galarraga",
+         "team": "Academic",
+         "position": "Vice President",
+         "year": "21",
+         "img": "1819/academic/Academic_DanielGalarraga_21.jpg",
+         "email": "dg494"
+      },
+      {
+         "name": "Zicen Pan",
+         "team": "Academic",
+         "position": "Co-Treasurer",
+         "year": "21",
+         "img": "1819/academic/Academic_ZicenPan_21.jpg",
+         "email": "zp37"
+      },
+      {
+         "name": "Edith Vu",
+         "team": "Publicity",
+         "position": "Co-Treasurer",
+         "year": "22",
+         "img": "1819/publicity/Publicity_EdithVu_22.jpg",
+         "email": "ev237"
+      },
+      {
+         "name": "Rose Zhou",
+         "team": "Graphic Design",
+         "position": "Secretary & Design Chair",
+         "year": "22",
+         "img": "1819/graphic_design/GraphicDesign_RoseZhou_22.jpg",
+         "email": "rmz38"
+      },
+      {
+         "name": "Judy Huang",
+         "team": "Academic",
+         "position": "Academic Chair",
+         "year": "22",
+         "img": "1819/academic/Academic_JudyHuang_22.jpg"
+      },
+      {
+         "name": "Rishi Bommasani",
+         "team": "Academic",
+         "position": "Academic Chair",
+         "year": "20",
+         "img": "1819/academic/Academic_RishiBommasani_20.jpg"
+      },
+      {
+         "name": "Kari Si",
+         "team": "Corporate",
+         "position": "Corporate Chair",
+         "year": "22",
+         "img": "1819/corporate/Corporate_KariSi_22.jpg",
+         "email": "ks783"
+      },
+      {
+         "name": "Henry Zheng",
+         "team": "Corporate",
+         "position": "Corporate Chair",
+         "year": "22",
+         "img": "1819/corporate/Corporate_HenryZheng_22.jpg",
+         "email": "hz265"
+      },
+      {
+         "name": "Julia Ng",
+         "team": "Graphic Design",
+         "position": "Graphic Design Chair",
+         "year": "21",
+         "img": "1819/graphic_design/GraphicDesign_JuliaNg_21.jpg"
+      },
+      {
+         "name": "Trisha Guttal",
+         "team": "Publicity",
+         "position": "Publicity Chair",
+         "year": "22",
+         "img": "1819/publicity/Publicity_TrishaGuttal_22.jpg"
+      },
+      {
+         "name": "Leo Park",
+         "team": "Social",
+         "position": "Social Chair",
+         "year": "23",
+         "img": "blank.png"
+      },
+      {
+         "name": "Alan Pascual",
+         "team": "Social",
+         "position": "Social Chair",
+         "year": "20",
+         "img": "1819/social/Social_AlanPascual_20.jpg"
+      },
+      {
+         "name": "William Wang",
+         "team": "Web Dev",
+         "position": "Web Dev Chair",
+         "year": "21",
+         "img": "blank.png"
+      },
+      {
+         "name": "Marcella Imoisili",
+         "team": "Web Dev",
+         "position": "Web Dev Chair",
+         "year": "21",
+         "img": "1819/web_dev/WebDev_MarcellaImoisili_21.jpg"
+      },
+      {
+         "name": "Sourabh Chakraborty",
+         "team": "Academic",
+         "position": "Community Lead",
+         "year": "20",
+         "img": "1819/academic/Academic_SourabhChakraborty_20.jpg"
+      },
+      {
+         "name": "Caleb Koch",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "20",
+         "img": "blank.png"
+      },
+      {
+         "name": "Qian Huang",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "21",
+         "img": "1819/academic/Academic_QianHuang_21.jpg"
+      },
+      {
+         "name": "Daniel Weber",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "20",
+         "img": "1819/academic/Academic_DanielWeber_20.jpg"
+      },
+      {
+         "name": "Anika Talwar",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "21",
+         "img": "1819/academic/Academic_AnikaTalwar_21.jpg"
+      },
+      {
+         "name": "Kelly Wan",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "20",
+         "img": "blank.png"
+      },
+      {
+         "name": "Victor Butoi",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "22",
+         "img": "blank.png"
+      },
+      {
+         "name": "Priya Srikumar",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "21",
+         "img": "blank.png"
+      },
+      {
+         "name": "Mo Islam",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "23",
+         "img": "blank.png"
+      },
+      {
+         "name": "Derek Ni",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "23",
+         "img": "blank.png"
+      },
+      {
+         "name": "Irena Gao",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "21",
+         "img": "blank.png"
+      },
+      {
+         "name": "Lindsay Fei",
+         "team": "Corporate",
+         "position": "Corporate Queen",
+         "year": "20",
+         "img": "1819/corporate/Corporate_LindsayFei_20.jpg"
+      },
+      {
+         "name": "Amrit Amar",
+         "team": "Corporate",
+         "position": "Corporate King",
+         "year": "20",
+         "img": "1819/corporate/Corporate_AmritAmar_20.jpg"
+      },
+      {
+         "name": "Drew Williams",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "1819/corporate/Corporate_DrewWilliams_22.jpg"
+      },
+      {
+         "name": "Avani Aggrwal",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "1819/corporate/Corporate_AvaniAggrwal_22.jpg"
+      },
+      {
+         "name": "Eric Miao",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "1819/corporate/Corporate_EricMiao_22.jpg"
+      },
+      {
+         "name": "Uni Wei",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "1819/corporate/Corporate_UniWei_22.jpg"
+      },
+      {
+         "name": "Sophia Xu",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "1819/corporate/Corporate_SophiaXu_22.jpg"
+      },
+      {
+         "name": "Margaret Chan",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "blank.png"
+      },
+      {
+         "name": "Grace Zhao",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "21",
+         "img": "blank.png"
+      },
+      {
+         "name": "Daniel Lee",
+         "team": "Graphic Design",
+         "position": "Graphic Design Officer",
+         "year": "22",
+         "img": "1819/graphic_design/GraphicDesign_DanielLee_22.jpg"
+      },
+      {
+         "name": "Ada Chai",
+         "team": "Graphic Design",
+         "position": "Graphic Design Officer",
+         "year": "21",
+         "img": "1819/graphic_design/GraphicDesign_AdaChai_21.jpg"
+      },
+      {
+         "name": "Madeleine Chang",
+         "team": "Graphic Design",
+         "position": "Graphic Design Officer",
+         "year": "22",
+         "img": "1819/graphic_design/GraphicDesign_MadeleineChang_22.jpg"
+      },
+      {
+         "name": "Urael Xu",
+         "team": "Graphic Design",
+         "position": "Graphic Design Officer",
+         "year": "21",
+         "img": "blank.png"
+      },
+      {
+         "name": "Ally Zhang",
+         "team": "Publicity",
+         "position": "Publicity Officer",
+         "year": "21",
+         "img": "1819/publicity/Publicity_AllyZhang_21.jpg"
+      },
+      {
+         "name": "Sungmin Kim",
+         "team": "Publicity",
+         "position": "Publicity Officer",
+         "year": "21",
+         "img": "1819/publicity/Publicity_SungminKim_21.jpg"
+      },
+      {
+         "name": "William Lee",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "22",
+         "img": "blank.png"
+      },
+      {
+         "name": "Abdullah Ridwan",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "22",
+         "img": "blank.png"
+      },
+      {
+         "name": "Juliane Tsai",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "22",
+         "img": "blank.png"
+      },
+      {
+         "name": "Brian Lu",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "21",
+         "img": "blank.png"
+      },
+      {
+         "name": "Ava Tan",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "23",
+         "img": "blank.png"
+      },
+      {
+         "name": "Amulya Khurana",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "22",
+         "img": "blank.png"
+      }
+   ]
+}
