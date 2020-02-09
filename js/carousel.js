@@ -130,7 +130,7 @@ jQuery(document).ready(function($){
     function setDatePosition(timelineComponents, min) {
         for (i = 0; i < timelineComponents['timelineDates'].length; i++) {
             var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
-                distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + .75;
+                distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + .25;
             timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm*min+'px');
         }
     }
@@ -141,7 +141,7 @@ jQuery(document).ready(function($){
             timeSpanNorm = Math.round(timeSpanNorm) + 4,
             totalWidth = timeSpanNorm*width;
         timelineComponents['eventsWrapper'].css('width', totalWidth+'px');
-        updateFilling(timelineComponents['timelineEvents'].eq(4), timelineComponents['fillingLine'], totalWidth);
+        updateFilling(timelineComponents['timelineEvents'].eq(5), timelineComponents['fillingLine'], totalWidth);
         return totalWidth;
     }
 
