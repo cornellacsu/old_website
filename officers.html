@@ -11,16 +11,14 @@ $(".navbar-custom").css('background-color', '#272940');
 ol {
     list-style-type: none;
 }
-
 ul {
     list-style-type: none;
 }
-
 #officers {
     margin: auto;
 }
 </style>
-{% assign data_jsons = "officers1516|officers1617|officers1718|officers1819|officers1920|officers2021" | split: "|" %}
+{% assign data_jsons = "officers1617|officers1718|officers1819|officers1920|officers2021|officers2122" | split: "|" %}
 <br>
 <section class="cd-horizontal-timeline">
     <div class="timeline">
@@ -31,7 +29,7 @@ ul {
                       {% assign data = site.data[json] %}
                       <li><a href="#{{ forloop.index0 }}" data-date={{ data.date }} class="{{ data.class_name }}">{{data.year}}</a></li>
                     {% endfor %}
-                    <li><a href="#{{ data_jsons.size }}" data-date="01/09/2021">2021-2022</a></li>
+                    <li><a href="#{{ data_jsons.size }}" data-date="01/09/2020">2021-2022</a></li>
                 </ol>
                 <span class="filling-line" aria-hidden="true"></span>
             </div>
@@ -107,7 +105,7 @@ ul {
                               <div class="wow bounceInDown" data-wow-delay="0.4s">
                                   <div class="section-heading">
                                       <h2>2021-2022</h2>
-                                        <p>Officer recruitment for Spring 2020 has closed. Be on the lookout for applications to open again in Fall 2020!
+                                        <p>Officer recruitment for Fall 2020 has closed. Be on the lookout for applications to open again in Spring 2021!
                                         </p>
                                       <hr class="marginbot-50">
                                       <p><img src = "img/acsu_team_2018.jpg" style="width:90%"/></p>
