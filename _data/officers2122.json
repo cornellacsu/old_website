@@ -1,0 +1,335 @@
+{
+   "year": "2020-2021",
+   "date": "01/09/2020",
+   "class_name": "selected",
+   "officers": [
+      {
+         "name": "Helen Liang",
+         "team": "Social",
+         "position": "Co-President",
+         "year": "21",
+         "img": "1819/social/Social_HelenLiang_21.jpg",
+         "email": "hl973"
+      },
+      {
+         "name": "Michael Zhang",
+         "team": "Social",
+         "position": "Co-President",
+         "year": "21",
+         "img": "1819/social/Social_MichaelZhang_21.jpg",
+         "email": "maz62"
+      },
+      {
+         "name": "Daniel Galarraga",
+         "team": "Academic",
+         "position": "Vice President",
+         "year": "21",
+         "img": "1819/academic/Academic_DanielGalarraga_21.jpg",
+         "email": "dg494"
+      },
+      {
+         "name": "Zicen Pan",
+         "team": "Academic",
+         "position": "Co-Treasurer",
+         "year": "21",
+         "img": "1819/academic/Academic_ZicenPan_21.jpg",
+         "email": "zp37"
+      },
+      {
+         "name": "Edith Vu",
+         "team": "Publicity",
+         "position": "Co-Treasurer",
+         "year": "22",
+         "img": "1819/publicity/Publicity_EdithVu_22.jpg",
+         "email": "ev237"
+      },
+      {
+         "name": "Rose Zhou",
+         "team": "Graphic Design",
+         "position": "Secretary",
+         "year": "22",
+         "img": "1819/graphic_design/GraphicDesign_RoseZhou_22.jpg",
+         "email": "rmz38"
+      },
+      {
+         "name": "Winnie Chow",
+         "position": "Co-Secretary",
+         "year": "23",
+         "img": "2021/Publicity/chow_winnie.jpg",
+         "email": "wc459"
+      },
+      {
+         "name": "Judy Huang",
+         "team": "Academic",
+         "position": "Academic-Chair",
+         "year": "22",
+         "img": "2021/Academic/huang_judy.jpg",
+         "email": "jh994"
+      },
+      {
+         "name": "Henry Zheng",
+         "team": "Corporate",
+         "position": "Corporate Chair",
+         "year": "22",
+         "img": "2021/Corporate/zheng_henry.jpg",
+         "email": "hz265"
+      },
+      {
+         "name": "Kari Si",
+         "team": "Corporate",
+         "position": "Corporate Chair",
+         "year": "22",
+         "img": "2021/Corporate/si_kari.jpg",
+         "email": "ks783"
+      },
+      {
+         "name": "Julia Ng",
+         "team": "Graphic Design",
+         "position": "Graphic Design Chair",
+         "year": "21",
+         "img": "1819/graphic_design/GraphicDesign_JuliaNg_21.jpg",
+         "email": "jen67"
+      },
+      {
+         "name": "Lydia Kim",
+         "team": "Publicity",
+         "position": "Publicity Chair",
+         "year": "22",
+         "img": "2021/Publicity/kim_lydia.jpg",
+         "email": "lmk225"
+      },
+      {
+         "name": "Ava Tan",
+         "team": "Social",
+         "position": "Social Chair",
+         "year": "23",
+         "img": "2021/Social/tan_ava.jpg",
+         "email": "at637"
+      },
+      {
+         "name": "William Wang",
+         "team": "Web Dev",
+         "position": "Web Dev Chair",
+         "year": "21",
+         "img": "2021/WebDev/wang_will.jpg",
+         "email": "wow7"
+      },
+      {
+         "name": "Priya Srikumar",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "21",
+         "img": "2021/Academic/srikumar_priya.jpg",
+         "email": "ps735"
+      }, 
+      {
+         "name": "Qian Huang",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "21",
+         "img": "2021/Academic/huang_qian.jpg",
+         "email": "qh53"
+      },
+      {
+         "name": "Keely Wan",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "22",
+         "img": "2021/Academic/wan_keely.jpg",
+         "email": "kw443"
+      },
+      {
+         "name": "Victor Butoi",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "22",
+         "img": "2021/Academic/butoi_victor.jpg",
+         "email": "vib9"
+      }, 
+      {
+         "name": "Derek Ni",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "23",
+         "img": "2021/Academic/ni_derek.jpg",
+         "email": "dan82"
+      },
+      {
+         "name": "Mo Islam",
+         "team": "Academic",
+         "position": "Academic Officer",
+         "year": "23",
+         "img": "2021/Academic/islam_mo.jpg",
+         "email": "mti7"
+      },
+      {
+         "name": "Drew Williams",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "1819/corporate/Corporate_DrewWilliams_22.jpg",
+         "email": "atw54"
+      }, 
+      {
+         "name": "Eric Miao",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "1819/corporate/Corporate_EricMiao_22.jpg",
+         "email": "em648"
+      },  
+      {
+         "name": "Grace Zhao",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "21",
+         "img": "2021/Corporate/zhao_grace.jpg",
+         "email": "rz92"
+      }, 
+      {
+         "name": "Karl Hajjar",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "2021/Corporate/haijar_karl.jpg",
+         "email": "ksh82"
+      }, 
+      {
+         "name": "Manya Walia",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "2021/Corporate/walia_manya.jpg",
+         "email": "mtw62"
+      },  
+      {
+         "name": "Margaret Chan",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "2021/Corporate/chan_margaret.jpg",
+         "email": "myc39"
+      }, 
+      {
+         "name": "Sophia Xu",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "1819/corporate/Corporate_SophiaXu_22.jpg",
+         "email": "sx53"
+      },   
+      {
+         "name": "Uni Wei",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "22",
+         "img": "1819/corporate/Corporate_UniWei_22.jpg",
+         "email": "qw89"
+      },  
+      {
+         "name": "Andrii Iermolaiev",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "23",
+         "img": "2021/Corporate/iermolaiev_andrii.jpg",
+         "email": "ai93"
+      }, 
+      {
+         "name": "Winston Liu",
+         "team": "Corporate",
+         "position": "Corporate Officer",
+         "year": "23",
+         "img": "2021/Corporate/liu_winston.jpg",
+         "email": "wdl33"
+      },
+      {
+         "name": "Ada Chai",
+         "team": "Graphic Design",
+         "position": "Graphic Design Officer",
+         "year": "21",
+         "img": "1819/graphic_design/GraphicDesign_AdaChai_21.jpg",
+         "email": "ac2687"
+      }, 
+      {
+         "name": "Daniel Lee",
+         "team": "Graphic Design",
+         "position": "Graphic Design Officer",
+         "year": "22",
+         "img": "1819/graphic_design/GraphicDesign_DanielLee_22.jpg",
+         "email": "jl2565"
+      }, 
+      {
+         "name": "Madeleine Chang",
+         "team": "Graphic Design",
+         "position": "Graphic Design Officer",
+         "year": "22",
+         "img": "1819/graphic_design/GraphicDesign_MadeleineChang_22.jpg",
+         "email": "mmc337"
+      }, 
+      {
+         "name": "Charu Murugesan",
+         "team": "Publicity",
+         "position": "Publicity Officer",
+         "year": "22",
+         "img": "2021/Publicity/murugesan_charu.jpg",
+         "email": "csm246"
+      }, 
+      {
+         "name": "Abdullah Ridwan",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "22",
+         "img": "2021/Social/ridwan_abdullah.jpg",
+         "email": "aar233"
+      }, 
+      {
+         "name": "Amulya Khurana",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "22",
+         "img": "2021/Social/khurana_amulya.jpg",
+         "email": "ak2425"
+      }, 
+      {
+         "name": "Juliane Tsai",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "22",
+         "img": "2021/Social/tsai_juliane.jpg",
+         "email": "jpt79"
+      }, 
+      {
+         "name": "Leo Park",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "23",
+         "img": "2021/Social/park_leo.jpg",
+         "email": "lsp62"
+      }, 
+      {
+         "name": "Alice Hu",
+         "team": "Web Dev",
+         "position": "Web Dev Officer",
+         "year": "22",
+         "img": "2021/WebDev/hu_alice.jpg",
+         "email": "ath84"
+      },
+      {
+         "name": "Sohwi Jung",
+         "team": "Web Dev",
+         "position": "Web Dev Officer",
+         "year": "22",
+         "img": "2021/WebDev/jung_sohwi.jpg",
+         "email": "sj399"
+      },
+      {
+         "name": "Shafieen Ibrahim",
+         "team": "Web Dev",
+         "position": "Web Dev Officer",
+         "year": "23",
+         "img": "2021/WebDev/ibrahim_shaf.jpg",
+         "email": "smi32"
+
+      }
+   ]
+}
