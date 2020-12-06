@@ -1,4 +1,4 @@
-let cal = document.querySelector('#calendar');
+window.onload = eventRender;
 
 $(document).ready(function() { 
     $('#calendar').fullCalendar({ 
@@ -6,19 +6,29 @@ $(document).ready(function() {
         googleCalendarApiKey: 'AIzaSyBsosKuN91ELrOaJ2PpIxSmSYHcrYSllhE', 
         events: { googleCalendarId: 'cornell.edu_ugjtscehl3thqdg9vh8eg89ulk@group.calendar.google.com' }, 
         eventRender: function( evt, elem ) { if (evt.location) elem.find(".fc-title").append("<span class='event-location'>" + evt.location + "</span>"); } 
-    });
-
-    let buttons = (document.getElementsByClassName('fc-button-group'))[0];
-    console.log(buttons);
-    buttons.addEventListener('click', eventRender);
+    }); 
 });
+
+window.addEventListener("load", function() {
+    // let buttons = (document.getElementsByClassName('fc-button-group'))[0];
+    let prev = (document.getElementsByClassName('fc-prev-button'))[0];
+    let next = (document.getElementsByClassName('fc-next-button'))[0];
+
+    prev.addEventListener('click', eventRender);
+    next.addEventListener('click', eventRender);
+});
+
+let cal = document.querySelector('#calendar');
 
 function eventRender() {
     console.log('Called Event Render');
     let calBox = ((document.getElementsByClassName("fc-view-container"))[0]);
     console.log(calBox);
-    console.log($('.fc-view-container').find('.fc-list-empty'))
-    if ($('.fc-view-container').find('.fc-list-empty').length > 0) {
+    
+    // if ($(".fc-list-empty")[0]){
+    // console.log($('.fc-view-container').find('.fc-list-empty'));
+    
+    if (($('.fc-view-container').find('.fc-list-empty').length) > 0) {
         let info = document.createElement("h3");
         let text = document.createTextNode('There are no events this week.');
 
@@ -31,12 +41,15 @@ function eventRender() {
         info.classList.add('display-3');
         info.style.marginTop = '2em';
     } else {
+        let results = ((document.getElementsByClassName('fc-list-table')));
+        console.log(results);
         console.log('YES EVENTS');  
         calBox.style.display = 'block'; 
     }
 }
 
-window.onload = eventRender;
+
+// window.onclick = eventRender;
 // buttons.addEventListener('click', eventRender);
 
 // documentation link : https://developers.google.com/calendar/v3/reference/events/list?apix_params=%7B%22calendarId%22%3A%22cornell.edu_uvd5bb84i557fp4mfqa1gs6ta4%40group.calendar.google.com%22%7D#try-it
