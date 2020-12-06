@@ -1,14 +1,15 @@
 let cal = document.querySelector('#calendar');
 
-$(document).ready(function() { $('#calendar').fullCalendar({ 
-    defaultView: 'listWeek',
-    googleCalendarApiKey: 'AIzaSyBsosKuN91ELrOaJ2PpIxSmSYHcrYSllhE', 
-    events: { googleCalendarId: 'cornell.edu_ugjtscehl3thqdg9vh8eg89ulk@group.calendar.google.com' }, 
-    eventRender: function( evt, elem ) { if (evt.location) elem.find(".fc-title").append("<span class='event-location'>" + evt.location + "</span>"); } }); 
-});
+$(document).ready(function() { 
+    $('#calendar').fullCalendar({ 
+        defaultView: 'listWeek',
+        googleCalendarApiKey: 'AIzaSyBsosKuN91ELrOaJ2PpIxSmSYHcrYSllhE', 
+        events: { googleCalendarId: 'cornell.edu_ugjtscehl3thqdg9vh8eg89ulk@group.calendar.google.com' }, 
+        eventRender: function( evt, elem ) { if (evt.location) elem.find(".fc-title").append("<span class='event-location'>" + evt.location + "</span>"); } 
+    });
 
-window.addEventListener("load", function() {
     let buttons = (document.getElementsByClassName('fc-button-group'))[0];
+    console.log(buttons);
     buttons.addEventListener('click', eventRender);
 });
 
@@ -16,8 +17,8 @@ function eventRender() {
     console.log('Called Event Render');
     let calBox = ((document.getElementsByClassName("fc-view-container"))[0]);
     console.log(calBox);
-    
-    if ($('.fc-view-container').has('.fc-list-empty')) {
+    console.log($('.fc-view-container').find('.fc-list-empty'))
+    if ($('.fc-view-container').find('.fc-list-empty').length > 0) {
         let info = document.createElement("h3");
         let text = document.createTextNode('There are no events this week.');
 
@@ -36,7 +37,6 @@ function eventRender() {
 }
 
 window.onload = eventRender;
-window.onclick = eventRender;
 // buttons.addEventListener('click', eventRender);
 
 // documentation link : https://developers.google.com/calendar/v3/reference/events/list?apix_params=%7B%22calendarId%22%3A%22cornell.edu_uvd5bb84i557fp4mfqa1gs6ta4%40group.calendar.google.com%22%7D#try-it
