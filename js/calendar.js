@@ -1,21 +1,19 @@
-window.onload = eventRender;
-
-$(document).ready(function() { 
-    $('#calendar').fullCalendar({ 
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
         defaultView: 'listWeek',
-        googleCalendarApiKey: 'AIzaSyBsosKuN91ELrOaJ2PpIxSmSYHcrYSllhE', 
-        events: { googleCalendarId: 'cornell.edu_ugjtscehl3thqdg9vh8eg89ulk@group.calendar.google.com' }, 
-        eventRender: function( evt, elem ) { if (evt.location) elem.find(".fc-title").append("<span class='event-location'>" + evt.location + "</span>"); } 
-    }); 
-});
+        googleCalendarApiKey: 'AIzaSyBsosKuN91ELrOaJ2PpIxSmSYHcrYSllhE',
+        events: { googleCalendarId: 'cornell.edu_ugjtscehl3thqdg9vh8eg89ulk@group.calendar.google.com' },
+        eventRender: function( evt, elem ) { if (evt.location) elem.find(".fc-title").append("<span class='event-location'>" + evt.location + "</span>"); }
+    });
 
-window.addEventListener("load", function() {
     // let buttons = (document.getElementsByClassName('fc-button-group'))[0];
     let prev = (document.getElementsByClassName('fc-prev-button'))[0];
     let next = (document.getElementsByClassName('fc-next-button'))[0];
 
     prev.addEventListener('click', eventRender);
     next.addEventListener('click', eventRender);
+
+    eventRender();
 });
 
 let cal = document.querySelector('#calendar');
@@ -24,11 +22,14 @@ function eventRender() {
     console.log('Called Event Render');
     let calBox = ((document.getElementsByClassName("fc-view-container"))[0]);
     console.log(calBox);
-    
+
     // if ($(".fc-list-empty")[0]){
-    // console.log($('.fc-view-container').find('.fc-list-empty'));
-    
-    if (($('.fc-view-container').find('.fc-list-empty').length) > 0) {
+    console.log($('.fc-view-container').find('.fc-list-empty'));
+    console.log($('.fc-view-container')[0])
+    console.log($($('.fc-view-container')[0]).find('.fc-list-empty'))
+    console.log($('.fc-list-empty-wrap2').length)
+
+    if (($.contains($('.fc-view-container'), $('.fc-list-empty')))) {
         let info = document.createElement("h3");
         let text = document.createTextNode('There are no events this week.');
 
@@ -43,8 +44,8 @@ function eventRender() {
     } else {
         let results = ((document.getElementsByClassName('fc-list-table')));
         console.log(results);
-        console.log('YES EVENTS');  
-        calBox.style.display = 'block'; 
+        console.log('YES EVENTS');
+        calBox.style.display = 'block';
     }
 }
 
