@@ -1,0 +1,31 @@
+- title: About
+  url: about.html
+  sublinks:
+    - title: What is ACSU?
+      url: what.html
+    - title: Officers
+      url: officers.html
+    - title: ByLaws
+      url: bylaws.html
+- title: Events
+  url: calendar.html
+  sublinks:
+  - title: Calendar
+    url: calendar.html
+  - title: G-Body
+    url: gbody.html
+- title: Resources
+  url: resources.html
+  sublinks:
+    - title: ACSU README
+      url: readme.html
+    - title: Resume Book
+      url: https://resumebook.acsu.cornell.edu/upload/
+    - title: CS Wiki
+      url: https://cornellcswiki.gitlab.io/
+- title: Sponsors
+  url: corporate.html
+- title: HACSU
+  url: hacsu.html
+- title: Join
+  url: join.html
