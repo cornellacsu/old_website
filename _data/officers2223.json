@@ -53,6 +53,7 @@
          "name": "Grace Han",
          "position": "Co-Treasurer",
          "year": "24",
+         "img": "2022/Han_Grace.jpeg",
          "email": "gsh68"
       }, 
       {
@@ -143,7 +144,6 @@
          "img": "2021/Academic/huang_qian.jpg",
          "email": "qh53"
       },
-      
       {
          "name": "Derek Ni",
          "team": "Academic",
@@ -161,13 +161,6 @@
          "email": "mti7"
       },
       {
-         "name": "Hali Shin",
-         "team": "Academic",
-         "position": "Academic Officer",
-         "year": "22",
-         "email": "hbs59"
-      },
-      {
          "name": "Caleb Biddulph",
          "team": "Academic",
          "position": "Academic Officer",
@@ -180,6 +173,7 @@
          "team": "Academic",
          "position": "Academic Officer",
          "year": "24",
+         "img": "2022/zhang_travis.jpg",
          "email": "tz98"
       },
       {
@@ -203,20 +197,15 @@
          "team": "Corporate",
          "position": "Corporate Officer",
          "year": "23",
+         "img":"2022/Iermolaiev_Andrii.jpeg",
          "email": "ai93"
-      },
-      {
-         "name": "Hanzheng Li",
-         "team": "Corporate",
-         "position": "Corporate Officer",
-         "year": "23",
-         "email": "hl999"
       },
       {
          "name": "Michelle Shou",
          "team": "Corporate",
          "position": "Corporate Officer",
          "year": "23",
+         "img": "2022/Shou_Michelle.jpeg",
          "email": "mcs349"
       },
       {
@@ -224,6 +213,7 @@
          "team": "Corporate",
          "position": "Corporate Officer",
          "year": "23",
+         "img": "2022/Xu_Zhuoyu.jpeg",
          "email": "zx85"
       },
       {
@@ -231,6 +221,7 @@
          "team": "Corporate",
          "position": "Corporate Officer",
          "year": "24",
+         "img": "2022/lee_janice.jpeg",
          "email": "jl2838"
       },
       {
@@ -241,13 +232,6 @@
          "img": "2022/Lou_Andrew.jpg",
          "email": "ayl72"
       },
-      {
-         "name": "Julia Ng",
-         "team": "Graphic Design",
-         "position": "Graphic Design Officer",
-         "year": "21",
-         "email": "jen67"
-      }, 
       {
          "name": "Daniel Lee",
          "team": "Graphic Design",
@@ -273,20 +257,6 @@
          "email": "jmw499"
       }, 
       {
-         "name": "Winfield Mac",
-         "team": "Graphic Design",
-         "position": "Graphic Design Officer",
-         "year": "23",
-         "email": "wtm54"
-      }, 
-      {
-         "name": "Prachi Kelkar",
-         "team": "Graphic Design",
-         "position": "Graphic Design Officer",
-         "year": "24",
-         "email": "pak226"
-      }, 
-      {
          "name": "Yihan Huang",
          "team": "Publicity",
          "position": "Publicity Officer",
@@ -299,15 +269,9 @@
          "team": "Publicity",
          "position": "Publicity Officer",
          "year": "23",
+         "img": "2022/Na_Justin.jpeg",
          "email": "jn377"
-      }, 
-      {
-         "name": "Vy Nguyen",
-         "team": "Publicity",
-         "position": "Publicity Officer",
-         "year": "24",
-         "email": "vn46"
-      }, 
+      },  
       {
          "name": "Sabrina Chu",
          "team": "Publicity",
@@ -316,6 +280,47 @@
          "img": "2022/Publicity/Chu_Sabrina.jpg",
          "email": "sc2323"
       }, 
+      {
+         "name": "Leo Park",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "23",
+         "img": "2021/Social/park_leo.jpg",
+         "email": "lsp62"
+      }, 
+      {
+         "name": "Abdullah Ridwan",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "22",
+         "img": "2021/Social/ridwan_abdullah.jpg",
+         "email": "aar233"
+      }, 
+      {
+         "name": "Juliane Tsai",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "22",
+         "img": "2021/Social/tsai_juliane.jpg",
+         "email": "jpt79"
+      }, 
+      {
+         "name": "Amulya Khurana",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "22",
+         "img": "2021/Social/khurana_amulya.jpg",
+         "email": "ak2425"
+      }, 
+      {
+         "name": "Sebastian Guo",
+         "team": "Social",
+         "position": "Social Officer",
+         "year": "23",
+         "img": "2022/guo_sebastian.jpg",
+         "email": "sjg276"
+      }, 
+
       {
          "name": "Shafieen Ibrahim",
          "team": "Web Dev",
