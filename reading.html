@@ -1,0 +1,65 @@
+---
+layout: default
+permalink: reading.html
+---
+<script>
+$(".navbar-custom").css('background-color', '#272940');
+</script>
+<!-- Section: reading -->
+<section id="content" class="home-section">
+    <div class="heading">
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="wow bounceInDown" data-wow-delay="0.4s">
+                        <div class="section-heading text-center">
+                            <h2>Reading Groups <span class="glyphicon glyphicon-book"></span></h2>
+                            <p> Inspired by MIT's<a href="http://ieee.scripts.mit.edu/files/urge/urge.html"> URGE </a> program, the ACSU has initiated our own undergraduate Reading Groups.
+                                <br/> Our reading group are open for anyone who is interested, regardless of background.
+                            </p>
+                        </div>
+                        <h3> Overview </h3>
+                        <p>
+                            ACSU Reading Groups are small groups of less than 10 undergraduate students that meet regularly to discuss technical papers in a casual learning environment. These groups are open to anyone who is interested, regardless of background. Each reading group has a leader who is responsible for choosing the technical paper and facilitating the discussions. The participants read the paper beforehand, come prepared with 1-2 questions, and join the discussion.</p>
+                        <br/>
+                        <h3> Application Process </h3>
+                        <p>
+                            The application for Fall 2018 is not yet open.
+                        </p>
+                        <br/>
+                        {% for years in site.data.readinggroups %}
+                        <h3> {{ years.year }} Topics </h3>
+                        {% assign columns = 12 | divided_by: years.topics.size %}
+                        <div class="row years">
+                          {% for t in years.topics %}
+                          <div class="col-md-{{columns}}">
+                            <div class="accordion_header background">
+                              <p class="accordion_text">{{t.topic}}</p>
+                            </div>
+                            <div class="reading_info none">
+                              <p><b>Leaders</b>: {{t.leader}}
+                                <br/><br/><b>Papers</b>:
+                                <ul>
+                                {% for p in t.papers %}
+                                <li><a href="{{ p.link }}" target="_blank">{{ p.name }}</a></li>
+                                {% endfor %}
+                                </ul>
+                              </p>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                        <br>
+                        {% endfor %}
+                        <br>
+                        <div class="section-heading text-center">
+                          <h3> Questions </h3>
+                          <p> For any questions, contact our <a href="officers.html">Academic Officers</a>. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Section: reading -->

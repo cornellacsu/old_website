@@ -1,0 +1,147 @@
+---
+layout: default
+permalink: officers.html
+---
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script>
+$(".navbar-custom").css('background-color', '#272940');
+</script>
+
+<style>
+ol {
+    list-style-type: none;
+}
+ul {
+    list-style-type: none;
+}
+#officers {
+    margin: auto;
+}
+</style>
+{% assign data_jsons = "officers1718|officers1819|officers1920|officers2021|officers2122|officers2223" | split: "|" %}
+<br>
+<section class="cd-horizontal-timeline">
+    <div class="timeline">
+        <div class="events-wrapper">
+            <div class="events">
+                <ol>
+                    {% for json in data_jsons %}
+                      {% assign data = site.data[json] %}
+                      <li><a href="#{{ forloop.index0 }}" data-date={{ data.date }} class="{{ data.class_name }}">{{data.year}}</a></li>
+                    {% endfor %}
+                    <li><a href="#{{ data_jsons.size }}" data-date="01/09/2023">2022-2023</a></li>
+                </ol>
+                <span class="filling-line" aria-hidden="true"></span>
+            </div>
+        </div>
+    </div>
+    <!-- .timeline -->
+    <div class="events-content">
+        <ol>
+          <!-- generate the team pages using the data jsons -->
+          {% for json in data_jsons %}
+          {% assign data = site.data[json] %}
+          <li data-date={{ data.date }} class={{ data.class_name }}>
+              <section id="officers" class="officer-section text-center">
+                <div class="heading-about">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="wow bounceInDown" data-wow-delay="0.4s">
+                              <div class="section-heading">
+                                {% if data.class_name == "selected" %}
+                                  <h2>Current Officers</h2>
+                                  <p>Shoutout to our hard-working ACSU officers for 2021 :)
+                                  <br/>Feel free to <a id="acsuemail" data-email="acsu" href="mailto:">email</a> or contact us through our <a href="https://www.facebook.com/CornellACSU/" target="_blank">Facebook</a> page.</p>
+                                {% else %}
+                                  <h2>{{ data.year }}</h2>
+                                  <p>These brave souls were the ACSU officers for {{ data.year }}.</p>
+                                {% endif %}
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="row">
+                      <div class="col-lg-2 col-lg-offset-5">
+                          <hr class="marginbot-50">
+                      </div>
+                  </div>
+                  <div class="container">
+                  <!-- create a row for every 4 officers  -->
+                  {% assign rows = data.officers.size | divided_by: 4.0 | ceil %}
+                  {% for i in (1..rows) %}
+                    {% assign offset = forloop.index0 | times: 4 %}
+                    <div class="row">
+                      {% for officer in data.officers limit:4 offset:offset %}
+                        <div class="col-md-3">
+                          <div class="wow bounceInUp" data-wow-delay="0.2s">
+                            <div class="team boxed-grey">
+                              <div class="inner">
+                                <h5>{{ officer.name }} '{{ officer.year }}</h5>
+                                <p class="subtitle">{{ officer.position }}</p>
+                                <div class="avatar"><img class="lozad img-responsive img-circle" data-src="img/team/{{ officer.img }}" alt="" width=500/></div>
+                                {% if officer.email %}
+                                <a id="email{{ officer.email }}" data-email="{{ officer.email }}" href="mailto:"><img src="img/icons/email.png" onmouseover="this.src='img/icons/email-2.png'" onmouseout="this.src='img/icons/email.png'" width="38" alt=""/></a>
+                                {% endif %}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      {% endfor %}
+                    </div>
+                    <br>
+                  {% endfor %}
+                </div>
+              </section>
+          </li>
+          {% endfor %}
+          <li data-date="01/09/2023">
+              <section id="officers" class="officer-section text-center">
+                  <div class="heading-about">
+                      <div class="container">
+                          <div class="row">
+                              <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                  <div class="section-heading">
+                                      <!-- <h2>2021-2022</h2> -->
+                                        <h3>Officer recruitment for Spring 2021 has closed. <br/>Be on the lookout for applications to open again in Spring 2022!
+                                        </h3>
+                                      <hr class="marginbot-50">
+                                      <p><img src = "img/acsu_team_2018.jpg" style="width:90%"/></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </li>
+        </ol>
+    </div>
+<script>
+var emails = document.querySelectorAll('[data-email]');
+emails.forEach(function(id) {
+  $(id).on('mouseover', function(){
+    var href = $(this).attr('href')
+    if (href == 'mailto:') $(this).attr('href', href + id.dataset.email + "@cornell.edu");
+  });
+});
+
+// for lozad lazy loading
+window.addEventListener('load', function() {
+  var observer = lozad();
+  observer.observe();
+})
+</script>
+<!-- .events-content -->
+</section>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.js"></script>
+<script src="js/carousel.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.js"></script>

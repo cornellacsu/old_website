@@ -1,0 +1,57 @@
+- year: 2018
+  topics:
+    - topic: Deep Learning and Computer Vision
+      leader: Horace He and Isay Katsman
+      papers:
+        - link: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
+          name: ImageNet Classification with Deep Convolutional Neural Networks
+        - link: https://arxiv.org/pdf/1611.03530.pdf
+          name: Understanding deep learning requires rethinking generalization
+        - link: https://arxiv.org/pdf/1703.06870.pdf
+          name: Mask R-CNN
+        - link: https://arxiv.org/pdf/1701.07875.pdf
+          name: Wasserstein GAN
+        - link: https://arxiv.org/pdf/1312.6114.pdf
+          name: Auto-Encoding Variational Bayes
+    - topic: Natural Language Processing
+      leader: Rishi Bommasani
+      papers:
+        - link: http://www.cs.cornell.edu/home/llee/papers/sentiment.pdf
+          name: Sentiment Classification using Machine Learning Techniques
+        - link: http://www.aclweb.org/anthology/P13-1151
+          name: Improving Text Simplification Language Modeling Using Unsimplified Text Data
+        - link: https://arxiv.org/pdf/1704.04368.pdf
+          name: Get To The Point - Summarization with Pointer-Generator Networks
+        - link: https://arxiv.org/pdf/1704.07130.pdf
+          name: Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings
+    - topic: Network Inference and Multivariate Optimization
+      leader: Tavish McDonald
+      papers:
+        - link: files/reading_group_files/Network Inference via the Time Varying Graphical Lasso.pdf
+          name: Network Inference via the Time-Varying Graphical Lasso
+        - link: files/reading_group_files/Representation Learning on Graphs Methods and Applications.pdf
+          name: Representation Learning on Graphs - Methods and Applications
+        - link: files/reading_group_files/streaming node classification.pdf
+          name: Toward online node classification on streaming networks
+- year: 2017
+  topics:
+    - topic: Programming Languages
+      leader: Siva Somayyajula
+      papers:
+        - link: http://www.cs.cornell.edu/~jnfoster/papers/frenetic-netkat.pdf
+          name: NetKAT:Semantic Foundations for Networks
+    - topic: Machine Learning
+      leader: Matthew Weidman
+      papers:
+        - link: https://arxiv.org/pdf/1412.2306.pdf
+          name: DeepVisual-Semantic Alignments for Generating Image Descriptions
+    - topic: Artificial Intelligence
+      leader: Ji Hun Kim
+      papers:
+        - link: https://www.cs.cornell.edu/~cristian/memorability_files/memorability.pdf
+          name: You had me at hello - How phrasing affects memorability
+    - topic: Scientific Computing
+      leader: Anna Yesypenko
+      papers:
+        - link: http://meyer.math.ncsu.edu/Meyer/PS_Files/DeeperInsidePR.pdf
+          name: Deeper Inside PageRank
